@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="conversation_detail_settings_msg_record">대화 내용</string>
+    <string name="conversation_detail_settings_create_group_chat">그룹 만들기</string>
+    <string name="conversation_detail_settings_remove_from_group">그룹에서 삭제</string>
+    <string name="conversation_detail_settings_to_chat">채팅하기 시작</string>
+    <string name="conversation_detail_settings_push_on_black_list">차단 목록에 가입</string>
+    <string name="conversation_detail_settings_group_name">그룹명</string>
+    <string name="conversation_detail_settings_invite_friends_to_join_group">그룹 멤버 추가</string>
+    <string name="conversation_detail_settings_leave_group">그룹에서 나가기</string>
+    <string name="conversation_detail_settings_show_all_members">멤버 더 보기</string>
+    <string name="conversation_detail_settings_code_encrypted">암호화 된 보안 코드</string>
+    <string name="conversation_detail_settings_burn_after_reading">읽은 후 사라 짐</string>
+    <string name="conversation_detail_settings_burn_after_reading_notice">이 옵션을 설정하면 이 채팅에서 주고받은 메시지는 읽은 후에 사라집니다.</string>
+    <string name="conversation_detail_settings_msg_has_been_encrypted">채팅이 암호화되었습니다</string>
+    <string name="conversation_detail_settings_remark">별명을 설정</string>
+    <string name="conversation_detail_settings_chat_background">배경 화면</string>
+    <string name="conversation_detail_settings_change_chat_background">배경 화면 변경하기</string>
+    <string name="conversation_list_encrypte_notifications">메시지 와 통 화 는 모두 엔 드 로 암호 화 된다.대 화 를 제외 한 그 누구 도 시 크 릿 앱 을 포함 하여 읽 거나 받 을 수 없다.</string>
+    <string name="conversation_list_no_encrypte_notifications">이 대화의 메시지와 통화가 암호화됩니다.대 화 를 제외 한 그 누구 도 시 크 릿 앱 을 포함 하여 읽 거나 받 을 수 없다.</string>
+    <string name="conversation_detail_settings_group_nick">그룹 별명을 설정</string>
+    <string name="conversation_detail_settings_save">저장</string>
+    <string name="conversation_detail_remark">별명</string>
+    <string name="conversation_detail_group_nick">그룹 별명</string>
+    <string name="conversation_detail_setting_success">설정 성공</string>
+    <string name="conversation_detail_setting_failure">설정 실패</string>
+    <string name="conversation_detail_settings_background_apply">확인</string>
+    <string name="conversation_detail_settings_background_try_other_style">다른 스타일 시도해 보세요.</string>
+    <string name="conversation_detail_settings_background_try_other_style_anytime">언제든지 신선한 테마를 사용할수 있습니다.</string>
+    <string name="pick_user_warning">경고</string>
+    <string name="pick_user_ok">확인</string>
+    <string name="launch_guide_start_using">Start Using</string>
+    <string name="profile_setting_account_manager">계정 관리</string>
+    <string name="profile_setting_my_qrcode">내 QR 코트</string>
+    <string name="head_portrait_title">프로필 사진</string>
+    <string name="device_detail_title">기기 세부 사항</string>
+    <string name="pickuser_contacts">연럭처</string>
+    <string name="conversation_group_profile_photo">그룹 프로필 사진</string>
+    <string name="show_all_participants">전체 텍스트 (%1$s)</string>
+    <string name="conversation_detail_settings_join_group">참ㅇ</string>
+    <string name="conversation_detail_settings_aks_join">그룹 채팅에 참여하시겠습니까</string>
+    <string name="group_participant_invite_title">%1$s님을 그룹에 초대</string>
+    <string name="group_participant_invite_content">%1$s님이%2$s님을%3$s그룹에 초대，진입하여 세부 정보를 볼수 있습니다.</string>
+    <string name="group_participant_invite_tips">채팅</string>
+    <string name="group_participant_invite_confirm">그룹에 참여하는지 확인</string>
+    <string name="group_participant_invite_joined">가입함</string>
+    <string name="group_participant_invite_confirm_tips">해당 그룹에 참여</string>
+    <string name="group_participant_invite_refuse">가입을 거부</string>
+    <string name="group_participant_invite_total_memsum">모두(%1$s)사람</string>
+    <string name="navigation_menu_item_close">끔</string>
+    <string name="group_participant_add_default_group">메뉴 바에 추가</string>
+    <string name="group_participant_remove_default_group">메뉴 바에서 제거</string>
+    <string name="group_participant_user_row_creator_and_me">그룹 소유자 \u0026 나</string>
+    <string name="conversation_setting_group_manage_and_me">관리자 \u0026 나</string>
+    <string name="group_participant_user_row_creator">그룹 소유자</string>
+    <string name="group_participant_user_row_me">나</string>
+    <string name="group_participant_invite_enter_group_conversation">해당 그룹에 가입</string>
+    <string name="conversation_image_original">원본</string>
+    <string name="conversation_detail_settings_top_placement">맨 위에 고정</string>
+    <string name="conversation_detail_settings_forbidden_title">전원 금언</string>
+    <string name="conversation_detail_settings_forbidden_describe">모든 그룹 전원에 대한 금언을 활성화 한 후 그룹 소유자만 발언 할 수 있으며 그룹 멤버 명함을 입력하여 개별 회원에 대한 금언을 설정할 수 있습니다</string>
+    <string name="conversation_detail_settings_invite_visible_title">멤버 초대,퇴출이 보이지 않습니다</string>
+    <string name="conversation_detail_settings_forbidden_settings">그룹에셔 금언을 설정</string>
+    <string name="conversation_detail_settings_add_friend_settings">그뤀 내에 친구 추가하는것을 금지</string>
+    <string name="conversation_detail_settings_forbidden_option_title">전원 금언 시간</string>
+    <string name="conversation_detail_settings_forbidden_open">%1$s전원 금언을 설정</string>
+    <string name="conversation_detail_settings_forbidden_close">%1$s전원 금언을 끔</string>
+    <string name="conversation_detail_settings_forbidden_state">금언 중</string>
+    <string name="conversation_detail_settings_forbidden_state2">금언 중(%1$s)</string>
+    <string name="conversation_detail_settings_invite_visible_open">%1$s\'멤버 초대 퇴출 보이지 않음\'을 끔</string>
+    <string name="conversation_detail_settings_invite_visible_close">%1$s\'멤버 초대 퇴출 보이지 않음\'을 설정</string>
+    <string name="conversation_detail_settings_add_friend_open">%1$s그룹내에서 친구를 추가하지 못하도록 설정을 끔</string>
+    <string name="conversation_detail_settings_add_friend_close">%1$s그룹내에서 친구를 추가하지 못하도록 설정</string>
+    <string name="conversation_detail_settings_msg_only_to_manager_open">%1$s 다른 회원에게는 메시지가 보이지 않습니다</string>
+    <string name="conversation_detail_settings_msg_only_to_manager_close">%1$s 다른 회원이 닫은 메시지는 보이지 않습니다</string>
+    <string name="conversation_detail_settings_forbidden_option_open">%1$s그룹 소유자한테 영구적으로 금언 당함</string>
+    <string name="conversation_detail_settings_forbidden_option_close">%1$s그룹 소유자한테 금언 해제</string>
+    <string name="conversation_detail_settings_forbidden_option_open2">%1$s회원님한테 영구적으로 금언 당함</string>
+    <string name="conversation_detail_settings_forbidden_option_close2">%1$s회원님한테 금언 해제</string>
+    <string name="conversation_detail_settings_forbidden_option_custom">홀로 설저</string>
+    <string name="conversation_detail_settings_forbidden_option_recovery">%1$s금언 해제, 정상적으로 발언할 수 있음</string>
+    <string name="conversation_detail_settings_forbidden_option_time_params">%1$s관리자한테 금언 당함%2$s</string>
+    <string name="conversation_detail_settings_forbidden_option_time_params2">%1$s회원님한테 금언 당함%2$s</string>
+    <string name="conversation_detail_settings_forbidden_option_open3">%1$s관리자한테 영구적으로 금언 당함</string>
+    <string name="conversation_detail_settings_forbidden_option_close3">%1$s관리자한테 금언 해제</string>
+    <string name="conversation_detail_settings_forbidden_option_time_params3">%1$s관리자한테 금언 당함%2$s</string>
+    <string name="conversation_detail_settings_forbidden_option_time_day">일</string>
+    <string name="conversation_detail_settings_forbidden_option_time_hour">시간</string>
+    <string name="conversation_detail_settings_forbidden_option_time_minute">분</string>
+    <string name="conversation_detail_settings_screenshot_title">스크린샷 알림</string>
+    <string name="conversation_detail_settings_screenshot_describe">스크린샷 알림이 활성화된 후 스크린샷을 찍을 때 채팅 페이지에 알림 메시지가 전송됩니다.</string>
+    <string name="conversation_detail_user_permissions">이 사용자 정보를 볼 수있는 권한이 없습니다</string>
+    <string name="conversation_detail_item_add_friend">친구로 추기</string>
+    <string name="conversation_detail_item_add_group_manager">%1$s 관리자로 됨</string>
+    <string name="conversation_detail_item_del_group_manager">%1$s 그룹 소유자에 의해 관리자직을 해제</string>
+    <string name="conversation_just_now">방금</string>
+    <string name="conversation_minutes_ago">분전</string>
+    <string name="conversation_hours_ago">시간전</string>
+    <string name="conversation_days_ago">일전</string>
+    <string name="group_total_mems">%1$s분</string>
+    <string name="server_notification_open_status">메시지 알림</string>
+    <string name="server_notification_settings">서비스 알림 설정</string>
+    <string name="server_notification_to_add_user">친구를 추가하려면 클릭</string>
+    <string name="conversation_top_menu_start_group_chat">그룹 만들기</string>
+    <string name="conversation_top_menu_add_friend">친구 추가</string>
+    <string name="conversation_top_menu_scan">코드 스캔</string>
+    <string name="create_group_conversation">그룹 만들기</string>
+    <string name="ycuwq_datepicker_decide">확인</string>
+    <string name="more">더 많이</string>
+    <string name="conversation__action__sticky_top">맨 위에 고정</string>
+    <string name="conversation__action__un_sticky_top">\'맨 위에 고정\'을 취소</string>
+    <string name="basic_block_time_close">끔</string>
+    <string name="basic_block_time_open">영원히</string>
+    <string name="basic_time_minute_10">10분</string>
+    <string name="basic_time_hour_1">1시간</string>
+    <string name="basic_time_hour_12">12시간</string>
+    <string name="basic_time_day_1">1일</string>
+    <string name="conversation_detail_settings_inviter_list">초대자 목록</string>
+    <string name="conversation_detail_settings_invite_me">받은 신청</string>
+    <string name="conversation_detail_settings_me_invite">보낸 신청 (%1$s)</string>
+    <string name="conversation_detail_check_permissions">휴대폰 권한이 허용되는지 확인하십시오</string>
+    <string name="conversation_detail_settings_msg_only_to_manager_title">기타 멤버의 메시지가 보이지 않습니다</string>
+    <string name="conversation_msg_only_to_manager_show">현재 메시지는 본인과 그룹 관리자 만 볼 수 있습니다</string>
+    <string name="conversation_mobile_contacts">휴대 폰 연락처</string>
+    <string name="record_time_too_short">메시지가 너무 짧습니다</string>
+
+    <string name="conversation_detail_settings_group_nickname">그룹에서 내 별칭</string>
+    <string name="conversation_detail_settings_forbid_message_tip">관리자 %1$s 숨기다 %2$s 규칙을 어기다.</string>
+    <string name="conversation_detail_settings_forbid_message_tip2">이 내용은 규칙을 위반하여 관리자에게 숨겨진 디스플레이를 받는다</string>
+    <string name="conversation_detail_settings_forbid_message_tip3">관리자 %1$s 숨기다 %2$s 규칙을 어기다.</string>
+    <string name="conversation_detail_settings_forbid_message_tip4">너 숨기다 %1$s 규칙을 어기다.</string>
+    <string name="conversation_leave_without_transfer_creator">회원님은 해당 그룹의 소유자입니다.그룹 소유자의 관리 권한을 양도하거나 또는 그룹을 해산한 후 그룹에서 탈퇴하세요.</string>
+
+    <string name="report_blocked_title">사용자 신고로 인해 현재 그룹은 시스템에 의해 자동으로 봉쇄되었습니다. 그룹에 불법 콘텐츠가 없는 경우 그룹 소유자는 그룹 봉쇄 해제를 신청할 수 있습니다.</string>
+    <string name="report_blocked_msg">보고 된 총 사용자：%1$s/%2$s</string>
+    <string name="report_apply_unblock_group">봉쇄 해제 신청</string>
+    <string name="report_content_title">신고할 내용을 묘사해주세요</string>
+    <string name="report_content_submit">신고 제출</string>
+    <string name="report_apply_unblock_submit">컨텐츠 제출</string>
+    <string name="report_type_select">해당 그룹을 신고할 이유를 택해 주세요</string>
+    <string name="report_content_hint">신고 이유를 더 상세하고 명확하게 묘사해 주세요</string>
+    <string name="report_apply_unblock_hint">봉쇄 해제 신청 설명</string>
+    <string name="report_content_image_title">사진 업로드</string>
+    <string name="picture_max_num">제일 많아서 %1$s 장 사진을 선택할 수 있습니다</string>
+    <string name="report_notice_content_text">회원의 %1$s %가보고했으며 보고서가 %2$s %에 도달하면 그룹이 자동으로 차단됩니다.</string>
+
+    <string name="report_type_item_porn">색정</string>
+    <string name="report_type_item_contraband">위법 범죄 및 금지품</string>
+    <string name="report_type_item_gaming">도박</string>
+    <string name="report_type_item_rumor">정치적 요언</string>
+    <string name="report_type_item_terror">폭력 혈성</string>
+    <string name="report_type_item_other">기타 규정 위반 내용</string>
+
+    <string name="conversation_detail_settings_show_memsum_settings">멤버 인수를 디스플레이</string>
+    <string name="conversation_detail_settings_show_memsum_open">%1$s 님은 멤버 인수 디스플레이 기능을 열었음</string>
+    <string name="conversation_detail_settings_show_memsum_close">%1$s 님은 멤버 인수 디스플레이 기능을 끔</string>
+    <string name="conversation_detail_settings_edit_msg_settings">메시지가 편집,삭제 가능함</string>
+    <string name="conversation_detail_settings_edit_msg_open">%1$s 님은 메시지 편집,삭제 기능을 열었음</string>
+    <string name="conversation_detail_settings_edit_msg_close">%1$s 님은 메시지 편집,삭제 기능을 끔</string>
+    <string name="show_all_participants_no_num">전체 텍스트</string>
+    <string name="participants_divider_people_no_num">인원</string>
+    <string name="participants_divider_services_no_num">서비스</string>
+
+    <string name="conversation_detail_settings_add_to_launcher">데스크 톱 단축 키 추가</string>
+    <string name="conversation_join_group_closed">이 그룹 은 이미 링크 를 닫 고 그룹 에 진입 하 였 습 니 다</string>
+    <string name="conversation_join_group_already_in">당신은 이미 그룹에 있습니다</string>
+
+    <string name="conversation_join_group_tips_warring">이 그룹은 대량 이용자의 신고로 사기, 지역법 위반 등의 위험이 있으니 신중하게 가입하시기 바랍니다</string>
+    <string name="conversation_join_group_tips_error">대량 사용자의 신고로 사기, 지역법 위반 등의 위험이 있어 접속을 금지하였습니다.</string>
+    <string name="conversation_join_group_confirm">가입</string>
+    <string name="conversation_join_group_cancel">잠시 가입하지 않음</string>
+    <string name="conversation_join_group_know">확인</string>
+
+    <string name="conversation_setting_not_disturb">어시스턴트 방해 금지</string>
+    <string name="conversation_list_stick_fold">끈끈한 채팅 %1$s개</string>
+
+    <string name="conversation_edit_single_other">다른 쪽</string>
+    <string name="conversation_edit_single_open">%1$s가 "%2$s" 기능을 활성화했습니다.</string>
+    <string name="conversation_edit_single_close">%1$s가 "%2$s" 기능을 해제했습니다.</string>
+    <string name="conversation_edit_single_open_sure">%1$s가 "%2$s" 기능을 활성화했습니다. 동의하십니까?</string>
+    <string name="conversation_edit_single_close_sure">%1$s가 "%2$s" 기능을 해제했습니다. 동의하십니까?</string>
+    <string name="conversation_edit_single_open_cancel">%1$s는 "%2$s" 기능의 활성화를 철회했습니다.</string>
+    <string name="conversation_edit_single_close_cancel">%1$s는 "%2$s"기능 폐쇄를 철회했습니다.</string>
+    <string name="conversation_edit_single_open_reject">%1$s는 "%2$s" 기능 활성화를 거부했습니다.</string>
+    <string name="conversation_edit_single_close_reject">%1$s는 "%2$s" 기능의 폐쇄를 거부했습니다.</string>
+    <string name="conversation_edit_single_open_agree">이 대화의 "%1$s" 기능이 켜져 있습니다.</string>
+    <string name="conversation_edit_single_close_agree">이 대화의 "%1$s" 기능이 꺼져 있습니다.</string>
+
+</resources>

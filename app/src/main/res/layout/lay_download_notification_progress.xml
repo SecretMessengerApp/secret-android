@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:paddingStart="@dimen/message_content_padding_6"
+                android:paddingEnd="@dimen/message_content_padding_24">
+
+    <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_marginEnd="@dimen/message_content_padding_6"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_menu_logo"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:layout_toEndOf="@+id/ivIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/message_content_padding_6"
+            android:layout_marginBottom="@dimen/message_content_padding_6">
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+            <TextView
+                    android:id="@+id/tvTitle"
+                    android:textColor="@color/color_333"
+                    android:layout_marginEnd="@dimen/message_content_padding_24"
+                    android:singleLine="true"
+                    android:maxWidth="200dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="15sp"
+                    android:focusable="true"
+                    android:ellipsize="marquee"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tvProgress"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_333"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ProgressBar
+                android:id="@+id/pbProgress"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:progressDrawable="@drawable/notification_download_program_bar"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

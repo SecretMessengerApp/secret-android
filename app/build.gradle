@@ -1,0 +1,226 @@
+/**
+ * Wire
+ * Copyright (C) 2019 Wire Swiss GmbH
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'jp.leafytree.android-scala'
+//apply plugin: 'com.mutualmobile.gradle.plugins.dexinfo'
+android {
+
+    compileSdkVersion = Config.compileSdkVersion
+    buildToolsVersion = Config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion Config.minSdkVersion
+        targetSdkVersion Config.targetSdkVersion
+        versionCode Config.versionCode
+        versionName Config.versionName
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //vectorDrawables.useSupportLibrary = true
+
+        manifestPlaceholders = [customURLScheme: config.custom_url_scheme]
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        buildConfigField 'Integer', 'MAX_ACCOUNTS',               "$config.maxAccounts"
+        buildConfigField 'boolean', 'ACCOUNT_CREATION_ENABLED',   "$config.allow_account_creation"
+        buildConfigField 'boolean',  'ALLOW_SSO',                    "$config.allowSSO"
+        buildConfigField 'String',  'SUPPORT_EMAIL',              "\"$config.supportEmail\""
+        buildConfigField 'String',  'FIREBASE_PUSH_SENDER_ID',    "\"$config.firebasePushSenderId\""
+        buildConfigField 'String',  'FIREBASE_APP_ID',            "\"$config.firebaseAppId\""
+        buildConfigField 'String',  'FIREBASE_API_KEY',           "\"$config.firebaseApiKey\""
+        buildConfigField 'boolean', 'ENABLE_BLACKLIST',           "$config.enableBlacklist"
+        buildConfigField 'boolean', 'SUBMIT_CRASH_REPORTS',       "$config.submitCrashReports"
+        buildConfigField 'boolean', 'ALLOW_MARKETING_COMMUNICATION', "$config.allowMarketingCommunication"
+        buildConfigField 'boolean', 'ALLOW_CHANGE_OF_EMAIL',      "$config.allowChangeOfEmail"
+        buildConfigField 'String',  'CUSTOM_URL_SCHEME',          "\"$config.custom_url_scheme\""
+        buildConfigField 'Integer', 'NEW_PASSWORD_MINIMUM_LENGTH', "$config.new_password_minimum_length"
+        buildConfigField 'Integer', 'NEW_PASSWORD_MAXIMUM_LENGTH', "$config.new_password_maximum_length"
+        buildConfigField 'String',  'ACCOUNTS_URL',                "\"$config.accounts_url\""
+        buildConfigField 'String',  'FORGET_PASSWORD_URL',         "\"$config.forget_password\""
+        buildConfigField 'String',  'SECRET_BASE_URL',             "\"$config.secret_base_url\""
+        buildConfigField 'String',  'SECRET_SERVICE_URL',          "\"$config.secret_service_url\""
+        buildConfigField 'String',  'BACKEND_URL',                "\"$config.backendUrl\""
+        buildConfigField 'String',  'WEBSOCKET_URL',              "\"$config.websocketUrl\""
+        buildConfigField 'String',  'BLACKLIST_HOST',             "\"$config.blacklistHost\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        dev {}
+
+        prod {}
+
+        googleplay {}
+    }
+
+    sourceSets.all{set ->
+        def name = set.name
+        char[] cs = name.toCharArray()
+        cs[0] -= 32
+        def newName = String.valueOf(cs)
+
+        java.srcDirs ("build/generated/not_namespaced_r_class_sources/${name}/generate${newName}RFile/out/com/waz/zclient")
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += ['src/main/java', 'src/main/kotlin']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility Config.sourceCompatibilityVersion
+        targetCompatibility Config.targetCompatibilityVersion
+    }
+}
+
+
+dependencies {
+
+    api fileTree(include: ['*.jar'], dir: 'libs')
+
+    api BuildDependencies.scalaLibrary
+    api BuildDependencies.scalaReflect
+    api Kotlin.kotlinStdlibJdk7
+
+    //wire libraries:
+    api BuildDependencies.audioNotifications
+//    api 'com.wire:wiretranslations:1.+'
+//    api(name: 'secrettranslations-release', ext: 'aar')
+
+    //support libraries
+    api AndroidX.multidex
+    api AndroidX.legacyV4
+    api AndroidX.legacyV13
+    api AndroidX.material
+    api AndroidX.appCompat
+    api AndroidX.recyclerview
+    api AndroidX.preference
+    api AndroidX.cardview
+    api AndroidX.gridlayout
+    api AndroidX.annotationX
+    api AndroidX.constraintlayout
+    api AndroidX.paging
+    api AndroidX.work
+    api AndroidX.media
+    // Play services
+    api BuildDependencies.playServicesBase
+    api BuildDependencies.playServicesMaps
+    api BuildDependencies.playServicesLocation
+    api BuildDependencies.playServicesGcm
+    api BuildDependencies.firebaseMessaging
+
+
+    api BuildDependencies.preference
+
+    api BuildDependencies.androidJob
+
+    api BuildDependencies.rebound
+    api BuildDependencies.commonmark
+    api BuildDependencies.jna
+
+    api BuildDependencies.rxjava2
+
+    api BuildDependencies.rxAndroid
+    api BuildDependencies.retrofitAdapterRxjava2
+    api BuildDependencies.retrofit
+    api BuildDependencies.retrofitConverterGson
+
+    api BuildDependencies.loggingInterceptor
+
+    api BuildDependencies.zxingCore
+    api BuildDependencies.zxingAndroidCore
+
+    api BuildDependencies.ormliteCore
+
+    // https://github.com/j256/ormlite-android/issues/84
+    api BuildDependencies.ormLiteAndroid
+    api BuildDependencies.baseQuickAdapter
+    api BuildDependencies.glide
+    annotationProcessor BuildDependencies.glideCompiler
+    annotationProcessor AndroidX.annotationX
+    api BuildDependencies.prettytime
+    api BuildDependencies.swipeDelMenuLayout
+    api BuildDependencies.photoView
+
+    api BuildDependencies.percent
+
+
+//    Common-START---api
+    // TODO  Nasty hack to be able to build add only one wire-core flavor to the build
+    // TODO  (I know, it sucks, will think of a better way to do this, and we need this
+    // TODO   when there are different SE APIs in dev vs internal/prod)
+    boolean isProd = false
+    for (String taskName : gradle.startParameter.taskNames) {
+        if (taskName.contains("Prod")) {
+            isProd = true
+            break
+        }
+    }
+    // https://github.com/j256/ormlite-android/issues/84
+    if (!isProd) {// dev ...
+        api BuildDependencies.stetho
+    }
+
+    api files("$rootDir/app/libs/avs-5.4.aar")
+    api project(':secrettranslations')
+    api BuildDependencies.timber
+    api BuildDependencies.threetenabp
+    api BuildDependencies.barcodescanner
+
+    //    Common-END---api
+    api project(':zmessaging')
+    api project(':swipbackactivity')
+    api project(':secrettranslations')
+    api BuildDependencies.jsoup
+    api BuildDependencies.yanzhenjieRecyclerview
+    api BuildDependencies.smartRefreshLayout
+
+    ScalaCompileOptions.metaClass.daemonServer = true
+    ScalaCompileOptions.metaClass.fork = true
+    ScalaCompileOptions.metaClass.useAnt = false
+    ScalaCompileOptions.metaClass.useCompileDaemon = false
+
+    api BuildDependencies.gifDrawable
+    api BuildDependencies.luban
+    api BuildDependencies.nanohttpd
+    api BuildDependencies.shortcutBadger
+    api BuildDependencies.androidsvg
+    api BuildDependencies.stickyheaders
+    api BuildDependencies.animatedWebp
+    annotationProcessor BuildDependencies.alibabaCompiler
+}
+
+
+

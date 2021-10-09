@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="275dp"
+              android:layout_height="320dp"
+              android:layout_gravity="center"
+              android:background="@drawable/shape_force_update"
+              android:orientation="vertical"
+              tools:ignore="UselessParent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:src="@drawable/force_update_bg"
+        />
+
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/forced_update__general_padding"
+            android:text="@string/forced_update__header"
+            android:textColor="@color/forced_update__header__font_color"
+            android:textSize="@dimen/forced_update__header__font_size"
+            app:w_font="@string/forced_update__header__font"/>
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/forced_update__general_padding"
+            android:text="@string/forced_update__sub_header"
+            android:textColor="@color/forced_update__sub_header__font_color"
+            android:textSize="@dimen/forced_update__sub_header__font_size"
+            app:w_font="@string/forced_update__sub_header__font"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_not_force_update"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal">
+
+            <com.jsy.common.views.ProgressButton
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/zb__update__quit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/forced_update__general_padding"
+                android:padding="@dimen/forced_update__general_padding"
+                android:text="@string/connect_request__ignore_button__text"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp"
+                app:progressMargin="0dp"
+                app:progressBackColor="@color/draw_sky"
+                app:progressColor="@color/accent_blue"
+                app:buttonColor="@color/accent_blue" />
+
+            <com.jsy.common.views.ProgressButton
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/zb__update__download_not_force"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/forced_update__general_padding"
+                android:padding="@dimen/forced_update__general_padding"
+                android:text="@string/forced_update__update_now"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp"
+                app:progressMargin="0dp"
+                app:progressBackColor="#FF70B5FE"
+                app:progressColor="@color/accent_blue"
+                app:buttonColor="@color/accent_blue" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_force_update"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal">
+
+            <com.jsy.common.views.ProgressButton
+                style="?android:attr/borderlessButtonStyle"
+                android:gravity="center"
+                android:id="@+id/zb__update__download_force"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/forced_update__update_now"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp"
+                app:progressMargin="0dp"
+                app:progressBackColor="#FF70B5FE"
+                app:progressColor="@color/accent_blue"
+                app:buttonColor="@color/accent_blue" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

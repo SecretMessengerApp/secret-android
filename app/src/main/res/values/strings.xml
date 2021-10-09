@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="email_login_later_message">PLEASE TRY TO LOG IN LATER</string>
+    <string name="phone_login_later_message">Please try to log in later</string>
+    <string name="conversation__action__open_conversation">OPEN CONVERSATION</string>
+    <string name="conversation__action__remove_member">Remove from group…</string>
+    <string name="pref_advanced_enable_logs_title">Collect usage data</string>
+    <string name="pref_advanced_enable_logs_subtitle">This stores troubleshooting information locally. Disabling this option will delete all local logs.</string>
+    <string name="otr__participant__information">INFORMATION</string>
+    <string name="user_profile_email_field_name">Email</string>
+    <string name="default_deleted_username">Default</string>
+    <string name="availability_notification_warning_away_title">You are set to Away</string>
+    <string name="availability_notification_warning_away">You will appear as Away to other people. You will not receive notifications about any incoming calls or messages.</string>
+    <string name="availability_notification_warning_busy_title">You are set to Busy</string>
+    <string name="availability_notification_warning_busy">You will appear as Busy to other people. You will only receive notifications for mentions, replies, and calls in conversations that are not muted.</string>
+    <string name="availability_notification_warning_available_title">You are set to Available</string>
+    <string name="availability_notification_warning_available">You will appear as Available to other people. You will receive notifications for incoming calls and for messages according to the Notifications setting in each conversation.</string>
+    <string name="availability_notification_warning_nostatus_title">No status set</string>
+    <string name="availability_notification_warning_nostatus">You will receive notifications for incoming calls and for messages according to the Notifications setting in each conversation.</string>
+    <string name="availability_notification_dont_show">Do not display this information again</string>
+    <string name="availability_notification_ok">Ok</string>
+    <string name="availability_notification_blocked_title">Notifications are disabled in %1$s</string>
+    <string name="availability_notification_blocked">Status affects notifications now. You\'re set to \"Away\" and won\'t receive any notifications.</string>
+    <string name="availability_notification_changed_title">Notifications have changed in %1$s</string>
+    <string name="availability_notification_changed">Status affects notifications now. You\'re set to \"Busy\" and will only receive notifications when someone mentions you or replies to one of your messages.</string>
+    <string name="sso_signin_max_accounts_title">Two accounts active</string>
+    <string name="sso_signin_max_accounts_message">You can only be logged in with two accounts at once. Log out from one to add another.</string>
+    <string name="deep_link_generic_error_title">Invalid link.</string>
+    <string name="deep_link_generic_error_message">The link you opened is not valid.</string>
+
+    <string name="deep_link_conversation_error_title">Secret can\'t open this conversation.</string>
+    <string name="deep_link_conversation_error_message">You may not have permission with this account or the person may not be on Secret.</string>
+
+    <string name="deep_link_user_error_title">Secret can\'t find this person.</string>
+    <string name="deep_link_user_error_message">You may not have permission with this account or it no longer exists.</string>
+
+    <string name="password_policy_hint">Use at least %1$s characters, with one lowercase letter, one capital letter, a number, and a special character.</string>
+
+    <!-- Custom Backend -->
+    <string name="custom_backend_info_title">Connected to \"%1$s\"</string>
+    <string name="custom_backend_info_show_more">SHOW MORE</string>
+
+    <string name="custom_backend_dialog_ok">OK</string>
+    <string name="custom_backend_dialog_cancel">Cancel</string>
+    <string name="custom_backend_dialog_connect">Connect</string>
+
+    <string name="custom_backend_dialog_confirmation_title">Connect to server</string>
+    <string name="custom_backend_dialog_confirmation_message">This configuration will connect the app to a third-party server: %1$s</string>
+
+    <string name="custom_backend_dialog_info_title">You are connected to a third-party server: \"%1$s\"</string>
+
+    <string name="custom_backend_dialog_network_error_title">The server is not responding</string>
+    <string name="custom_backend_dialog_network_error_message">Please check your internet connection, verify the link and try again.</string>
+
+    <string name="custom_backend_dialog_logged_in_error_title">Can\'t switch servers</string>
+    <string name="custom_backend_dialog_logged_in_error_message">You are already logged in.\nTo connect to this server, log out of all accounts and try again.</string>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources>
+
+    <string name="app_update_info_detail">1、New top folding function\n2、Add one touch read function\n3、New unread message quick jump function\n4、Optimize QR code scanning function\n5、Optimize session list\n6、Optimize some pop-up pages\n7、Optimize user experience\n8、Optimize other functions\n9、Fixed some flashback issues\n10、Fix bug</string>
+    <string name="pref_scan_login_title">Login on desktop version</string>
+    <string name="pref_account_manager_title">Account manager</string>
+    <string name="invalid_qrcode">invalid QR code</string>
+    <string name="secret_scan_login_failure">Login failure</string>
+    <string name="secret_scan_login_successful">Login success</string>
+    <string name="profile_setting_sweep_up_and_friend">Sweep up the above two-dimensional code pattern, add my Secret</string>
+    <string name="profile_setting_save_two_dimensional_code">Save my two-dimensional code</string>
+    <string name="app_update_info_title">Version update: V%1$s</string>
+    <string name="app_update_info_close">Close</string>
+    <string name="conversation_reply_content_img">image</string>
+    <string name="conversation_reply_content_video">video</string>
+    <string name="message_bottom_menu_action_reply">Reply</string>
+    <string name="conversation_jump_to_latest_message">Jump to the latest message</string>
+    <string name="conversation_someone_screen_shot">%1$s Screenshot taken</string>
+
+    <string name="secret_confirm">Confirm</string>
+    <string name="secret_publish">Release</string>
+    <string name="secret_code_reset">reset</string>
+    <string name="secret_code_get">get</string>
+    <string name="secret_code_get_fail">get failed</string>
+    <string name="secret_code_confirm">make sure</string>
+
+    <string name="confirm_join_group">Make sure join group</string>
+
+    <string name="secret_share">Share</string>
+
+    <string name="secret_data_loading">Loading Data</string>
+    <string name="secret_data_copy_successful">Copied</string>
+    <string name="secret_open_permission">Permission</string>
+    <string name="secret_open_permission_tip">Need access to Camera, allow or refuse</string>
+    <string name="secret_open_permission_tip2">Need access to Storage, allow or refuse</string>
+    <string name="secret_permission_refuse">refuse</string>
+    <string name="secret_permission_allow">allow</string>
+    <string name="secret_scan">Scan</string>
+    <string name="secret_scan_album">Album</string>
+    <string name="secret_response_code_503">The user does not exist</string>
+    <string name="secret_scan_tips_title">Warm prompt</string>
+    <string name="secret_scan_tips_content">Put the qr code into the box, and it can be scanned automatically</string>
+    <string name="conversation_add_friends">Add Friends</string>
+    <string name="on_recognizing">Recognizing</string>
+    <string name="invalid_qr_code">Invalid QR Code</string>
+    <string name="invalid_qr_code_self">Can\'t scan your own QR code</string>
+    <string name="invalid_qr_code_error">Recognition Failure</string>
+    <string name="secret_scan_tab_title_qr">QR</string>
+    <string name="secret_scan_tab_title_ar">AR</string>
+    <string name="secret_agree">Agree</string>
+    <string name="secret_refuse">Refuse</string>
+    <string name="secret_conversation_voice_call_message_subtitle">[Voice Call]</string>
+
+    <string name="toast_no_external_storage_permission">Please grant permission to access the external storage</string>
+    <string name="toast_no_camera_permission">Please grant permission to access the camera</string>
+
+    <string name="picture_video_max_one">Can only select up to one video</string>
+    <string name="secret_cancel">Cancel</string>
+    <string name="secret_all_photos">All photos</string>
+    <string name="secret_report">Report</string>
+    <string name="loading">Loading</string>
+    <string name="compile">Edit</string>
+    <string name="secret_data_load_empty">Data is empty</string>
+    <string name="secret_data_delete_failed">Delete failed</string>
+    <string name="serverError">Server busy</string>
+    <string name="netInvalid">Network connectionless</string>
+    <string name="connection_timeout">Connection timeout</string>
+    <string name="dataError">Abnormal data</string>
+    <string name="copy_success">Copy successfully</string>
+    <string name="exit">Exit</string>
+    <string name="picture_camera_roll">CameraRoll</string>
+    <string name="picture_rule">Not pictures or video</string>
+    <plurals name="picture_message_max_num">
+        <item quantity="one">You can choose the most %1$d picture</item>
+        <item quantity="other">You can choose the most %1$d pictures</item>
+    </plurals>
+    <string name="picture_empty_title">No video or photos\n</string>
+    <string name="picture_empty_audio_title">No audio file\n</string>
+    <string name="picture_empty">You can use your camera to take photos or videos</string>
+    <string name="gif_tag">gif</string>
+    <string name="picture_audio">Access to system recording permission denied</string>
+    <string name="picture_camera">Get system camera permission denied</string>
+    <string name="picture_prompt">Prompt</string>
+    <string name="picture_save_error">Picture save failed</string>
+    <string name="picture_save_success">The picture is successfully stored in %1$s</string>
+    <string name="picture_all_audio">All audio</string>
+    <string name="picture_error">The picture is corrupted</string>
+    <string name="picture_video_error">The video is corrupted</string>
+    <string name="picture_audio_error">The audio is corrupted</string>
+    <string name="picture_confirm">OK</string>
+    <string name="secret_delete">Delete</string>strings
+    <string name="complete">Complete</string>
+    <string name="secret_message_forward_to_friends">forward to friends</string>
+</resources>

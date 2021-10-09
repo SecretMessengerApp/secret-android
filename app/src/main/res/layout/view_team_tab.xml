@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/team_icon_container"
+        android:layout_width="@dimen/teams_tab_icon_size"
+        android:layout_height="@dimen/teams_tab_icon_size"
+        android:layout_marginBottom="@dimen/teams_tab_text_bottom_margin"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/team_icon"
+            android:layout_width="@dimen/teams_tab_icon_size"
+            android:layout_height="@dimen/teams_tab_icon_size"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            />
+
+        <com.waz.zclient.ui.views.CircleView
+            android:id="@+id/unread_indicator_icon"
+            android:layout_width="@dimen/unread_indicator_top_size"
+            android:layout_height="@dimen/unread_indicator_top_size"
+            android:layout_gravity="top|end"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/unread_indicator_top_margin"
+            android:layout_marginTop="@dimen/unread_indicator_top_margin"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/team_name_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <com.waz.zclient.ui.views.CircleView
+            android:id="@+id/unread_indicator_text"
+            android:layout_width="@dimen/unread_indicator_name_size"
+            android:layout_height="@dimen/unread_indicator_name_size"
+            android:layout_marginStart="@dimen/unread_indicator_name_margin"
+            android:layout_alignStart="@+id/team_name"
+            android:layout_centerVertical="true"
+            android:visibility="visible"/>
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wire__text_size__small"
+            android:layout_marginStart="@dimen/wire__padding__20"
+            app:w_font="@string/wire__typeface__regular"/>
+
+    </RelativeLayout>
+
+
+</merge>

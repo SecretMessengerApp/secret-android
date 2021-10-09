@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_cursor_image_select"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#99FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCentreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/wire__padding__5"
+            android:paddingTop="@dimen/wire__padding__5"
+            android:text="@string/secret_all_photos"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/tvCentreTitle"
+            android:background="@drawable/ic_expand_more_black_24dp"
+            android:backgroundTint="?attr/SecretPrimaryTintColor" />
+
+        <TextView
+            android:id="@+id/tvCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:padding="@dimen/list__archived_left_margin"
+            android:text="@string/secret_cancel"
+            android:textColor="@color/publish_circle_text_color_FFBABABA"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/picture_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp2"
+        android:layout_marginRight="@dimen/dp2"
+         />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_multiple_send"
+        android:background="@drawable/cursor_rl_multiple_send_image"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <CheckBox
+            android:id="@+id/compress_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_centerInParent="true"
+            android:button="@null"
+            android:drawableStart="@drawable/base_radio_selector"
+            android:drawablePadding="7dp"
+            android:text="@string/conversation_image_original"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"
+            />
+
+        <Button
+            android:id="@+id/bt_multiple_send"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp10"
+            android:background="@drawable/cursor_send_multiple_images_button"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"
+            android:text="@string/sharing__image_preview__confirm_action"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

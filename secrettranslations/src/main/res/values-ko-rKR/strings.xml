@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources>
+
+    <string name="app_update_info_detail">1、지붕 접 기 기능 추가\n2、원 키 읽 기 기능 추가\n3、읽 지 않 은 메시지 의 빠 른 점프 기능 추가\n4、QR 코드 스 캔 기능 최적화\n5、최적화 세 션 목록\n6、부분 탄 상자 페이지 최적화\n7、사용자 체험 최적화\n8、다른 기능 최적화\n9、일부 섬 퇴 문 제 를 복구\n10、복구 BUG</string>
+    <string name="pref_scan_login_title">Secret PC버전 로그인 하기</string>
+    <string name="pref_account_manager_title">계정 관리</string>
+    <string name="invalid_qrcode">잘못된 QR 코드</string>
+    <string name="secret_scan_login_failure">로그인 실패</string>
+    <string name="secret_scan_login_successful">로그인 성공</string>
+    <string name="profile_setting_sweep_up_and_friend">위의 QR 코드를 스캔하여 나의 Secret을 추가해 주세요</string>
+    <string name="profile_setting_save_two_dimensional_code">내 QR 코드 저장</string>
+    <string name="app_update_info_title">버전 업데이트: V%1$s</string>
+    <string name="app_update_info_close">알았음</string>
+    <string name="conversation_reply_content_img">사진</string>
+    <string name="conversation_reply_content_video">비디오</string>
+    <string name="message_bottom_menu_action_reply">답장</string>
+    <string name="conversation_jump_to_latest_message">최신 메시지로 이동</string>
+    <string name="conversation_someone_screen_shot">%1$s 찍은 스크린샷</string>
+
+    <string name="secret_confirm">확인</string>
+    <string name="secret_publish">게시</string>
+    <string name="secret_code_reset">재설정</string>
+    <string name="secret_code_get">획득</string>
+    <string name="secret_code_get_fail">획득 실패</string>
+    <string name="secret_code_confirm">확인</string>
+
+    <string name="confirm_join_group">그룹애 가입하는지 확인</string>
+
+    <string name="secret_share">공유</string>
+
+    <string name="secret_data_loading">데터 로딩 중</string>
+    <string name="secret_data_copy_successful">복사 성공</string>
+    <string name="secret_open_permission">권한을 열기</string>
+    <string name="secret_open_permission_tip">카메라 권한이 필요합니다.열겠습까</string>
+    <string name="secret_open_permission_tip2">저장 접근 권한이 필요합니다.열겠습까</string>
+    <string name="secret_permission_refuse">거부</string>
+    <string name="secret_permission_allow">열기</string>
+    <string name="secret_scan">QR 코드 스캔</string>
+    <string name="secret_scan_album">앨범</string>
+    <string name="secret_response_code_503">사용자가 존재하지 않습니다</string>
+    <string name="secret_scan_tips_title">알림</string>
+    <string name="secret_scan_tips_content">QR 코드를 프레임 내부에서 정렬해 스캔</string>
+    <string name="conversation_add_friends">친구 추가</string>
+    <string name="on_recognizing">식별 중</string>
+    <string name="invalid_qr_code">유효하지 않은 QR 코드</string>
+    <string name="invalid_qr_code_self">자신의 QR 코드를 스캔 할 수 없습니다</string>
+    <string name="invalid_qr_code_error">인식 실패</string>
+    <string name="secret_scan_tab_title_qr">QR</string>
+    <string name="secret_scan_tab_title_ar">AR</string>
+    <string name="secret_agree">동의</string>
+    <string name="secret_refuse">거부</string>
+    <string name="secret_conversation_voice_call_message_subtitle">[음성 통화]</string>
+
+    <string name="toast_no_external_storage_permission">파일 저장 졉근 권한을 켜주세요</string>
+    <string name="toast_no_camera_permission">카메라 졉근 권한을 켜주세요</string>
+
+    <string name="picture_camera_roll">카메라 롤</string>
+    <string name="picture_rule">사진이나 동영상을 동시에 선택할 수 없습니다</string>
+    <string name="picture_video_max_one">최대로 한 비디오만 선택할 수 있습니다</string>
+    <plurals name="picture_message_max_num">
+        <item quantity="one">제일 많아서%1$d장 사진을 선택할 수 있습니다</item>
+        <item quantity="other">제일 많아서%1$d장 사진을 선택할 수 있습니다</item>
+    </plurals>
+    <string name="picture_empty_title">비디오 그램이나 사진이 없습니다\n</string>
+    <string name="picture_empty_audio_title">오디오 파일 없음\n</string>
+    <string name="picture_empty">카메라로 사진이나 비디오를 찍을 수 있습니다</string>
+    <string name="gif_tag">gif</string>
+    <string name="picture_camera">시스템 카메라 권한 가져 오기 거부</string>
+    <string name="picture_audio">시스템 녹화 권한 얻기가 거부되었습니다.</string>
+    <string name="picture_prompt">프롬프트</string>
+    <string name="picture_save_error">이미지 저장 실패</string>
+    <string name="picture_save_success">이미지를%1$s에 성공적으로 저장</string>
+    <string name="picture_all_audio">모든 오디오</string>
+    <string name="picture_error">이미지가 손상되었습니다</string>
+    <string name="picture_video_error">동영상이 손상되었습니다</string>
+    <string name="picture_audio_error">오디오가 손상되었습니다</string>
+    <string name="picture_confirm">확인</string>
+    <string name="secret_cancel">취소</string>
+    <string name="secret_all_photos">전체 사진</string>
+    <string name="secret_delete">삭제</string>
+    <string name="secret_report">신고</string>
+    <string name="loading">로드 중…</string>
+    <string name="compile">편집</string>
+    <string name="secret_data_load_empty">데이터가 비움</string>
+    <string name="secret_data_delete_failed">삭제 실패</string>
+    <string name="serverError">서버 사용량이 너무 많음</string>
+    <string name="netInvalid">네트워크 연결이 없습니다</string>
+    <string name="connection_timeout">연결 시간이 초과되었습니다</string>
+    <string name="dataError">데이터 이상</string>
+    <string name="copy_success">복사</string>
+    <string name="exit">로그 아웃</string>
+    <string name="complete">완료</string>
+    <string name="secret_message_forward_to_friends">친구에게 보내기</string>
+</resources>

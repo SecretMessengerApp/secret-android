@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<resources>
+    <color name="com_ycuwq_datepicker_selectedTextColor">#33AAFF</color>
+    <color name="com_ycuwq_datepicker_divider">#CCCCCC</color>
+</resources>

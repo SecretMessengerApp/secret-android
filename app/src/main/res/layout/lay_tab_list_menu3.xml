@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <View
+        android:id="@+id/vAnim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/vAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp5"
+        android:src="@drawable/ico_angle_white_bottom" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vAngle"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:background="@drawable/shape_solid_white_ovl_13dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp5"
+        android:paddingEnd="@dimen/dp5">
+
+        <TextView
+            android:id="@+id/gtvActionGlphyToEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/recyclerMenu"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp_40"
+            android:paddingStart="@dimen/wire__padding__15"
+            android:paddingEnd="@dimen/wire__padding__15"
+            android:textColor="@color/SecretBlue"
+            android:textSize="15sp" />
+
+        <com.jsy.common.views.PagerScrollViewGroup2
+            android:id="@+id/pagerScrollViewGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp20">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:scrollbars="none" />
+        </com.jsy.common.views.PagerScrollViewGroup2>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/indicatorRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp10"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

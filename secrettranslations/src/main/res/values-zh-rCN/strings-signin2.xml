@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
+
+    <string name="sign_in2_worth_tips">让连接更有价值</string>
+
+    <string name="sign_up2_name_title">全名</string>
+    <string name="sign_up2_name_bottom_tips">您的姓名将与您发送的消息一起显示</string>
+
+    <string name="sign_up2_your_email_title">邮箱</string>
+    <string name="sign_up2_your_email_subtitle">我们会给您发送一封电子邮件，让您立即登录</string>
+
+    <string name="sign_up2_your_password">密码</string>
+    <string name="sign_up2_password_bottom_tips">密码长度至少为8个字符</string>
+
+    <string name="sign_up2_check_your_email">查看电子邮件</string>
+
+    <string name="sign_up2_email_verify_code">验证码</string>
+    <string name="sign_up2_resend_code">重发验证码</string>
+    <string name="sign_up2_change_email">修改邮箱</string>
+
+    <string name="sign_in2_your_email_title">邮箱</string>
+    <string name="sign_in2_password_title">密码</string>
+    <string name="sign_in2_password_subtitle">%1$s的密码</string>
+
+
+    <string name="sign_in2_forget_your_password">忘记密码</string>
+    <string name="sign_in2_invalid_email">无效的邮箱</string>
+
+</resources>

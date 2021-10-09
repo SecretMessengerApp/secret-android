@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/SecretThreeBackgroundColor"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:clipChildren="false"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/vAvastar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:clipChildren="false"
+            >
+
+            <ImageView
+                    android:id="@+id/chat_imagebutton_avastar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chat_bottom_avastar_0"
+                    style="?bottomBarStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.waz.zclient.views.MessageBubbleView
+                    android:id="@+id/vNotificationAvastar"
+                    android:layout_width="@dimen/di_12"
+                    android:layout_height="@dimen/di_12"
+                    android:padding="@dimen/di_8"
+                    android:visibility="gone"
+                    app:mbv_circleColor="@color/notification_red_color"
+                    app:layout_constraintBottom_toTopOf="@+id/chat_imagebutton_avastar"
+                    app:layout_constraintEnd_toEndOf="@+id/chat_imagebutton_avastar"
+                    app:layout_constraintStart_toEndOf="@+id/chat_imagebutton_avastar"
+                    app:layout_constraintTop_toTopOf="@+id/chat_imagebutton_avastar"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+                android:id="@+id/vFriend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:longClickable="true">
+
+            <ImageView
+                android:id="@+id/chat_imagebutton_friend"
+                style="?bottomBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/chat_bottom_friend_0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/vDefaultGRoup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:visibility="gone">
+
+            <ImageView
+                    android:id="@+id/chat_default_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/default_group_chat_light"
+                    style="?bottomBarStyle"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/vSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:longClickable="true">
+
+            <ImageView
+                android:id="@+id/chat_imagebutton_settings"
+                style="?bottomBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/chat_bottom_settings_0" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_conversation_list_bottom_border"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/people_picker__border_line__height"
+        android:layout_gravity="top"
+        android:background="?attr/SecretPrimaryDividerColor"/>
+</merge>

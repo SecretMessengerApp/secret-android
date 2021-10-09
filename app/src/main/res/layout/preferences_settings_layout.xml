@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <include
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    layout="@layout/layout_line_c9ced2_top_bottom_stroken"/>
+
+            <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/settings_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:iconStartImg="@drawable/ico_setting_language"
+                app:bottomLineStyle="alignTitleStart"
+                app:showBottomLine="true"
+                app:textOrientation="horizontal"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:title="@string/pref_devices_language"/>
+
+            <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/settings_dark_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:iconStartImg="@drawable/ico_setting_dark_mode"
+                app:bottomLineStyle="alignTitleStart"
+                app:showBottomLine="true"
+                app:textOrientation="horizontal"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:title="@string/dark_mode" />
+
+            <com.waz.zclient.preferences.views.TextButton
+                    android:id="@+id/settings_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/preference_button_height"
+                    android:background="@drawable/selector__transparent_button_3"
+
+                    app:iconEndImg="@drawable/left_to_right_arrow"
+                    app:iconStartImg="@drawable/ico_setting_account"
+                    app:bottomLineStyle="alignTitleStart"
+                    app:showBottomLine="true"
+                    app:textOrientation="horizontal"
+                    app:titleColor="?attr/SecretPrimaryTextColor"
+                    app:title="@string/pref_account_screen_title"/>
+
+            <com.waz.zclient.preferences.views.TextButton
+                    android:id="@+id/settings_devices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/preference_button_height"
+                    android:background="@drawable/selector__transparent_button_3"
+
+                    app:iconEndImg="@drawable/left_to_right_arrow"
+                    app:iconStartImg="@drawable/ico_setting_device"
+                    app:bottomLineStyle="alignTitleStart"
+                    app:showBottomLine="true"
+                    app:textOrientation="horizontal"
+                    app:titleColor="?attr/SecretPrimaryTextColor"
+                    app:title="@string/pref_devices_screen_title"/>
+
+            <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/settings_backup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:iconStartImg="@drawable/ico_setting_data_backup"
+                app:bottomLineStyle="alignTitleStart"
+                app:showBottomLine="true"
+                app:textOrientation="horizontal"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:title="@string/pref_data_backup_title"/>
+
+            <com.waz.zclient.preferences.views.TextButton
+                    android:id="@+id/settings_options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/preference_button_height"
+                    android:background="@drawable/selector__transparent_button_3"
+
+                    app:iconEndImg="@drawable/left_to_right_arrow"
+                    app:iconStartImg="@drawable/ico_setting_option"
+                    app:bottomLineStyle="alignTitleStart"
+                    app:showBottomLine="true"
+                    app:textOrientation="horizontal"
+                    app:titleColor="?attr/SecretPrimaryTextColor"
+                    app:title="@string/pref_options_screen_title"/>
+
+
+            <com.waz.zclient.preferences.views.TextButton
+                    android:id="@+id/settings_advanced"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/preference_button_height"
+                    android:background="@drawable/selector__transparent_button_3"
+
+                    app:iconEndImg="@drawable/left_to_right_arrow"
+                    app:iconStartImg="@drawable/ico_setting_advance"
+                    app:bottomLineStyle="alignTitleStart"
+                    app:showBottomLine="true"
+                    app:textOrientation="horizontal"
+                    app:titleColor="?attr/SecretPrimaryTextColor"
+                    app:title="@string/pref_advanced_screen_title"/>
+
+
+            <com.waz.zclient.preferences.views.TextButton
+                    android:id="@+id/settings_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/preference_button_height"
+                    android:background="@drawable/selector__transparent_button_3"
+
+                    app:iconEndImg="@drawable/left_to_right_arrow"
+                    app:bottomLineStyle="alignTitleStart"
+                    app:showBottomLine="true"
+                    app:textOrientation="horizontal"
+                    app:titleColor="?attr/SecretPrimaryTextColor"
+                    app:iconStart="@string/glyph__info"
+                    app:title="@string/pref_support_screen_title"/>
+
+            <com.waz.zclient.preferences.views.TextButton
+                    android:id="@+id/settings_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/preference_button_height"
+                    android:background="@drawable/selector__transparent_button_3"
+                    app:iconEndImg="@drawable/left_to_right_arrow"
+                    app:iconStartImg="@drawable/ico_setting_about"
+                    app:bottomLineStyle="alignTitleStart"
+                    app:showBottomLine="true"
+                    app:textOrientation="horizontal"
+                    app:titleColor="?attr/SecretPrimaryTextColor"
+                    app:title="@string/pref_about_screen_title"
+            />
+
+            <com.waz.zclient.preferences.views.TextButton
+                    android:id="@+id/settings_dev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/preference_button_height"
+                    android:background="@drawable/selector__transparent_button_3"
+
+                    app:iconEndImg="@drawable/left_to_right_arrow"
+                    app:bottomLineStyle="alignTitleStart"
+                    app:showBottomLine="true"
+                    app:textOrientation="horizontal"
+                    app:titleColor="?attr/SecretPrimaryTextColor"
+                    app:iconStart="@string/glyph__filter_robot"
+                    app:title="@string/pref_developer_screen_title"/>
+
+
+            <com.waz.zclient.preferences.views.TextButton
+                    android:id="@+id/settings_avs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/preference_button_height"
+                    android:background="@drawable/selector__transparent_button_3"
+
+                    app:iconEndImg="@drawable/left_to_right_arrow"
+                    app:bottomLineStyle="alignParentStart"
+                    app:showBottomLine="true"
+                    app:textOrientation="horizontal"
+                    app:titleColor="?attr/SecretPrimaryTextColor"
+                    app:iconStart="@string/glyph__speaker_loud"
+                    app:title="@string/pref_dev_avs_screen_title"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</merge>

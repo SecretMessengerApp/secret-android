@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/layout_line_c9ced2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire__divider__height__thin" />
+
+        <com.waz.zclient.preferences.views.TextButton
+            android:id="@+id/device_detail_name__id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector__transparent_button_3"
+            android:minHeight="@dimen/preference_button_height"
+            app:bottomLineStyle="alignParentStart"
+            app:showBottomLine="true"
+            app:subTitleColor="?attr/SecretPrimaryTextColor"
+            app:subTitleSize="11sp"
+            app:textOrientation="vertical"
+            app:titleColor="?attr/SecretPrimaryTextColor"
+            app:titleSize="16sp" />
+
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/device_detail_activated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/wire__padding__16"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__small"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/fingerprint_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.waz.zclient.preferences.views.SectionHeadText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:showBottomLine="true"
+                app:showTopLine="true"
+                app:title="@string/pref_devices_device_fingerprint_category_title"
+                app:titleColor="?attr/SecretSubTextColor"
+                app:titleSize="11sp" />
+
+            <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/device_detail_fingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector__transparent_button_3"
+                android:minHeight="@dimen/preference_button_height"
+                app:bottomLineStyle="alignTitleStart"
+                app:showBottomLine="true"
+                app:subTitleColor="?attr/SecretPrimaryTextColor"
+                app:subTitleSize="11sp"
+                app:textOrientation="horizontal"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp" />
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/wire__padding__16"
+                android:text="@string/pref_devices_device_fingerprint_summary"
+                android:textColor="@color/light_graphite"
+                android:textSize="@dimen/wire__text_size__small"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/device_detail_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.waz.zclient.preferences.views.SwitchPreference
+                android:id="@+id/device_detail_verified"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:desc="@string/pref_devices_device_fingerprint_summary"
+                app:showBottomLine="false"
+                app:showCenterLine="true"
+                app:title="@string/pref_devices_device_verified"
+                app:titleColor="?attr/SecretPrimaryTextColor" />
+
+            <com.waz.zclient.preferences.views.SectionHeadText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:showBottomLine="true"
+                app:showTopLine="false"
+                app:title="@string/secret_code_reset"
+                app:titleColor="?attr/SecretSubTextColor"
+                app:titleSize="11sp" />
+
+            <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/device_detail_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector__transparent_button_3"
+                android:minHeight="@dimen/preference_button_height"
+                app:bottomLineStyle="alignParentStart"
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:showBottomLine="true"
+                app:textOrientation="horizontal"
+                app:title="@string/pref_devices_device_reset_session_title"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp" />
+
+
+            <com.waz.zclient.preferences.views.SectionHeadText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:showBottomLine="true"
+                app:title="@string/pref_devices_device_reset_session_summary"
+                app:titleColor="?attr/SecretSubTextColor"
+                app:titleFont="@string/wire__typeface__light"
+                app:titleGravity="top"
+                app:titleSize="11sp" />
+
+
+            <com.waz.zclient.preferences.views.AdvanceTextButton
+                android:id="@+id/device_detail_remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:centerLineStyle="alignParentStart"
+                app:showBottomLine="false"
+                app:showCenterLine="true"
+                app:subTitle="@string/pref_devices_device_remove_summary"
+                app:subTitleColor="?attr/SecretSubTextColor"
+                app:subTitleSize="11sp"
+                app:title="@string/pref_devices_device_remove_title"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/rlProfileInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/selector__transparent_button_3"
+                android:orientation="vertical">
+
+            <com.waz.zclient.common.views.ChatHeadViewNew
+                    android:id="@+id/chathead"
+                    android:layout_width="51dp"
+                    android:layout_height="51dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    app:allow_icon="false"
+                    app:gray_on_unconnected="false"
+                    app:initials_font_size="@dimen/participant_initials_text_size"
+                    app:isSelectable="false"
+                    app:is_round="true"
+                    app:show_border="false"
+                    app:show_waiting="false"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/chathead"
+                    android:layout_alignBottom="@+id/chathead"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/chathead"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/wire__padding__16"
+                    android:orientation="vertical">
+
+                <com.waz.zclient.ui.text.TypefaceTextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="?attr/SecretPrimaryTextColor"
+                        android:textSize="@dimen/wire__text_size__regular"
+                        app:w_font="@string/wire__typeface__regular"/>
+
+                <com.waz.zclient.ui.text.TypefaceTextView
+                        android:id="@+id/user_handle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="?attr/SecretSecondTextColor"
+                        android:textSize="@dimen/wire__text_size__small"
+                        app:w_font="@string/wire__typeface__regular"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                layout="@layout/layout_line_c9ced2_top_bottom_stroken"/>
+
+        <RelativeLayout
+                android:id="@+id/rl_fingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/preference_button_padding"
+                android:background="@drawable/selector__transparent_button_3">
+
+            <include
+                    android:id="@+id/img_end_fingerprint"
+                    layout="@layout/lay_settings_right_direction_icon"/>
+
+            <ImageView
+                    android:id="@+id/img_lock_fingerprint"
+                    android:layout_width="@dimen/content__footer__height"
+                    android:layout_height="@dimen/collections__web_preview_image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:layout_toLeftOf="@+id/img_end_fingerprint"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    app:srcCompat="@drawable/ico_fingerprint_lock"/>
+
+            <RelativeLayout
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_lock_fingerprint"
+                    android:orientation="vertical">
+
+                <com.waz.zclient.ui.text.TypefaceTextView
+                        android:id="@+id/preference_title_fingerprint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+
+
+                        android:text="@string/conversation_detail_settings_code_encrypted"
+                        android:textColor="?attr/SecretPrimaryTextColor"
+                        android:textSize="@dimen/wire__text_size__regular"
+                        app:w_font="@string/wire__typeface__light"/>
+
+                <com.waz.zclient.ui.text.TypefaceTextView
+                        android:layout_below="@+id/preference_title_fingerprint"
+                        android:id="@+id/preference_subtitle_fingerprint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/preference_button_padding"
+                        android:ellipsize="end"
+
+                        android:text="@string/conversation_detail_settings_msg_has_been_encrypted"
+                        android:textColor="?attr/SecretSubTextColor"
+                        android:textSize="@dimen/wire__text_size__small"
+                        app:w_font="@string/wire__typeface__light"/>
+
+
+            </RelativeLayout>
+
+            <include
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/wire__divider__height__thin"
+                    layout="@layout/layout_line_c9ced2"/>
+
+        </RelativeLayout>
+
+        <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/user_chat_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:textOrientation="horizontal"
+                app:title="@string/conversation_detail_settings_remark"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:subTitleColor="?attr/SecretPrimaryTextColor"
+                app:subTitleSize="16sp"
+                app:showBottomLine="false"
+        />
+
+        <include
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                layout="@layout/layout_line_c9ced2_top_bottom_stroken"/>
+
+        <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/burn_after_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:textOrientation="vertical"
+                app:title="@string/conversation_detail_settings_burn_after_reading"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:subTitle="@string/conversation_detail_settings_burn_after_reading_notice"
+                app:subTitleColor="?attr/SecretSubTextColor"
+                app:subTitleSize="11sp"
+                app:showBottomLine="true"
+                app:bottomLineStyle="alignTitleStart"
+        />
+
+
+        <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/group_chat_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:textOrientation="vertical"
+                app:title="@string/conversation_detail_settings_msg_record"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:subTitleColor="?attr/SecretPrimaryTextColor"
+                app:subTitleSize="16sp"
+                app:showBottomLine="true"
+                app:bottomLineStyle="alignTitleStart"
+        />
+
+        <com.waz.zclient.preferences.views.SwitchPreference
+            android:id="@+id/single_chat_message_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleBackground="@color/white"
+            app:title="@string/conversation_detail_settings_edit_msg_settings"
+            app:titleColor="?attr/SecretPrimaryTextColor"
+            app:titleSize="16sp"
+            app:showBottomLine="true"
+            app:bottomLineStyle="alignTitleStart"
+            android:visibility="gone"
+            />
+
+        <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/user_chat_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:textOrientation="vertical"
+                app:title="@string/conversation_detail_settings_chat_background"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:showBottomLine="false"
+                app:bottomLineStyle="alignTitleStart"
+        />
+
+        <include
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                layout="@layout/layout_line_c9ced2_top_bottom_stroken"/>
+
+        <com.waz.zclient.preferences.views.SwitchPreference
+                android:id="@+id/preferences_vibration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:titleBackground="@color/white"
+                app:title="@string/conversation__action__silence"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:showBottomLine="true"
+                app:bottomLineStyle="alignTitleStart"
+
+        />
+
+        <com.waz.zclient.preferences.views.SwitchPreference
+            android:id="@+id/preferences_not_disturb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/conversation_setting_not_disturb"
+            app:titleBackground="@color/white"
+            app:titleColor="?attr/SecretPrimaryTextColor"
+            app:bottomLineStyle="alignParentStart"
+            app:showBottomLine="true"
+            android:visibility="gone"
+            />
+
+        <com.waz.zclient.preferences.views.SwitchPreference
+            android:id="@+id/preferences_default_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:title="@string/group_participant_add_default_group"
+            app:titleBackground="@color/white"
+            app:titleColor="?attr/SecretPrimaryTextColor"
+            app:bottomLineStyle="alignParentStart"
+            app:showBottomLine="true"/>
+
+        <com.waz.zclient.preferences.views.SwitchPreference
+                android:id="@+id/preferences_add_blacklist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:titleBackground="@color/white"
+                app:title="@string/conversation_detail_settings_push_on_black_list"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:showBottomLine="true"
+                app:bottomLineStyle="alignTitleStart"
+        />
+
+
+        <com.waz.zclient.preferences.views.SwitchPreference
+                android:id="@+id/top_change_switchPreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:titleBackground="@color/white"
+                app:title="@string/conversation_detail_settings_top_placement"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:showBottomLine="true"
+                app:bottomLineStyle="alignTitleStart"
+        />
+
+
+<!--        <com.waz.zclient.preferences.views.TextButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minHeight="@dimen/preference_button_height"-->
+<!--            android:background="@drawable/selector__transparent_button_3"-->
+<!--            app:textOrientation="horizontal"-->
+<!--            app:title="@string/conversation_detail_settings_screenshot_title"-->
+<!--            app:subTitle="@string/dark_mode_enabled"-->
+<!--            app:titleColor="?attr/SecretPrimaryTextColor"-->
+<!--            app:titleSize="16sp"-->
+<!--            app:subTitleColor="?attr/SecretSubTextColor"-->
+<!--            app:subTitleSize="14sp"-->
+<!--            app:showBottomLine="true"-->
+<!--            />-->
+
+
+        <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/remove_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+                android:visibility="gone"
+
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:textOrientation="vertical"
+                app:title="@string/conversation_detail_settings_remove_from_group"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:showBottomLine="true"
+                app:bottomLineStyle="alignTitleStart"
+        />
+
+
+        <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/user_create_group_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:textOrientation="vertical"
+                app:title="@string/conversation_detail_settings_create_group_chat"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:showBottomLine="true"
+                app:bottomLineStyle="alignTitleStart"
+        />
+
+
+        <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/user_start_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:textOrientation="vertical"
+                app:title="@string/conversation_detail_settings_to_chat"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:showBottomLine="true"
+                app:bottomLineStyle="alignTitleStart"
+        />
+
+
+        <com.waz.zclient.preferences.views.TextButton
+                android:id="@+id/forbidden_setting_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_button_height"
+                android:background="@drawable/selector__transparent_button_3"
+                android:visibility="gone"
+
+                app:iconEndImg="@drawable/left_to_right_arrow"
+                app:textOrientation="vertical"
+                app:title="@string/conversation_detail_settings_forbidden_settings"
+                app:titleColor="?attr/SecretPrimaryTextColor"
+                app:titleSize="16sp"
+                app:bottomLineStyle="alignParentStart"
+        />
+
+    </LinearLayout>
+</ScrollView>

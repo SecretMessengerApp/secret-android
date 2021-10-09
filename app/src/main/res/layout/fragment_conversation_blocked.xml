@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/conversation_blocked"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_48">
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/di_15"
+        android:src="@drawable/action_back_white"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp25"
+        android:layout_marginEnd="@dimen/dp25"
+        android:background="@drawable/shape_solid_white_ovl_10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/blocked_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginTop="@dimen/di_22"
+            android:layout_marginEnd="@dimen/dp30"
+            android:layout_marginBottom="@dimen/di_15"
+            android:gravity="center"
+            android:text="@string/report_blocked_title"
+            android:textAlignment="center"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__regular"
+            app:w_font="@string/wire__typeface__regular" />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/blocked_msg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wire__padding__18"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/report_blocked_msg"
+            android:textColor="@color/color_69"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__medium" />
+
+        <include layout="@layout/line__primary_gray_48" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/di_45"
+            android:layout_marginTop="@dimen/dp5"
+            android:orientation="horizontal">
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/apply_unblock_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/report_apply_unblock_group"
+                android:textColor="@color/text_009DFF"
+                android:textSize="@dimen/wire__text_size__regular"
+                android:visibility="gone"
+                app:w_font="@string/wire__typeface__medium" />
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/blocked_see_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/markdown_link_dialog_confirmation"
+                android:textColor="@color/text_009DFF"
+                android:textSize="@dimen/wire__text_size__regular"
+                android:visibility="visible"
+                app:w_font="@string/wire__typeface__medium" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

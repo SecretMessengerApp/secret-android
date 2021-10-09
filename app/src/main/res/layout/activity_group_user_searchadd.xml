@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/SecretBackgroundColor">
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/group_speaker_add_tool"
+        style="?conversationToolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:clickable="false"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:navigationIcon="@drawable/action_back_dark">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/tv_tool_title"
+                style="?conversationToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/conversation_setting_group_speaker_add"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="18sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+            android:id="@+id/group_speaker_add_search_layout"
+            app:layout_constraintTop_toBottomOf="@+id/group_speaker_add_tool"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+        <com.waz.zclient.usersearch.views.SearchEditText
+            android:id="@+id/searchBoxView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            app:hintText="@string/conversation_setting_group_speaker_search_hint" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+            app:layout_constraintTop_toBottomOf="@+id/group_speaker_add_search_layout"
+            android:id="@+id/group_search_add_container"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

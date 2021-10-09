@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttvTitle"
+            android:layout_toStartOf="@+id/ivQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:layout_marginEnd="@dimen/preference_button_padding"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/wire__text_size__regular"
+            app:w_font="@string/wire__typeface__light"/>
+
+    <ImageView
+            android:id="@+id/ivQrCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/ivEndImg"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_qrcode_small"/>
+
+    <ImageView
+            android:id="@+id/ivEndImg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:layout_marginEnd="@dimen/preference_button_padding"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"/>
+
+    <View
+            android:id="@+id/vBottomLine"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/SecretPrimaryDividerColor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire__divider__height__thin"/>
+</merge>

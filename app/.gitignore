@@ -1,0 +1,34 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# copied by build script
+jni/Android.mk
+
+# generated files
+bin/
+gen/
+obj
+libs/armeabi
+libs/zmessaging-android*
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Downloaded corelib
+corelib
+
+# intellij
+.idea
+
+# Build info
+assets/buildinfo
+assets/jenkins
+assets/version.buildinfo
+

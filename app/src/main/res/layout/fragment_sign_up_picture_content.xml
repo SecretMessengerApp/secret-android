@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/wire__text_size__regular"
+            android:textColor="@color/sign_up__photo_guidance"
+            android:text="@string/sign_up__set_picture__guidance"
+            android:includeFontPadding="false"
+            app:w_font="@string/wire__typeface__medium"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/wire__padding__16"
+            >
+
+            <com.waz.zclient.ui.views.ZetaButton
+                android:id="@+id/zb__choose_own_picture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/framework_confirmation_menu_button_height"
+                android:gravity="center"
+                android:text="@string/sign_up__set_picture__choose"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__text_size__small"
+                android:textAllCaps="true"
+                app:w_font="@string/wire__typeface__light"
+                />
+
+
+            <com.waz.zclient.ui.views.ZetaButton
+                android:id="@+id/zb__keep_picture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/framework_confirmation_menu_button_height"
+                android:layout_marginTop="@dimen/wire__padding__8"
+                android:gravity="center"
+                android:text="@string/sign_up__set_picture__keep"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__text_size__small"
+                android:textAllCaps="true"
+                app:w_font="@string/wire__typeface__light"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll__init_photo__loading_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <com.waz.zclient.views.ProgressView
+            android:id="@+id/pv__init_photo__loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sign_up__loading_spinner"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/wire__padding__regular"
+            android:textAllCaps="true"
+            android:textSize="@dimen/wire__text_size__small"
+            android:text="@string/sign_up__set_picture__loading"
+            app:w_font="@string/wire__typeface__light"
+            />
+
+    </LinearLayout>
+
+</merge>

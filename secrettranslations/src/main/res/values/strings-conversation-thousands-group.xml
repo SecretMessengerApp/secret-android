@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<resources
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
+    <string name="content__system__you_change_conv_type">[[you]] Upgrade chat group to thousand chat group</string>
+    <string name="content__system__other_change_conv_type">[[%1$s]] Upgrade chat group to thousand chat group</string>
+    <string name="conversation_thousands_group_me">Me</string>
+    <string name="conversation_thousands_group_mem_num">Members(%1$s)</string>
+    <string name="conversation_detail_settings_thousands_group">Upgrade to thousand chat group</string>
+    <plurals name="conversation_detail_settings_thousands_group_notice">
+        <item quantity="one">Group chat can only be upgrade with more than %1$d people</item>
+        <item quantity="other">Group chat can only be upgrade with more than %1$d people</item>
+    </plurals>
+    <string name="conversation_detail_settings_thousands_group_error">Only group owners and more than one hundred people can be upgrade</string>
+    <string name="conversation_detail_settings_thousands_group_is_open">Upgraded to thousand chat group</string>
+    <string name="conversation_detail_open_link_join">Open a link and join</string>
+    <string name="conversation_detail_open_qrcode_join">Open qr code to join</string>
+    <string name="conversation_detail_group_qrcode">Group qr code</string>
+    <string name="conversation_detail_delete_member">Delete member</string>
+    <string name="conversation_detail_qrcode_tip">Scan the above qr code to join secret group chat</string>
+    <string name="conversation_detail_qrcode_save">Save group qr code</string>
+    <string name="conversation_detail_share_to">Share to</string>
+    <string name="conversation_detail_share_select">Select to share</string>
+    <string name="conversation_detail_copy_url">Copy link</string>
+    <string name="conversation_detail_select_user_share">Select friend</string>
+    <string name="conversation_detail_select_transfer_group">Select the new group manager</string>
+    <string name="conversation_detail_invited_member">Complete(%s)</string>
+    <string name="conversation_detail_complete">Complete</string>
+    <string name="conversation_share_user_mem">Send(%1$s)</string>
+    <string name="conversation_setting_group_setting">Group Management</string>
+    <string name="conversation_setting_group_invite_confirm">Confirm Invitation</string>
+    <string name="conversation_setting_group_invite_confirm_tip">Once enabled, group members need to be confirmed by the group owner to invite friends into the group. Scanning the QR code into the group will be disabled at the same time.</string>
+    <string name="conversation_setting_group_only_creator_invite">Only group owner can invite to join in group chat</string>
+    <string name="conversation_detail_show_mem">Show Group Members</string>
+    <string name="conversation_detail_mem_confirm">Group members invited to confirm</string>
+    <string name="conversation_setting_group_creator_change">Group owner management transfer</string>
+    <string name="conversation_setting_group_speaker_manage">Speaker</string>
+    <string name="conversation_setting_group_admin_manage">Group Manage</string>
+    <string name="conversation_setting_group_speaker_add">Add</string>
+    <string name="conversation_setting_group_speaker_search_hint">SEARCH BY NAME OR USERNAME</string>
+    <string name="conversation_setting_group_bind">binded</string>
+    <string name="conversation_setting_invite_number">invite %1$s friends to join in group chat</string>
+    <string name="conversation_setting_invite_to_confirm">Confirm</string>
+    <string name="conversation_setting_invite_confirm">Confirmed</string>
+    <string name="conversation_setting_you">You</string>
+    <string name="conversation_setting_open_link_join">%1$s opened group link to join in</string>
+    <string name="conversation_setting_close_link_join">%1$s closed group link to join in</string>
+    <string name="conversation_setting_open_confirm_join">%1$s opened invitation confirmation</string>
+    <string name="conversation_setting_close_confirm_join">%1$s closed invitation confirmation</string>
+    <string name="conversation_setting_open_only_creator">%1$s opened for only group owner invitations</string>
+    <string name="conversation_setting_close_only_creator">%1$s closed for only group owner invitations</string>
+    <string name="conversation_setting_be_new_creator">%1$s became a new group leader</string>
+    <string name="conversation_setting_open_show_mem">%1$s opened Show Group Members</string>
+    <string name="conversation_setting_close_show_mem">%1$s closed Show Group Members</string>
+    <string name="conversation_setting_open_mem_confirm">%1$s opened Group members invited to confirm</string>
+    <string name="conversation_setting_close_mem_confirm">%1$s closed Group members invited to confirm</string>
+    <string name="conversation_detail_invite_excuse">Input why to invite</string>
+    <string name="conversation_detail_invite_description">The group owner has enabled "Group Chat Invitation Confirmation" to describe the reason once there is a invitation.</string>
+    <string name="conversation_detail_transfer_group_description">You will lose the status of the owner once transfer the group.</string>
+    <string name="conversation_detail_transfer_group_confirm"><Data><![CDATA[confirm to transfer <font color="#009DFF"><b>%1$s</b></font>]]></Data></string>
+    <string name="conversation_detail_transfer_group_success">Transfer success</string>
+    <string name="conversation_detail_add_member">Invitation has been sent, please wait for the owner to confirm</string>
+    <string name="conversation_detail_transfer_group_failed">Transfer failed</string>
+    <string name="conversation_detail_transfer_group_nvitation_failed">Invitation failed</string>
+    <string name="conversation_detail_transfer_group_confirm_invite">Confirm to invitation</string>
+    <string name="conversation_detail_transfer_group_invite_detail">Invitation detail</string>
+    <string name="conversation_detail_transfer_group_invite_desc">Invite %1$d friends to join in group</string>
+    <string name="conversation_setting_change_new_creator">%1$s transferred the group owner to %2$s</string>
+    <string name="conversation_send_failure">Send failure</string>
+    <string name="conversation_setting_group_notice">Group Notice</string>
+    <string name="conversation_setting_group_notice_publish">Publishing</string>
+    <string name="conversation_setting_group_notice_edit">Edit Notice</string>
+    <string name="conversation_setting_group_notice_empty">This group has no group announcement</string>
+    <string name="conversation_add_exist_user">%1$s already exists in the group</string>
+</resources>

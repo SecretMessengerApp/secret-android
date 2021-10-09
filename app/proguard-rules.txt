@@ -1,0 +1,138 @@
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class com.waz.zclient.views.** {
+   void set*(***);
+   *** get*();
+}
+
+# Needed for logging
+-keepclassmembers class * { public java.lang.String toString(); }
+
+-keep class scala.concurrent.forkjoin.** { *; }
+-keep class org.webrtc.** { *; }
+-keep class com.waz.call.FlowManager { *; }
+-keep class com.waz.avs.VideoRenderer { *; }
+-keep class com.waz.call.CaptureDevice { *; }
+-keep class com.waz.media.manager.** { *; }
+-keep class com.waz.service.call.** { *; }
+
+-keepclassmembers class **.R$* {public static <fields>;}
+-keep class **.R$*
+
+-dontwarn org.joda.convert.**
+-dontwarn scala.collection.parallel.**
+-dontwarn sun.misc.Unsafe
+
+# keep line numbers
+-renamesourcefileattribute SourceFile
+-keepattributes SourceFile,LineNumberTable
+
+# Google play services specific
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+# keep setters in controllers so that animations can still work
+-keepclassmembers class com.waz.zclient.controllers.** {
+   void set*(***);
+   *** get*();
+}
+
+-ignorewarnings
+
+# For Localytics
+-keep class com.localytics.android.** { *; }
+-keepattributes JavascriptInterface
+
+# Required for Google Play Services (see http://developer.android.com/google/play-services/setup.html)
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+# End of Localytics config
+
+# For Spotify
+-dontwarn retrofit.**
+-keep class retrofit.** { *; }
+-keepattributes Exceptions, Signature, InnerClasses, *Annotation*
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+-keep class kaaes.spotify.webapi.android.** { *; }
+-keep class com.spotify.** { *; }
+-keepclasseswithmembernames,includedescriptorclasses class * {
+    native <methods>;
+}
+
+
+# For JSR310
+-dontwarn java.util.spi.LocaleServiceProvider
+-dontwarn sun.util.calendar.*
+-keep class org.threeten.bp.zone.*
+
+# For E2EE
+-keep class com.wire.cryptobox.** { *; }
+
+# For funky MiPad NDK crash
+-keep class com.waz.utils.scrypt.** { *; }
+
+# Avs SoundLink
+-keep class com.waz.soundlink.SoundLinkAPI { *; }
+
+# Video parsing tools for video message preview
+-keep class * implements com.coremedia.iso.boxes.Box { *; }
+-dontwarn com.coremedia.iso.boxes.**
+-dontwarn com.googlecode.mp4parser.authoring.tracks.mjpeg.**
+-dontwarn com.googlecode.mp4parser.authoring.tracks.ttml.**
+
+## JNA classes for calling v3
+-keep class * extends com.sun.jna.** { *; }
+-keep class com.sun.jna.** { *; }
+
+# Glide
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public class * extends com.bumptech.glide.module.AppGlideModule
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/SecretBackgroundColor"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/conversation_invite_member_tool"
+        style="?conversationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clickable="false"
+        android:contentInsetStart="@dimen/content__padding_left"
+        android:navigationIcon="@drawable/action_back_dark">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            style="?conversationToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/wire__padding__regular"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:text="@string/conversation_detail_settings_inviter_list"
+            android:textSize="18sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/invite_members_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+
+</LinearLayout>

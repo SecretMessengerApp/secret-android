@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
+
+    <string name="sign_in2_worth_tips">Connection makes value</string>
+
+    <string name="sign_up2_name_title">Your full name</string>
+    <string name="sign_up2_name_bottom_tips">Your name will be displayed with messages you send</string>
+
+    <string name="sign_up2_your_email_title">Your email address</string>
+    <string name="sign_up2_your_email_subtitle">We’ll send you an email that will instantly sign you in</string>
+
+    <string name="sign_up2_your_password">Your password</string>
+    <string name="sign_up2_password_bottom_tips">Passwords at least 8 characters long</string>
+
+    <string name="sign_up2_check_your_email">Check your email</string>
+
+    <string name="sign_up2_email_verify_code">Verification code</string>
+    <string name="sign_up2_resend_code">Resend code</string>
+    <string name="sign_up2_change_email">Change email address</string>
+
+    <string name="sign_in2_your_email_title">Your email address</string>
+    <string name="sign_in2_password_title">Password</string>
+    <string name="sign_in2_password_subtitle">Your password for %1$s</string>
+
+
+    <string name="sign_in2_forget_your_password">Forget your password</string>
+    <string name="sign_in2_invalid_email">Invalid email address</string>
+
+</resources>

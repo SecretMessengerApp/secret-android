@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <stroke
+        android:width="1.0dp"
+        android:color="#999999"
+        />
+    <corners android:radius="48dp"/>
+</shape>

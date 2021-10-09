@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/framework__general__left_padding"
+    android:paddingRight="@dimen/framework__general__right_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/participants__otr_device__content_height"
+        android:layout_marginTop="@dimen/participants__otr_device__padding_top"
+        android:layout_marginBottom="@dimen/participants__otr_device__divider_padding_top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv__row_otr_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/participants__otr_device__icon_padding_right"
+            android:scaleType="fitStart" />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttv__row_otr_device"
+            style="?userOtrDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:w_font="@string/wire__typeface__light" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v__row_otr__divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire__divider__height__thin"
+        android:background="@color/separator_light" />
+</LinearLayout>

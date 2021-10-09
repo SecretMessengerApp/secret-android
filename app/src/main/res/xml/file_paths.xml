@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<paths>
+    <external-path path="Android/data/com.jsy.secret.dev/" name="Secret" />
+    <external-path path="." name="Secret" />
+</paths>

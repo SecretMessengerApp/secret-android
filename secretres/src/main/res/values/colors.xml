@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources>
+
+    <color name="bg_color_ffffff">#ffffff</color>
+    <color name="bg_color_14ffffff">#14ffffff</color>
+    <color name="bg_color_28ffffff">#28ffffff</color>
+    <color name="bg_color_080808">#080808</color>
+    <color name="bg_color_000000">#000000</color>
+    <color name="bg_color_14000000">#14000000</color>
+    <color name="bg_color_28000000">#28000000</color>
+    <color name="bg_color_4aad61">#4AAD61</color>
+    <color name="bg_color_e85d5a">#E85D5A</color>
+    <color name="bg_color_f0f1f2">#F0F1F2</color>
+    <color name="bg_color_f2f2f2">#F2F2F2</color>
+    <color name="bg_color_eeeff1">#EEEFF1</color>
+    <color name="bg_color_fafafa">#FAFAFA</color>
+    <color name="bg_color_c9ced2">#C9CED2</color>
+    <color name="bg_color_5876a9">#5876A9</color>
+    <color name="bg_color_99d5b1">#99D5B1</color>
+    <color name="bg_color_5779a7">#5779A7</color>
+    <color name="bg_color_007aff">#007AFF</color>
+    <color name="bg_color_eff0f1">#EFF0F1</color>
+    <color name="bg_color_17191c">#17191C</color>
+    <color name="bg_color_ef3f4a">#EF3F4A</color>
+    <color name="bg_color_111111">#111111</color>
+    <color name="bg_color_80111111">#80111111</color>
+    <color name="bg_color_80ffffff">#80ffffff</color>
+    <color name="bg_color_4aad64">#4AAD64</color>
+    <color name="bg_color_d5cfb7">#d5cfb7</color>
+    <color name="bg_color_666666">#666666</color>
+    <color name="bg_color_ebebeb">#ebebeb</color>
+    <color name="bg_color_d8d8d8">#d8d8d8</color>
+    <color name="bg_color_33d8d8d8">#33d8d8d8</color>
+    <color name="bg_color_d9d8d8d8">#d9d8d8d8</color>
+    <color name="bg_color_8c8d8e">#8c8d8e</color>
+    <color name="bg_color_5e8bec">#5e8bec</color>
+    <color name="bg_color_59b3af">#59b3af</color>
+    <color name="bg_color_fbb537">#fbb537</color>
+    <color name="bg_color_303133">#303133</color>
+    <color name="bg_color_3f3f40">#3f3f40</color>
+    <color name="bg_color_a63f3f40">#a63f3f40</color>
+    <color name="bg_color_545247">#545247</color>
+    <color name="bg_color_1b1b1b">#1b1b1b</color>
+    <color name="bg_color_101b1b1b">#101b1b1b</color>
+    <color name="bg_color_d9575757">#d9575757</color>
+    <color name="bg_color_80f4f4f4">#80f4f4f4</color>
+    <color name="bg_color_282828">#282828</color>
+    <color name="bg_color_333333">#333333</color>
+    <color name="bg_color_1c1c1e">#1c1c1e</color>
+    <color name="bg_color_252525">#252525</color>
+    <color name="bg_color_c7252525">#c7252525</color>
+    <color name="bg_color_8c8c8c">#8c8c8c</color>
+    <color name="bg_color_c6c6c6">#c6c6c6</color>
+    <color name="bg_color_484848">#484848</color>
+    <color name="bg_color_393939">#393939</color>
+    <color name="bg_color_f1efe4">#f1efe4</color>
+    <color name="bg_color_0d0d0d">#0d0d0d</color>
+    <color name="bg_color_808080">#808080</color>
+    <color name="bg_color_bbbbbb">#bbbbbb</color>
+    <color name="bg_color_38383a">#38383a</color>
+    <color name="bg_color_cfcfcf">#cfcfcf</color>
+    <color name="bg_color_6a6a6a">#6a6a6a</color>
+
+    <color name="text_color_ffffff">#ffffff</color>
+    <color name="text_color_000000">#000000</color>
+    <color name="text_color_3574fa">#3574fa</color>
+    <color name="text_color_c6c6cb">#c6c6cb</color>
+    <color name="text_color_9fa0a1">#9fa0a1</color>
+    <color name="text_color_007aff">#007aff</color>
+    <color name="text_color_9c9c9c">#9c9c9c</color>
+    <color name="text_color_cacaca">#cacaca</color>
+    <color name="text_color_33373a">#33373A</color>
+    <color name="text_color_333333">#333333</color>
+    <color name="text_color_1b1b1b">#1B1B1B</color>
+    <color name="text_color_121212">#121212</color>
+    <color name="text_color_5e7898">#5e7898</color>
+    <color name="text_color_bfc0c1">#bfc0c1</color>
+    <color name="text_color_87888a">#87888a</color>
+    <color name="text_color_e95171">#E95171</color>
+    <color name="text_color_dadada">#dadada</color>
+    <color name="text_color_dcddde">#DCDDDE</color>
+    <color name="text_color_49ad64">#49ad64</color>
+    <color name="text_color_0f0f0f">#0F0F0F</color>
+    <color name="text_color_ff3b30">#FF3B30</color>
+    <color name="text_color_303131">#303131</color>
+    <color name="text_color_121219">#121219</color>
+    <color name="text_color_afafaf">#afafaf</color>
+    <color name="text_color_ebebf5">#ebebf5</color>
+    <color name="text_color_d5d5d5">#d5d5d5</color>
+    <color name="text_color_99ebebf5">#99ebebf5</color>
+    <color name="text_color_fbb537">#fbb537</color>
+</resources>

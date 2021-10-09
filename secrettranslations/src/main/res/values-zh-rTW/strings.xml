@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources>
+
+    <string name="app_update_info_detail">1、新增置頂折疊功能\n2、新增一鍵已讀功能\n3、新增未讀消息快速跳轉功能\n4、優化二維碼掃碼功能\n5、優化會話清單\n6、優化部分彈框頁面\n7、優化用戶體驗\n8、優化其他功能\n9、修復部分閃退問題\n10、修復BUG</string>
+    <string name="pref_scan_login_title">Secret 電腦版掃碼登錄</string>
+    <string name="pref_account_manager_title">賬號管理</string>
+    <string name="invalid_qrcode">無效的二維碼</string>
+    <string name="secret_scan_login_failure">登錄失敗</string>
+    <string name="secret_scan_login_successful">登錄成功</string>
+    <string name="profile_setting_sweep_up_and_friend">掃一掃上面的二維碼圖案，加我Secret</string>
+    <string name="profile_setting_save_two_dimensional_code">保存我的二維碼</string>
+    <string name="app_update_info_title">版本更新: V%1$s</string>
+    <string name="app_update_info_close">知道了</string>
+    <string name="conversation_reply_content_img">照片</string>
+    <string name="conversation_reply_content_video">視頻</string>
+    <string name="message_bottom_menu_action_reply">回復</string>
+    <string name="conversation_jump_to_latest_message">跳轉到最新消息</string>
+    <string name="conversation_someone_screen_shot">%1$s 已截屏</string>
+
+    <string name="secret_confirm">確認</string>
+    <string name="secret_publish">發佈</string>
+    <string name="secret_code_reset">重置</string>
+    <string name="secret_code_get">獲取</string>
+    <string name="secret_code_get_fail">獲取失敗</string>
+    <string name="secret_code_confirm">確定</string>
+
+    <string name="confirm_join_group">確認是否進群</string>
+
+    <string name="secret_share">分享</string>
+
+    <string name="secret_data_loading">正在加載數據</string>
+    <string name="secret_data_copy_successful">復制成功</string>
+    <string name="secret_open_permission">開啟權限</string>
+    <string name="secret_open_permission_tip">需要相機權限，是否開啟</string>
+    <string name="secret_open_permission_tip2">需要存儲權限，是否開啟</string>
+    <string name="secret_permission_refuse">拒絕</string>
+    <string name="secret_permission_allow">開啟</string>
+    <string name="secret_scan">掃壹掃</string>
+    <string name="secret_scan_album">相冊</string>
+    <string name="secret_response_code_503">用戶不存在</string>
+    <string name="secret_scan_tips_title">溫馨提示</string>
+    <string name="secret_scan_tips_content">將二維碼放入框中，即可自動掃描</string>
+    <string name="conversation_add_friends">添加好友</string>
+    <string name="on_recognizing">正在識別</string>
+    <string name="invalid_qr_code">無效二維碼</string>
+    <string name="invalid_qr_code_self">不能掃描自己的二維碼</string>
+    <string name="invalid_qr_code_error">識別失敗</string>
+    <string name="secret_scan_tab_title_qr">掃碼</string>
+    <string name="secret_scan_tab_title_ar">AR</string>
+    <string name="secret_agree">同意</string>
+    <string name="secret_refuse">拒絕</string>
+    <string name="secret_conversation_voice_call_message_subtitle">[語音通話]</string>
+
+    <string name="toast_no_external_storage_permission">請先開啟文件存儲權限</string>
+    <string name="toast_no_camera_permission">請先開啟相机權限</string>
+
+    <string name="picture_camera_roll">相機膠卷</string>
+    <string name="picture_rule">不能同時選擇圖片或視頻</string>
+    <string name="picture_video_max_one">最多只能選擇一個視頻</string>
+    <plurals name="picture_message_max_num">
+        <item quantity="one">你最多可以選擇%1$d張圖片</item>
+        <item quantity="other">你最多可以選擇%1$d張圖片</item>
+    </plurals>
+    <string name="picture_empty_title">無視頻或照片\n</string>
+    <string name="picture_empty_audio_title">無音頻文件\n</string>
+    <string name="picture_empty">你可以使用相機拍攝照片或視頻</string>
+    <string name="gif_tag">動圖</string>
+    <string name="picture_camera">獲取系統相機權限被拒絕</string>
+    <string name="picture_audio">獲取系統錄音權限被拒絕</string>
+    <string name="picture_prompt">提示</string>
+    <string name="picture_save_error">圖片保存失敗</string>
+    <string name="picture_save_success">圖片成功保存至%1$s</string>
+    <string name="picture_all_audio">所有音頻</string>
+    <string name="picture_error">圖片已損壞</string>
+    <string name="picture_video_error">視頻已損壞</string>
+    <string name="picture_audio_error">音頻已損壞</string>
+    <string name="picture_confirm">確定</string>
+    <string name="secret_cancel">取消</string>
+    <string name="secret_all_photos">所有照片</string>
+    <string name="secret_delete">刪除</string>
+    <string name="secret_report">舉報</string>
+    <string name="loading">正在加載中…</string>
+    <string name="compile">編輯</string>
+    <string name="secret_data_load_empty">數據為空</string>
+    <string name="secret_data_delete_failed">刪除失敗</string>
+    <string name="serverError">服務器繁忙</string>
+    <string name="netInvalid">網絡無連接</string>
+    <string name="connection_timeout">連接超時</string>
+    <string name="dataError">數據異常</string>
+    <string name="copy_success">複製成功</string>
+    <string name="exit">退出</string>
+    <string name="complete">完成</string>
+    <string name="secret_message_forward_to_friends">發送給好友</string>
+</resources>

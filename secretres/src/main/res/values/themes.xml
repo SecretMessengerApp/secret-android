@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources>
+
+    <style name="Theme.SecretDark" parent="@style/Theme.Design.NoActionBar">
+        <item name="themeName">dark</item>
+        <item name="android:textColorPrimary">@color/text_color_ffffff</item>
+
+        <item name="SecretBackgroundColor">@color/bg_color_000000</item>
+        <item name="SecretBackgroundColorReverted">@color/bg_color_ffffff</item>
+        <item name="SecretSecondaryBackgroundColor">@color/bg_color_000000</item>
+        <item name="SecretThreeBackgroundColor">#FF111111</item>
+        <item name="SecretFourBackgroundColor">#FF2C2C2C</item>
+        <item name="SecretFiveBackgroundColor">#FF1C1C1E</item>
+        <!--Toolbar-->
+        <item name="ToolbarBackgroundColor">#FF111111</item>
+        <item name="SecretPrimaryTextColor">#ffd5d5d5</item>
+        <item name="SecretSubTextColor">#99ebebf5</item>
+        <item name="SecretSecondTextColor">#ffa1a1a1</item>
+
+        <!---Dialog-->
+        <item name="DialogBackgroundColor">#FF1C1C1E</item>
+
+        <item name="SearchBoxBackgroundColor">#FF1C1C1E</item>
+
+        <item name="EditTextBackgroundColor">#6B1C1C1E</item>
+        <item name="EditTextHintColor">#99ebebf5</item>
+
+        <!--secrethouse-->
+        <item name="HouseMainBgColor">#111111</item>
+        <item name="HouseMainFrameTopColor">#801b1b1c</item>
+        <item name="HouseMainFrameBottomColor">@color/bg_color_80111111</item>
+        <item name="HouseBackgroundColor">@color/bg_color_000000</item>
+        <item name="HouseTitleColor">@color/text_color_d5d5d5</item>
+        <item name="HouseSecondTitleColor">@color/text_color_99ebebf5</item>
+        <item name="HouseGlyphTextColor">@color/text_color_ffffff</item>
+        <item name="HouseTextColor">@color/text_color_d5d5d5</item>
+        <item name="HouseCancleTitleColor">@color/text_color_ebebf5</item>
+        <item name="HouseEditTextColor">@color/text_color_d5d5d5</item>
+        <item name="HouseButtonBgColor">@color/bg_color_0d0d0d</item>
+        <item name="HouseMainBottomBgColor">#292929</item>
+        <item name="HouseIconBgColor">@color/bg_color_3f3f40</item>
+        <item name="HouseIconTintColor">@color/bg_color_ffffff</item>
+        <item name="HouseIconTintDisableColor">@color/bg_color_808080</item>
+        <item name="HouseSpeakerUserColor">@color/bg_color_545247</item>
+        <item name="HouseStrokeUserColor">@color/bg_color_484848</item>
+        <item name="HouseMuteUserBgColor">@color/bg_color_1b1b1b</item>
+        <item name="HouseMuteUserFrameColor">@color/bg_color_101b1b1b</item>
+        <item name="HouseUserConnectBgColor">@color/bg_color_d9575757</item>
+        <item name="HouseUserConnectTextColor">@color/text_color_ffffff</item>
+        <item name="HouseMaterialBgColor">@color/bg_color_252525</item>
+        <item name="HouseSecondTextColor">@color/text_color_99ebebf5</item>
+        <item name="HouseDialogTextColor">@color/text_color_d5d5d5</item>
+        <item name="HouseDialogDescColor">@color/text_color_ebebf5</item>
+        <item name="HouseDialogUserOpeateColor">@color/bg_color_3f3f40</item>
+        <item name="HouseDialogLineColor">@color/bg_color_80111111</item>
+        <item name="HousePopupBgColor">@color/bg_color_282828</item>
+        <item name="HouseDividerLineColor">@color/bg_color_38383a</item>
+        <item name="HouseSexIconTintColor">@color/bg_color_6a6a6a</item>
+        <item name="HouseSexSelectIconTintColor">@color/bg_color_ffffff</item>
+
+    </style>
+
+    <style name="Theme.SecretLight" parent="@style/Theme.Design.Light.NoActionBar">
+        <item name="themeName">light</item>
+        <item name="android:textColorPrimary">@color/text_color_000000</item>
+
+        <item name="SecretBackgroundColor">@color/bg_color_ffffff</item>
+        <item name="SecretBackgroundColorReverted">@color/bg_color_000000</item>
+        <item name="SecretSecondaryBackgroundColor">#fff7f7f7</item>
+        <item name="SecretThreeBackgroundColor">@color/bg_color_ffffff</item>
+        <item name="SecretFourBackgroundColor">@color/bg_color_ffffff</item>
+        <item name="SecretFiveBackgroundColor">#fff5f5f5</item>
+        <!--Toolbar-->
+        <item name="ToolbarBackgroundColor">@color/bg_color_ffffff</item>
+        <item name="SecretPrimaryTextColor">#ff333333</item>
+        <item name="SecretSubTextColor">#ff999999</item>
+        <item name="SecretSecondTextColor">#ff666666</item>
+
+        <!---Dialog-->
+        <item name="DialogBackgroundColor">@color/bg_color_ffffff</item>
+
+        <item name="SearchBoxBackgroundColor">#fff5f5f5</item>
+
+        <item name="EditTextBackgroundColor">#fff2f2f2</item>
+        <item name="EditTextHintColor">#B6999999</item>
+
+        <!--secrethouse-->
+        <item name="HouseMainBgColor">#ffffff</item>
+        <item name="HouseMainFrameTopColor">#80fafafa</item>
+        <item name="HouseMainFrameBottomColor">#80ffffff</item>
+        <item name="HouseBackgroundColor">@color/bg_color_ffffff</item>
+        <item name="HouseTitleColor">@color/text_color_33373a</item>
+        <item name="HouseSecondTitleColor">@color/text_color_afafaf</item>
+        <item name="HouseGlyphTextColor">@color/text_color_333333</item>
+        <item name="HouseCancleTitleColor">@color/text_color_9fa0a1</item>
+        <item name="HouseTextColor">@color/text_color_000000</item>
+        <item name="HouseEditTextColor">@color/text_color_121219</item>
+        <item name="HouseButtonBgColor">@color/bg_color_ffffff</item>
+        <item name="HouseMainBottomBgColor">@color/bg_color_f2f2f2</item>
+        <item name="HouseIconBgColor">@color/bg_color_f2f2f2</item>
+        <item name="HouseIconTintColor">@color/bg_color_000000</item>
+        <item name="HouseIconTintDisableColor">@color/bg_color_bbbbbb</item>
+        <item name="HouseSpeakerUserColor">@color/bg_color_d5cfb7</item>
+        <item name="HouseStrokeUserColor">@color/bg_color_c6c6c6</item>
+        <item name="HouseMuteUserBgColor">@color/bg_color_ffffff</item>
+        <item name="HouseMuteUserFrameColor">@color/bg_color_14000000</item>
+        <item name="HouseUserConnectBgColor">@color/bg_color_d9d8d8d8</item>
+        <item name="HouseUserConnectTextColor">@color/text_color_1b1b1b</item>
+        <item name="HouseMaterialBgColor">@color/bg_color_ffffff</item>
+        <item name="HouseSecondTextColor">@color/text_color_9c9c9c</item>
+        <item name="HouseDialogTextColor">@color/text_color_1b1b1b</item>
+        <item name="HouseDialogDescColor">@color/text_color_bfc0c1</item>
+        <item name="HouseDialogUserOpeateColor">@color/bg_color_f0f1f2</item>
+        <item name="HouseDialogLineColor">@color/bg_color_80111111</item>
+        <item name="HousePopupBgColor">@color/bg_color_eff0f1</item>
+        <item name="HouseDividerLineColor">@color/bg_color_d8d8d8</item>
+        <item name="HouseSexIconTintColor">@color/bg_color_cfcfcf</item>
+        <item name="HouseSexSelectIconTintColor">@color/bg_color_ffffff</item>
+
+
+    </style>
+
+</resources>

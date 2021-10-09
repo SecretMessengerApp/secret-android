@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.waz.zclient.ui.text.GlyphTextView
+        android:id="@+id/gtv__camera__top_control__flash_setting"
+        android:layout_width="@dimen/touch_target_buttons"
+        android:layout_height="@dimen/touch_target_buttons"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="center"
+        android:text="@string/glyph__flash_off"
+        android:textSize="@dimen/camera__control__button_text_size"
+        android:layout_marginLeft="@dimen/camera__control__button_margin_left"
+        android:clickable="true"
+        android:textColor="@color/camera__control"
+        />
+
+
+    <com.waz.zclient.ui.text.GlyphTextView
+        android:id="@+id/gtv__camera__top_control__change_camera"
+        android:layout_width="@dimen/touch_target_buttons"
+        android:layout_height="@dimen/touch_target_buttons"
+        android:layout_gravity="center_vertical|right"
+        android:gravity="center"
+        android:text="@string/glyph__flip"
+        android:textSize="@dimen/camera__control__button_text_size"
+        android:layout_marginRight="@dimen/camera__control__button_margin_right"
+        android:clickable="true"
+        android:textColor="@drawable/selector__camera__control__button"
+        />
+</merge>

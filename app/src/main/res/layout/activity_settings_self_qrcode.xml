@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/SecretSecondaryBackgroundColor"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        style="?conversationToolbar"
+        android:id="@+id/toolBarSelfQrCode"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clickable="false"
+        android:contentInsetStart="@dimen/content__padding_left"
+       >
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/profile_setting_my_qrcode"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="17sp"
+            app:w_font="@string/wire__typeface__light" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/prlQrCodeLayerAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_solid_white_ovl_10dp"
+            android:padding="13dp"
+            app:layout_heightPercent="90%w"
+            app:layout_widthPercent="80%w">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.waz.zclient.common.views.ChatHeadViewNew
+                    android:id="@+id/chatHeadView"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginRight="11dp" />
+
+                <com.waz.zclient.ui.text.TypefaceTextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/SecretPrimaryTextColor"
+                    android:textSize="@dimen/wire__text_size__regular"
+                    app:w_font="@string/wire__typeface__light" />
+            </LinearLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/prlQrCodeLayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:layout_heightPercent="65%w"
+                app:layout_widthPercent="65%w">
+
+                <ImageView
+                    android:id="@+id/ivQrCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <com.waz.zclient.common.views.ChatHeadViewNew
+                    android:id="@+id/chatHeadViewCenter"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_centerInParent="true" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/profile_setting_sweep_up_and_friend"
+                android:textColor="?attr/SecretSubTextColor"
+                android:textSize="@dimen/wire__text_size__small"
+                app:w_font="@string/wire__typeface__light" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSaveQrCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/ico_settings_download_self_qrcode"
+            app:tint="?attr/SecretPrimaryTintColor"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_setting_save_two_dimensional_code"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__light" />
+    </LinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

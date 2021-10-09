@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2016 Secret Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="permissions_denied_dialog_acknowledge">好</string>
+    <string name="permissions_denied_dialog_settings">设置</string>
+    <string name="camera_not_available">相机无法使用</string>
+    <string name="camera_permissions_denied_title">相机无法使用</string>
+    <string name="camera_permissions_denied_message">拍照并传送照片前，请开启相机访问权限</string>
+    <!-- Registration and Sign in -->
+    <string name="welcome__slogan">现代、私密的沟通方式。</string>
+    <string name="welcome__terms_of_service">继续使用前请先同意 _使用条款_。</string>
+    <string name="profile__photo__guidance">HI %1$s\n\n 新增一张照片Secret会更酷炫喔！</string>
+    <string name="profile__name__guidance__tooshort__title">至少需要两个字母</string>
+    <string name="profile__email__placeholder">邮箱</string>
+    <string name="profile__password__placeholder">密码</string>
+    <string name="profile__password__guidance__tooshort__title">至少需要8个字符</string>
+    <string name="profile__email__verify__instructions">我们已经发送一封邮件给\n[[%1$s]]。\n点击一下链接验证您的邮箱地址。</string>
+    <string name="profile__email__verify__didnt_get">没有收到验证邮件？</string>
+    <string name="profile__email__verify__resend">重新发送</string>
+    <string name="sign_up__account_creation_error__duplicate_email_header">Email address already taken</string>
+    <string name="sign_up__account_creation_error__duplicate_email_message">This email address has already been
+        registered
+    </string>
+    <string name="profile__guidance__invalid_email">The email address you entered is not valid. Please verify and try
+        again
+    </string>
+    <string name="profile__phone__guidance__first_time__title" tools:ignore="UnusedResources">_验证_您的手机号码</string>
+    <string name="profile__phone__guidance__first_time__explanation" tools:ignore="UnusedResources">
+        手机号码是选填的，但填写手机号码可以帮您更快的发现好友。为了确认是您本人的号码，我们会发送一条确认短信息给您。
+    </string>
+    <string name="profile__phone__guidance__nocountrycode__title" tools:ignore="UnusedResources">请输入国际区号</string>
+    <string name="profile__sms__guidance__title" tools:ignore="UnusedResources">请输入短信中的3位数字验证码。</string>
+    <string name="profile__sms__guidance__resend__explanation" tools:ignore="UnusedResources">没有收到验证短信？</string>
+    <string name="profile__sms__guidance__resend__link" tools:ignore="UnusedResources">重新发送</string>
+    <string name="profile__sms__validate__button" tools:ignore="UnusedResources">确认</string>
+    <!-- New Reg-->
+    <string name="new_reg__phone_signup__info">创建账号</string>
+    <string name="new_reg_phone__change_country">更换国家</string>
+    <string name="new_reg__add_email">新增邮箱地址和密码</string>
+    <string name="new_reg__add_email_info">当在账号锁定或手机遗失时，这可以帮助您登录。</string>
+    <string name="new_reg__otr__add_email_info">新增邮箱地址和密码</string>
+    <string name="new_reg__otr__add_email_sub_info">这可以让您在多个设备上使用Secret。</string>
+    <string name="new_reg_email_exists_header">@string/sign_up__account_creation_error__duplicate_email_header</string>
+    <string name="new_reg_email_exists_message">@string/sign_up__account_creation_error__duplicate_email_message
+    </string>
+    <string name="new_reg_email_invalid_header">无效的邮箱地址</string>
+    <string name="new_reg_email_invalid_message">Please enter a valid email address</string>
+    <string name="new_reg_email_generic_error_header">好像出了点问题。</string>
+    <string name="new_reg_email_generic_error_message">Please try to register again</string>
+    <string name="new_reg_email_register_generic_error_header">无效信息</string>
+    <string name="new_reg_email_register_generic_error_message">请输入您的全名和有效的邮箱地址及密码。</string>
+    <string name="new_reg_email_invalid_login_credentials_header">无效信息</string>
+    <string name="new_reg_email_invalid_login_credentials_message">Please verify your details and try again</string>
+    <string name="new_reg_phone_exists_header">手机号码已被使用</string>
+    <string name="new_reg_phone_exists_message">The phone number you provided has already been registered. Please try
+        again
+    </string>
+    <string name="new_reg_phone_invalid_format_header">无效的手机号码</string>
+    <string name="new_reg_phone_invalid_format_message">请输入有效的手机号码</string>
+    <string name="new_reg_phone_invalid_registration_code_header">验证码无效</string>
+    <string name="new_reg_phone_invalid_registration_code_message">Please enter a valid code</string>
+    <string name="new_reg_phone_invalid_add_code_header">验证码无效</string>
+    <string name="new_reg_phone_invalid_add_code_message">Please enter a valid code</string>
+    <string name="new_reg_phone_invalid_login_code_header">验证码不正确</string>
+    <string name="new_reg_phone_invalid_login_code_message">Please enter a valid code</string>
+    <string name="new_reg_phone_pending_login_header">验证码已发送</string>
+    <string name="new_reg_phone_pending_login_message">我们已经将验证码通过短信发送给您。如需重新获取验证码，请等候10分钟后点击重新发送。</string>
+    <string name="new_reg_phone_add_password_header">无效的密码</string>
+    <string name="new_reg_phone_add_password_message">Please verify your details and try again</string>
+    <string name="new_reg_phone_generic_error_header">出了点问题啊...</string>
+    <string name="new_reg_phone_generic_error_message">Please try to register again</string>
+    <string name="new_sign_in_generic_error_header">好像出了点问题。</string>
+    <string name="new_sign_in_generic_error_message">Please try to login again</string>
+    <string name="profile_generic_error_header">出了点问题啊...</string>
+    <string name="profile_generic_error_message">Please try again</string>
+    <string name="profile_phone_generic_error_header">无效的手机号码</string>
+    <string name="profile_phone_generic_error_message">请输入有效的手机号码</string>
+    <string name="new_reg_phone_too_man_attempts_header">您尝试太多次了</string>
+    <string name="new_reg_phone_too_man_attempts_message">Please try to log in later</string>
+    <string name="new_reg_server_connectivity_error_header">出了点问题啊...</string>
+    <string name="new_reg_server_connectivity_error_message">Please check your Internet connection and try again
+    </string>
+    <string name="new_reg_internet_connectivity_error_header">没有互联网讯号</string>
+    <string name="new_reg_internet_connectivity_error_message">Please check your Internet connection and try again
+    </string>
+    <string name="new_reg__code_resent">新验证码已经通过短信发送给您</string>
+    <string name="new_reg__code_resent__call">等待电话连通</string>
+    <string name="new_reg__invalid_code__auto_verification__manual">出了点问题 \n请确认手机号码和验证码无误。</string>
+    <string name="new_reg__default_country">德国</string>
+    <!-- consider updating this for every new language -->
+    <string name="new_reg_phone_budget_exhausted_title">请求过多</string>
+    <string name="new_reg_phone_budget_exhausted_message">请稍后重试。</string>
+    <string name="your_phone_number">您的手机号码</string>
+    <string name="new_reg_phone_password_exists_header">密码已存在</string>
+    <string name="new_reg_phone_password_exists_message">此帐户已经具有密码和电子邮件相关联。通过电子邮件，请登录。</string>
+    <string name="new_reg_phone__title__variant_1">您可以通过1对1或群组聊天\n来尽情分享内容，进行通话。</string>
+    <string name="new_reg_phone__title__variant_2">所有的文字、通话，\n都已被安全加密。</string>
+    <!-- Receive email/sms invitation -->
+    <string name="invitation_email__normal_phone_signup_button">使用手机号码注册</string>
+    <string name="invitation_email__normal_email_signup_button">使用其他邮箱地址注册</string>
+    <string name="invitation_email__password_placeholder">密码 (最少 %1$s 个字符)</string>
+    <string name="invitation_email__welcome_header">您好，%1$s。</string>
+    <string name="invitation_email__welcome_message">选择一个密码来创建您的账户。</string>
+    <string name="invitation__continue_button">继续</string>
+    <string name="invitation_phone__normal_phone_signup_button">使用其他手机</string>
+    <string name="invitation_phone__normal_email_signup_button">使用邮箱地址注册</string>
+    <string name="invitation_phone__welcome_header">您好，%1$s。</string>
+    <string name="invitation_phone__welcome_message">再一个步骤就完成建立您的账户。</string>
+    <string name="invitation__phone__failed">无法通过该邀请注册。</string>
+    <string name="invitation__email__failed">无法通过该邀请注册。</string>
+    <!-- People picker/start UI -->
+    <string name="pick_user_search_focus">\u0020 按昵称或用户名搜索</string>
+    <string name="pick_user_search_hint">按名称或用户名搜索</string>
+    <string name="pick_user_search__add_to_conversation">\u0020通过用户名查询</string>
+    <string name="people_picker__top_users_header_title">常联系的人</string>
+    <string name="people_picker__address_book_matches_title">新增好友</string>
+    <string name="people_picker__search_result_conversations_header_title">群组</string>
+    <string name="people_picker__search_result_team_conversations_header_title">%1$s 组</string>
+    <string name="people_picker__search_result_connections_header_title">联系人</string>
+    <string name="people_picker__search_result_others_header_title">添加好友</string>
+    <string name="people_picker__search_result_recommended_header_title">推荐好友</string>
+    <string name="people_picker__search_result_contacts_header_title">联络人</string>
+    <string name="people_picker__search_result_team_members_header_title">团队成员</string>
+    <string name="people_picker__invite_header_title">邀请</string>
+    <string name="people_picker__confirm_button_title">开始聊天</string>
+    <string name="people_picker__confirm_button_title__add_to_conversation">向群组中添加联系人</string>
+    <string name="people_picker__confirm_button_title__create_conversation">创建群聊</string>
+    <string name="people_picker__error_message__no_results">没有搜寻结果</string>
+    <string name="people_picker__error_message__no_results__no_shared_contacts">按名称或电子邮箱地址搜索</string>
+    <string name="people_picker__error_message__no_results__invalid_email__no_shared_contacts">请输入有效的邮箱地址或</string>
+    <string name="people_picker__error_message__no_results__shared_contacts__add_to_conversation">输入不同的名称</string>
+    <string name="people_picker__error_message__no_results__no_shared_contacts__add_to_conversation">输入不同的名称。</string>
+    <string name="people_picker__error_message__no_results__send_invite">发送\n1条邀请</string>
+    <string name="people_picker__error_message__no_users_to_add_to_conversation">您所有的联系人都已在此聊天室。</string>
+    <string name="people_picker__error_message__no_recommenended_users_found__body__shared_contacts">
+        我们在Secret找不到任何您的联系人。请输入完整的名称或电子邮件地址。
+    </string>
+    <string name="people_picker__toolbar_header__group">新增好友</string>
+    <string name="people_picker__toolbar_header__one_to_one">创建群聊</string>
+    <string name="people_picker__search_result__expander_title">显示全部 %1$s ↓</string>
+    <string name="people_picker__guest_label">游客</string>
+    <!-- start ui / people picker, contacts sharing -->
+    <string name="people_picker__share_contacts__title">共享联络人</string>
+    <string name="people_picker__share_contacts__message">在您分享通讯录后，Secret将帮助您找到其他的好友。</string>
+    <string name="people_picker__share_contacts__yay">允许</string>
+    <string name="people_picker__share_contacts__nah">拒绝</string>
+    <string name="people_picker__share_contacts__nevvah">不再询问</string>
+    <!-- People you may know -->
+    <string name="people_picker__recommended__common_connections__one">认识%1$s</string>
+    <string name="people_picker__recommended__common_connections__two">认识 %1$s 和 %2$s</string>
+    <string name="people_picker__recommended__common_connections__hide">隐藏</string>
+    <!-- Invite -->
+    <string name="people_picker__invite__share_details_label">发送邀请</string>
+    <!-- Should not use newline in the dialog message, not supported by all devices, text will be cut off -->
+    <string name="people_picker__invite__share_details_dialog">邀请朋友使用Secret</string>
+    <string name="people_picker__invite__share_text__header">%1$s 想和您在Secret上联系</string>
+    <string name="people_picker__invite__share_text__body">我在用Secret，搜索%1$s或者访问https://www.isecret.im 吧。</string>
+    <string name="people_picker__invite__message">嗨，\n谢谢您的邀请。让我们成为好友吧。 \n%1$s</string>
+    <string name="people_picker__invite__sent_feedback">邀请已送出</string>
+    <string name="people_picker__contact_list__user_selection_button__label">开启</string>
+    <string name="people_picker__contact_list__user_adding_button__label">新增</string>
+    <string name="people_picker__contact_list__contact_selection_button__label">邀请</string>
+    <string name="people_picker__contact_list__invite_dialog__title">发送邀请</string>
+    <string name="people_picker__contact_list__searchbox__hint">\u0020通过用户名查询</string>
+    <string name="people_picker__generic_invite_button_text">邀请好友使用Secret</string>
+    <string name="people_picker__contact_list_contact_sub_label_address_book">%1$s 已是联系人</string>
+    <string name="people_picker__contact_list_contact_sub_label_address_book_identical">在联系人中</string>
+    <!-- Conversation: Quick menu -->
+    <string name="conversation_quick_menu__conversation_button__single_label">开启</string>
+    <string name="conversation_quick_menu__conversation_button__group_label">建立群组</string>
+    <!-- Conversation: System messages -->
+    <string name="content__system__other_added_participant">[[%1$s]] 新增了 %2$s</string>
+    <string name="content__system__other_started_participant">[[%1$s]] 和 %2$s 开启了聊天室</string>
+    <string name="content__system__other_added_you">[[%1$s]] 新增了您</string>
+    <string name="content__system__other_started_you">[[%1$s]] 开启了和您的聊天室</string>
+    <string name="content__system__you_added_participant">[[您]] 新增了 %2$s</string>
+    <string name="content__system__you_started_participant">[[您]] 开启了和%2$s的聊天室</string>
+    <string name="content__system__other_left">[[%1$s]] 离开了</string>
+    <string name="content__system__you_left">[[您]] 离开了</string>
+    <string name="content__system__other_removed_other">[[%1$s]] 移除了 %2$s</string>
+    <string name="content__system__other_removed_you">[[%1$s]] 移除了 您</string>
+    <string name="content__system__you_removed_other">[[您]] 移除了 %1$s</string>
+    <string name="content__system__other_renamed_conv">[[%1$s]] 重新命名了聊天室</string>
+    <string name="content__system__you_renamed_conv">[[您]] 重新命名了聊天室</string>
+    <string name="content__system__message_deleted">该信息已被删除</string>
+    <string name="content_system_message_timestamp_failure">未发送的信息。</string>
+    <string name="content_system_message_timestamp_pending">发送\u2026</string>
+    <string name="content_system_message_timestamp_deleted">于%1$s删除</string>
+    <!-- Conversation: missed call -->
+    <string name="content__missed_call__you_called">[[您]] 播出通话</string>
+    <string name="content__missed_call__xxx_called">[[%1$s]] 曾来电</string>
+    <string name="content__you_pinged">[[您]] 打了声招呼</string>
+    <string name="content__xxx_pinged">[[%1$s]] 打了声招呼</string>
+    <!-- Conversation: E2EE system messages -->
+    <string name="content__otr__conversation_verified">聊天室已验证</string>
+    <string name="content__otr__conversation_unverified">聊天室未验证</string>
+    <string name="content__otr__message_error">从 [[%1$s]] 的信息未被接收。_重置Session？_</string>
+    <string name="content__otr__identity_changed_error">[[%1$s]] 的设备识别码已更改。信息无法送达。_了解更多_</string>
+    <string name="content__otr__added_new_device__message">[[%1$s]]开始使用 _新的设备_</string>
+    <string name="content__otr__start_this_device__message">[[您]]开始使用 _此设备_</string>
+    <string name="content__otr__all_fingerprints_verified">所有的指纹已完成验证</string>
+    <string name="content__otr__lost_history">您有一段时间沒有使用此设备，可能有部分信息不会显示出来。</string>
+    <string name="content__otr__unverified_device__message">[[您]] 取消了_%1$s 的某个设备_ 验证</string>
+    <string name="content__otr__your_unverified_device__message">[[您]] 取消了_您的某个设备_ 验证</string>
+    <string name="content__otr__new_member__message">新人加入 _VERIFY DEVICES_</string>
+    <!-- File transfer -->
+    <string name="content__file__status__default">%1$s</string>
+    <string name="content__file__status__uploading__minimized">正在上传...</string>
+    <string name="content__file__status__cancelled__minimized">已取消...</string>
+    <string name="content__file__status__download__start">开始下载</string>
+    <string name="content__file__status__downloading__minimized">正在下载...</string>
+    <string name="content__file__status__download_failed__minimized">下载失败</string>
+    <string name="content__file__status__upload_failed__minimized">上传失败</string>
+    <string name="content__file__status__uploading">%1$s ·正在上传...</string>
+    <string name="content__file__status__cancelled">%1$s ·已取消...</string>
+    <string name="content__file__status__downloading">%1$s ·正在下载...</string>
+    <string name="content__file__status__download_failed">%1$s ·_ 下载失败_</string>
+    <string name="content__file__status__upload_failed">%1$s ·_上传失败_</string>
+    <!-- used when there's a non-empty file extension, e.g. "300KB · PDF" -->
+    <string name="content__file__status__default__size_and_extension">%1$s · %2$s</string>
+    <string name="content__file__status__uploading__size_and_extension">%1$s ·%2$s ·正在上传...</string>
+    <string name="content__file__status__cancelled__size_and_extension">%1$s ·%2$s ·已取消...</string>
+    <string name="content__file__status__downloading__size_and_extension">%1$s ·%2$s ·正在下载...</string>
+    <string name="content__file__status__download_failed__size_and_extension">%1$s ·%2$s ·下载失败</string>
+    <string name="content__file__status__upload_failed__size_and_extension">%1$s ·%2$s ·_上传失败_</string>
+    <string name="content__file__action__open">开启</string>
+    <string name="content__file__action__save">存档</string>
+    <string name="content__file__action__share">分享</string>
+    <string name="content__file__action__open__no_app_found">找不到可打开此文件类型的应用程序</string>
+    <string name="content__file__action__save_completed">文件已保存在 %1$s</string>
+    <string name="content__file__action__save_error">无法保存文件</string>
+    <string name="content__location__no_map_placeholder">您的位置将在您重新在线时显示在地图上。</string>
+    <!-- Conversation actions -->
+    <string name="conversation__action__rename">重新命名</string>
+    <string name="conversation__action__delete">删除</string>
+    <string name="conversation__action__archive">归档</string>
+    <string name="conversation__action__unarchive">解除封存</string>
+    <string name="conversation__action__add_people">新增参与者</string>
+    <string name="conversation__action__create_group">建立群组</string>
+    <string name="conversation__action__silence">静音</string>
+    <string name="conversation__action__unsilence">关闭静音</string>
+    <string name="conversation__action__leave">离开</string>
+    <string name="conversation__action__remove">移除</string>
+    <string name="conversation__action__call">通话</string>
+    <string name="conversation__action__picture">图片</string>
+    <!-- Conversation: Profile Popover -->
+    <string name="popover__action__open">开启</string>
+    <string name="popover__action__remove">移除</string>
+    <string name="popover__action__block">拉黑</string>
+    <string name="popover__action__profile">个人资料</string>
+    <!-- Calling/voice -->
+    <string name="calling__slow_connection__title">网络速度缓慢</string>
+    <string name="calling__slow_connection__message">您的网速太慢无法通话。请稍候再试。</string>
+    <string name="calling__slow_connection__button">好</string>
+    <string name="calling__cannot_start__title">通话功能无法使用</string>
+    <string name="calling__cannot_start__message">开始新的通话前，请先结束当前通话。</string>
+    <string name="calling__cannot_start__no_permission__message">如需使用通话功能，请开启麦克风使用权限。</string>
+    <string name="calling__cannot_start__ongoing_different_kind__title">%1$s忙线中</string>
+    <string name="calling__cannot_start__ongoing_different_kind__message">请稍候再试</string>
+    <string name="calling__cannot_start__no_video_permission__message">如需使用视屏聊天功能，请开启麦克风和摄像头使用权限。</string>
+    <string name="calling__cannot_start__button">好</string>
+    <string name="calling__cannot_start__button_settings">设置</string>
+    <string name="calling__video_call__slow_connection__message">您可能会在通话期间遇到问题</string>
+    <string name="calling__header__joining">正加入通话</string>
+    <string name="calling__header__outgoing_subtitle">拨号中</string>
+    <string name="calling__header__outgoing_video_subtitle">拨号中</string>
+    <string name="calling__header__incoming_subtitle">来电</string>
+    <string name="calling__header__incoming_subtitle__video">视频来电</string>
+    <string name="incoming__controls__incoming__decline">拒绝</string>
+    <string name="incoming__controls__incoming__accept">接听</string>
+    <string name="incoming__controls__ongoing__hangup">结束通话</string>
+    <string name="incoming__controls__ongoing__speaker">免提</string>
+    <string name="incoming__controls__ongoing__mute">静音</string>
+    <string name="incoming__controls__ongoing__video">视频</string>
+    <string name="ongoing__other_turned_off_video">%1$s关闭了视频</string>
+    <string name="ongoing__other_unable_to_send_video">%1$s无法发送视频</string>
+    <string name="ongoing__poor_connection_message">网络连接差，视频停止</string>
+    <string name="ongoing__connecting">正在连接&#8230;</string>
+    <string name="calling__self_preview_unavailable">关闭视频</string>
+    <string name="calling__self_preview_unavailable_long">相机无法使用</string>
+    <!-- Calling in group conversation -->
+    <string name="group_calling_title">开始呼叫</string>
+    <string name="group_calling_message" tools:ignore="PluralsCandidate">将会呼叫%1$s位联系人</string>
+    <string name="group_calling_confirm">呼叫</string>
+    <!-- Connect request -->
+    <string name="connect__message">Hi %1$s，\n请加我为好友。\n%2$s</string>
+    <string name="connect_request__sub_header__pending_label">尚未处理</string>
+    <string name="connect_request__cancel_request__label">取消好友请求</string>
+    <string name="connect_request__unblock__button__text">取消黑名单</string>
+    <string name="send_connect_request__connect_button__text">新增好友</string>
+    <plurals name="connect_inbox__link__name">
+        <item quantity="one">%1$d 个好友邀请</item>
+        <item quantity="other">%1$d 个好友邀请</item>
+    </plurals>
+    <string name="connect_request__ignore_button__text">取消</string>
+    <string name="content__message__connect_request__footer">已成为好友</string>
+    <string name="content__message__connect_request__auto_connect__footer">自动加为好友。_了解更多_</string>
+    <string name="content__message__connect_request__user_info">%1$s 已是联系人</string>
+    <!-- Otr-->
+    <plurals name="conversation__degraded_confirmation__header__single_user">
+        <item quantity="other">%1$s 开始使用新的设备。</item>
+    </plurals>
+    <string name="conversation__degraded_confirmation__header__someone">有人开始使用新的设备。</string>
+    <string name="conversation__degraded_confirmation__header__multiple_user">%1$s 和 %2$s 开始使用新的设备。</string>
+    <plurals name="conversation__degraded_confirmation__message">
+        <item quantity="other">您仍然要发送您的信息吗？</item>
+    </plurals>
+    <string name="conversation__degraded_confirmation__accept_call">是否接听该通话？</string>
+    <string name="conversation__degraded_confirmation__place_call">你要拨打电话吗？</string>
+    <string name="conversation__degraded_confirmation__positive_action">确定发送</string>
+    <plurals name="conversation__degraded_confirmation__negative_action">
+        <item quantity="other">显示设备</item>
+    </plurals>
+    <string name="conversation__degraded_confirmation__negative_action_self">显示您的设备</string>
+    <string name="conversation_degraded_confirmation__header__you">您</string>
+    <!-- Profile and Participants -->
+    <plurals name="participants__sub_header_xx_people">
+        <item quantity="other">%1$d位参与者</item>
+    </plurals>
+    <string name="group_name">群组名称</string>
+    <!-- Picture selection confirmation -->
+    <string name="confirmation_menu__confirm_done">好</string>
+    <string name="confirmation_menu__cancel">取消</string>
+    <!-- ADD TO CONVERSATION offline -->
+    <string name="conversation__add_user__no_network__title">没有互联网讯号</string>
+    <string name="conversation__add_user__no_network__message">您必須在线才能增加参与者。当您重新在线时我们将再次尝试。</string>
+    <string name="conversation__add_user__no_network__button">好</string>
+    <!-- CREATE GROUP CONVERSATION FROM 1:1 offline -->
+    <string name="conversation__create_group_conversation__no_network__title">没有互联网讯号</string>
+    <string name="conversation__create_group_conversation__no_network__message">您必须在线才能建立聊天室。其他人将在您重新在线时看到您新建立的聊天室。
+    </string>
+    <string name="conversation__create_group_conversation__no_network__button">好</string>
+    <!-- Leave conversation -->
+    <string name="confirmation_menu__meta_remove">确定离开聊天室？</string>
+    <string name="confirmation_menu__meta_remove_text">您将无法发送或接收此聊天室的讯息。</string>
+    <string name="confirmation_menu__confirm_leave">离开</string>
+    <!-- RE-USING: confirmation_menu.cancel -->
+    <!-- Remove from conversation dialogue -->
+    <string name="confirmation_menu__header">移除？</string>
+    <string name="confirmation_menu_text_with_name">%1$s将无法发送或接收此聊天室的信息。</string>
+    <string name="confirmation_menu__confirm_remove">移除</string>
+    <!-- RE-USING: confirmation_menu.cancel -->
+    <!-- Block someone dialogue -->
+    <string name="confirmation_menu__block_header">拉黑？</string>
+    <string name="confirmation_menu__block_text_with_name">%1$s 将无法与您联系或将您添加到群聊中。</string>
+    <string name="confirmation_menu__confirm_block">拉黑</string>
+    <!-- RE-USING: confirmation_menu.cancel -->
+    <string name="connect_request__footer__blocked_label">已拉黑</string>
+    <!-- Delete conversation -->
+    <string name="confirmation_menu__meta_delete">删除内容？</string>
+    <string name="confirmation_menu__meta_delete_text">这将清除聊天历史记录，并从列表中删除。</string>
+    <string name="confirmation_menu__confirm_delete">删除</string>
+    <string name="confirmation_menu__delete_conversation__checkbox__label">并且离开聊天室</string>
+    <!-- Rich media -->
+    <string name="content__youtube__error__text">找不到该影片</string>
+    <string name="mediaplayer__artist__placeholder">音频</string>
+    <string name="mediaplayer__artist__error">无法播放音频</string>
+    <string name="mediaplayer__message__onsoundcloud">打开SoundCloud</string>
+    <string name="mediaplayer__message__onspotify">打开Spotify</string>
+    <string name="mediaplayer__spotify__hint">连接到Spotify</string>
+    <string name="mediaplayer__open_external">在浏览器中打开</string>
+    <!-- Invite banner -->
+    <string name="content__invite_banner__title">分享给大家！</string>
+    <string name="content__invite_banner__subtitle">新增参与者或分享连接到此聊天室。</string>
+    <string name="content__invite_banner__howto_link">这是如何运作的？</string>
+    <string name="content__invite_banner__button_label">新增好友到此聊天室</string>
+    <!-- Self profile -->
+    <string name="self_name">您的全名</string>
+    <string name="self_add_email">新增电子邮箱\u0026密码</string>
+    <string name="self_verify_email">验证电子邮箱</string>
+    <string name="self_add_phone">新增手机号码</string>
+    <string name="self_verify_phone">验证手机号码</string>
+    <!-- Options and settings -->
+    <string name="settings_title">设置</string>
+    <!-- Options menu -->
+    <string name="menu_settings">设置</string>
+    <string name="menu_avs_settings">AVS设置</string>
+    <string name="menu_about">关于我们</string>
+    <string name="menu_tutorial">功能介绍</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_logout">退出</string>
+    <!-- Manage Team -->
+    <string name="pref_manage_team_title">管理团队</string>
+    <!-- About screen -->
+    <string name="about_privacy_policy">隐私政策</string>
+    <string name="about_third_party_licences">授权条款</string>
+    <string name="about_website">isecret.im</string>
+    <string name="about_terms_of_service">使用条款</string>
+    <string name="about_copyright">\u00A9 Secret \u2022 %1$s</string>
+    <string name="pref_category_title">设置</string>
+    <string name="pref_contact_us">联系我们</string>
+    <string name="pref_evaluation">请给我们五星好评吧</string>
+    <string name="pref_developer_screen_title">开发人员设置</string>
+    <string name="pref_dev_avs_screen_title">AVS设置</string>
+    <string name="pref_profile_screen_title">用户信息</string>
+    <!-- Account -->
+    <string name="pref_account_screen_title">帐户</string>
+    <string name="pref_account_category_title">@string/pref_account_screen_title</string>
+    <string name="pref_account_name_title">名称</string>
+    <string name="pref_account_edit_name_title">编辑名称</string>
+    <string name="pref_account_details_category_title">信息</string>
+    <string name="pref_account_actions_category_title">操作</string>
+    <string name="pref_account_personal_category_title">个人信息</string>
+    <string name="pref_account_appearance_category_title">外观</string>
+    <string name="pref_account_details_category_summary">其他使用者能通过这些信息搜寻到您。</string>
+    <string name="pref_account_personal_category_summary">该信息对他人不可见</string>
+    <string name="pref_account_username_title">用户名</string>
+    <string name="pref_account_phone_title">电话</string>
+    <string name="pref_account_add_phone_title">新增手机号码</string>
+    <string name="pref_account_email_title">电子邮箱地址</string>
+    <string name="pref_account_add_email_title">新增电子邮箱</string>
+    <string name="pref_account_delete">删除</string>
+    <string name="pref_account_sign_out_title">登出</string>
+    <string name="pref_account_color_title">主色调</string>
+    <string name="pref_account_picture_title">头像</string>
+    <string name="pref_account_delete_title">删除账号</string>
+    <string name="pref_account_delete_warning_title">删除账号</string>
+    <string name="pref_account_delete_warning_message_email">我们将发送电子邮件至︰:\n[[%1$s]]\n点击链接来永久删除您的账号。</string>
+    <string name="pref_account_delete_warning_message_sms">我们将发送手机短信至︰:\n[[%1$s]]\n点击链接来永久删除您的账号。</string>
+    <string name="pref_account_delete_warning_verify">好</string>
+    <string name="pref_account_sign_out_warning_message">确定登出？</string>
+    <string name="pref_account_sign_out_warning_verify">登出</string>
+    <string name="pref_account_password_title">重设密码</string>
+    <string name="pref_account_edit_name_empty_warning">名称至少两个字符</string>
+    <string name="pref_account_edit_name_empty_verify">好</string>
+    <!-- Options -->
+    <string name="pref_options_dark_theme_title">黑色系主题</string>
+    <string name="pref_options_screen_title">选项</string>
+    <string name="pref_options_contacts_title">共享联络人</string>
+    <string name="pref_options_contacts_summary">这将帮助您找到其他联系人。我们将您的资料匿名处理并且不与任何人分享。</string>
+    <string name="pref_options_vbr_title">可变码率编码</string>
+    <string name="pref_options_vbr_summary">使用较少的数据和更好地工作在较慢的网络上的音频呼叫。请关闭使用固定编码。</string>
+    <!--TODO use old vbr summary string when avs is fixed-->
+    <string name="pref_options_vbr_summary_temp_disabled">因为多帐户支持，固定比特率呼叫已被暂时禁用。 固定比特率呼叫不久将回归。</string>
+    <string name="pref_options_alerts_category_title">注意</string>
+    <string name="pref_options_calls_category_title">通话</string>
+    <string name="pref_options_sounds_title">音效</string>
+    <string name="pref_options_sounds_all">所有</string>
+    <string name="pref_options_sounds_new_conversations_and_talks_only">首条信息，招呼，通话</string>
+    <string name="pref_options_sounds_none">无</string>
+    <string name="pref_options_vibration_title">震动</string>
+    <string name="pref_options_sounds_category_title">注意</string>
+    <string name="pref_options_ringtones_category_title">音效</string>
+    <string name="pref_options_ringtones_ringtone_title">铃声</string>
+    <string name="pref_options_ringtones_text_title">信息铃声</string>
+    <string name="pref_options_ringtones_ping_title">打招呼</string>
+    <string name="pref_options_ringtones_default_summary">Secret预设值</string>
+    <string name="pref_options_ringtones_silent">静音</string>
+    <string name="pref_options_image_download_title">下载图片</string>
+    <string name="pref_options_image_download_always">总是</string>
+    <string name="pref_options_image_download_wifi">仅无线网络</string>
+    <string name="pref_options_media_category_title">媒体</string>
+    <string name="pref_options_requested_category_title">推荐选项</string>
+    <string name="pref_options_cursor_send_button_title">发送按钮</string>
+    <string name="pref_options_cursor_send_button_summary">关闭键盘中的发送按钮</string>
+    <!-- Devices -->
+    <string name="pref_devices_screen_title">设备</string>
+    <string name="pref_current_device_category_title">当前设备</string>
+    <string name="pref_other_devices_category_title">已启用的设备</string>
+    <string name="pref_devices_summary">点一下来删除</string>
+    <string name="pref_devices_current_device_category_title">当前的设备</string>
+    <string name="pref_devices_other_devices_category_title">其他设备</string>
+    <string name="pref_devices_device_activation_summary">于 [[%1$s]]\n被启用</string>
+    <string name="pref_devices_device_activation_subtitle">于 [[%1$s]]被启用</string>
+    <string name="pref_devices_device_id">ID: %1$s</string>
+    <string name="pref_devices_device_verified">验证</string>
+    <string name="pref_devices_device_not_verified">未验证</string>
+    <string name="pref_devices_warning_summary">如果您不能识别以上设备，请立即移除并重设密码</string>
+    <string name="pref_devices_device_screen_title">设备详细信息</string>
+    <string name="pref_devices_device_fingerprint_category_title">指纹识别</string>
+    <string name="pref_devices_device_fingerprint_summary">Secret为每个设备设置了一个独特的指纹。您可以透過指纹比对来验证您的设备和聊天室。</string>
+    <string name="pref_devices_device_actions_category_title">操作</string>
+    <string name="pref_devices_device_trust_title">验证</string>
+    <string name="pref_devices_device_reset_session_title">重设session</string>
+    <string name="pref_devices_device_reset_session_summary">如果设备指纹比对结果不吻合，请重设session以产生新的密匙。</string>
+    <string name="pref_devices_device_remove_title">移除设备</string>
+    <string name="pref_devices_device_remove_summary">如果您不再使用该设备请将其移除，您将会立即从该设备上注销。</string>
+    <string name="pref_devices_device_fingerprint_copy_description">指纹识别</string>
+    <string name="pref_devices_device_fingerprint_copy_toast">指纹识别已复制</string>
+    <string name="pref_devices_language">语言</string>
+    <string name="pref_devices_language_default">跟随系统</string>
+
+    <!-- Advanced -->
+    <string name="pref_advanced_screen_title">高级</string>
+    <string name="pref_advanced_debug_report_title">提交错误报告</string>
+    <string name="pref_advanced_debug_report_summary">这将协助Secret诊断问题。</string>
+    <string name="pref_advanced_analytics_title">数据和崩溃报告</string>
+    <string name="pref_advanced_analytics_summary">通过发送匿名信息让Secret变的更好。</string>
+    <string name="pref_advanced_reset_push_title">重置信息推送通知的Token</string>
+    <string name="pref_advanced_reset_push_summary">当您遇到信息推送相关问题，Secret 建议您重置该Token。</string>
+    <string name="pref_advanced_reset_push_completed">信息推送Token已被重置</string>
+    <string name="debug_report__title">Secret 错误报告 - %1$s</string>
+    <string name="debug_report__body">请告诉我们重新错误的步骤，如有屏幕截图请一起发送至此邮箱。\n\n</string>
+    <!-- Support -->
+    <string name="pref_support_screen_title">帮助</string>
+    <string name="pref_support_website_title">Secret帮助网站</string>
+    <string name="pref_support_website_url">https://www.isecret.im</string>
+    <string name="pref_support_contact_title">与客服联系</string>
+    <string name="pref_support_contact_url">https://www.isecret.im</string>
+    <!-- About -->
+    <string name="pref_about_screen_title">关于</string>
+    <string name="pref_about_website_title">Secret官网</string>
+    <string name="pref_about_website_url">https://www.isecret.im</string>
+    <string name="pref_about_tos_title">使用条款</string>
+    <string name="pref_about_tos_url">@string/url_terms_of_service</string>
+    <string name="pref_about_privacy_policy_title">隐私政策</string>
+    <string name="pref_about_privacy_policy_url">@string/url_privacy_policy</string>
+    <string name="pref_about_licenses_title">授权申明</string>
+    <string name="pref_about_licenses_url">@string/url_third_party_licences</string>
+    <string name="pref_about_version_title">版本 %s</string>
+    <string name="pref_about_copyright_title">\u00A9 Secret</string>
+    <!-- Pref invite -->
+    <string name="pref_invite_title">邀请通讯录好友</string>
+    <!-- Preference Account Actions -->
+    <string name="pref__account_action__phone_verification__title">驗證電話號碼</string>
+    <string name="pref__account_action__phone_verification__description">输入我们发送到 %s的验证码</string>
+    <string name="pref__account_action__phone_verification__code">验证码</string>
+    <string name="pref__account_action__phone_verification__question">没收到验证码？</string>
+    <string name="pref__account_action__phone_verification__resend">
+        <u>重新发送验证码</u>
+    </string>
+    <string name="pref__account_action__phone_verification__change">
+        <u>更改手机号码</u>
+    </string>
+    <string name="pref__account_action__email_verification__title">验证邮箱地址...</string>
+    <string name="pref__account_action__email_verification__description">检查您的电子邮箱收件箱并按照说明进行操作。</string>
+    <string name="pref__account_action__email_verification__question">没收到电子邮件？</string>
+    <string name="pref__account_action__email_verification__resend">&lt;u&gt;重新发送至 %s&lt;/u&gt;</string>
+    <string name="pref__account_action__email_verification__change">
+        <u>更改电子邮箱</u>
+    </string>
+    <string name="pref__account_action__dialog__add_email_password__password">密码</string>
+    <string name="pref__account_action__dialog__add_email_password__email">电子邮箱地址</string>
+    <string name="pref__account_action__dialog__add_email_password__title">新增电子邮箱地址</string>
+    <string name="pref__account_action__dialog__add_email_password__error__invalid_email">无效的邮箱地址</string>
+    <string name="pref__account_action__dialog__add_email_password__error__invalid_password">至少8个字符</string>
+    <string name="pref__account_action__dialog__edit_phone__title">编辑手机号码</string>
+    <string name="pref__account_action__dialog__add_phone__title">新增手机号码</string>
+    <string name="pref__account_action__dialog__add_phone__error__country">不正确的国家代码</string>
+    <string name="pref__account_action__dialog__add_phone__error__number">无效的手机号码</string>
+    <string name="pref__account_action__dialog__add_phone__confirm__title">确认号码</string>
+    <string name="pref__account_action__dialog__add_phone__confirm__message">我们将发送通知代码到:\n%s</string>
+    <string name="pref__account_action__dialog__delete_phone_or_email__confirm__title">移除</string>
+    <string name="pref__account_action__dialog__delete_phone_or_email__confirm__message">您确定要将 %s 从您的Secret账户中删除吗？
+    </string>
+    <string name="pref__account_action__dialog__delete_phone__error">无法删除电话号码</string>
+    <string name="pref__account_action__dialog__delete_email__error">无法删除邮件地址</string>
+    <string name="pref__account_action__dialog__delete_email__no_internet_error">您需要在线来删除邮件地址</string>
+    <string name="pref__account_action__dialog__delete_phone__no_internet_error">您需要在线来删除电话号码</string>
+    <string name="pref__account_action__dialog__change_email__error__invalid_email">请输入有效的电子邮箱</string>
+    <string name="pref__account_action__dialog__change_email__title">编辑电子邮箱地址</string>
+    <string name="pref__account_action__dialog__change_username__summary">
+        其他人可以在不知道您的email地址或电话号码的情况下，通过该用户名在Secret上找到您。
+    </string>
+    <string name="pref__account_action__dialog__change_username__rules">至少2个字符，仅可使用a—z, 0—9以及下划线</string>
+    <string name="pref__account_action__dialog__change_username__title">用户名</string>
+    <string name="pref__account_action__dialog__change_username__error_already_taken">已经被占用</string>
+    <string name="pref__account_action__dialog__change_username__error_unknown">连接错误，请重试</string>
+    <!-- URLs -->
+    <string name="url_home">https://www.isecret.im</string>
+    <string name="url_terms_of_service">https://www.isecret.im/</string>
+    <string name="url_privacy_policy">https://service.isecret.im/info/private</string>
+    <string name="url__help">https://www.isecret.im</string>
+    <string name="url_password_reset">http://service.isecret.im/index.php/Secret/forgot</string>
+    <string name="url_third_party_licences">https://www.isecret.im/</string>
+    <string name="url_otr_learn_why">https://www.isecret.im/privacy/why</string>
+    <string name="url_otr_learn_how">https://www.isecret.im/privacy/how</string>
+    <string name="url_otr_decryption_error_1">https://www.isecret.im/privacy/error-1</string>
+    <string name="url_otr_decryption_error_2">https://www.isecret.im/privacy/error-2</string>
+    <!-- No Internet connection -->
+    <string name="system_status__no_internet">没有网络连接</string>
+    <string name="system_status__no_server_connection">正在连接&#8230;</string>
+    <!-- SHARING -->
+    <string name="system_status__sharing">选择聊天室</string>
+    <string name="alert_dialog__confirmation">好</string>
+    <string name="alert_dialog__no_network__header">没有互联网讯号</string>
+    <string name="sign_up__no_internet__message">您必须在线才能加入。检查您的网络，然后重试。</string>
+    <string name="sign_in__no_internet__message">您必须连接网络才能登录。检查您的网络，然后重试。</string>
+    <string name="sign_up__take_picture__back">编辑名称</string>
+    <string name="sign_up__take_picture_dialog__gallery">图片库</string>
+    <string name="sign_up__take_picture_dialog__camera">相机</string>
+    <string name="sign_up__take_picture_dialog__message">拍摄新的照片或从您现有的图片库中选择一张。</string>
+    <string name="sign_up__take_picture_dialog__title">拍照</string>
+    <string name="sign_up__set_picture__choose">自行选择</string>
+    <string name="sign_up__set_picture__keep">使用当前</string>
+    <string name="sign_up__set_picture__guidance">Secret有了您的头像图片就更酷炫了。</string>
+    <string name="sign_up__set_picture__loading">载入图片</string>
+    <string name="rename_conversation__no_network__message">您必须在线才能重新命名聊天室。检查您的网络，然后重试。</string>
+    <string name="resend_message__no_network__message">您必须在线才能重新发送信息。检查您的网络，然后重试。</string>
+    <string name="leave_conversation_failed__message">您必须在线才能离开聊天室。检查您的网络，然后重试。</string>
+    <string name="remove_from_conversation__no_network__message">您必须在线才能从聊天室移除参与者。检查您的网络，然后重试。</string>
+    <string name="calling__call_drop__message">使用语音通话，您必须连接到互联网。请检查您的网路然后重试。</string>
+    <string name="profile_pic__no_network__message">您必须在线才能更改头像。检查您的网络，然后重试。</string>
+    <string name="calling__voice_channel_full__title">通话人数已满</string>
+    <plurals name="calling__voice_channel_full__message">
+        <!-- should not happen though -->
+        <item quantity="other">只能允许%1$d位参与者</item>
+    </plurals>
+    <string name="calling__conversation_full__title">超出群组通话人数</string>
+    <plurals name="calling__conversation_full__message">
+        <!-- should not happen though -->
+        <item quantity="other">通话功能最多支持%1$d位参与者的聊天室。</item>
+    </plurals>
+    <!-- Lockscreen and notifications -->
+    <string name="lockscreen__talk">来电中</string>
+    <plurals name="notification__new_messages">
+        <item quantity="other">%1$d 信息来自 %2$s</item>
+    </plurals>
+    <plurals name="notification__new_messages_groups">
+        <item quantity="other">%1$d 信息在 %2$s</item>
+    </plurals>
+    <plurals name="notification__new_messages__multiple">
+        <item quantity="other">%1$d 条新信息在%2$s个聊天室</item>
+    </plurals>
+    <!-- %1$s == username, %2$s == conversation -->
+    <string name="notification__message__name__prefix__text">%1$s: \u0020</string>
+    <string name="notification__message__group__prefix__text">%1$s在 %2$s: \u0020</string>
+    <string name="notification__message__one_to_one__wanted_to_talk">曾来电</string>
+    <string name="notification__message__one_to_one__pinged">打了招呼</string>
+    <string name="notification__message__one_to_one__shared_picture">分享了一张图片</string>
+    <string name="notification__message__one_to_one__shared_file">分享了文件</string>
+    <string name="notification__message__one_to_one__shared_video">分享了影片</string>
+    <string name="notification__message__one_to_one__shared_audio">分享了语音信息</string>
+    <string name="notification__message__one_to_one__shared_location">分享了位置</string>
+    <string name="notification__message__one_to_one__liked">\u2764 您的信息</string>
+    <!-- %1$s == username, %2$s == conversation -->
+    <string name="notification__message__name__prefix__other">%1$s \u0020</string>
+    <string name="notification__message__group__prefix__other">%1$s于%2$s\u0020</string>
+    <string name="notification__message__group__pinged">ping了一下</string>
+    <string name="notification__message__group__shared_picture">分享了图片</string>
+    <string name="notification__message__group__shared_file">共享文件</string>
+    <string name="notification__message__group__shared_video">共享视频</string>
+    <string name="notification__message__group__shared_audio">分享了语音信息</string>
+    <string name="notification__message__group__shared_location">共享位置</string>
+    <string name="notification__message__group__renamed_conversation">聊天室被新命名为%1$s</string>
+    <string name="notification__message__group__add">新增了参与者到聊天室</string>
+    <string name="notification__message__group__remove">已从聊天室移除了参与者</string>
+    <string name="notification__message__generic__accept_request">您有一个新的好友</string>
+    <string name="notification__message__single__accept_request">您和%1$s已成为好友</string>
+    <string name="notification__message__group__default_conversation_name">群组聊天室</string>
+    <string name="notification__message__send_failed">消息发送失败</string>
+    <string name="notification__message__liked">\u2764 ‘%1$s’</string>
+    <string name="notification__message__liked_message">\u2764 您的信息</string>
+    <string name="notification__message__liked_picture">\u2764 您的图片</string>
+    <string name="notification__message__liked_file">\u2764 您的文件</string>
+    <string name="notification__message__textjson">新消息</string>
+    <!-- ephemeral -->
+    <string name="notification__message__ephemeral_details">点击查看更多</string>
+    <plurals name="notification__message__ephemeral">
+        <item quantity="other">您有 %1$d 条新信息</item>
+    </plurals>
+    <!-- Others -->
+    <string name="app_name">Secret</string>
+    <string name="content__system__item_separator">,</string>
+    <string name="content__system__last_item_separator">和</string>
+    <string name="content__system__you">你</string>
+    <!-- System notifications -->
+    <string name="system_notification__group_call_title">%1$s于%2$s</string>
+    <string name="system_notification__silence_call">拒绝</string>
+    <string name="system_notification__join_call">加入通话</string>
+    <string name="system_notification__leave_call">结束通话</string>
+    <string name="system_notification__outgoing">拨号中</string>
+    <string name="system_notification__outgoing_video">视频拨号中</string>
+    <string name="system_notification__incoming">来电</string>
+    <string name="system_notification__incoming_video">视频来电</string>
+    <string name="system_notification__ongoing">通话中</string>
+    <string name="number_of_conversations_string">归档</string>
+    <!-- Notification actions -->
+    <string name="notification__action__call">通话</string>
+    <string name="notification__action__reply">回复</string>
+    <!-- Quick reply -->
+    <string name="quick_reply__counter">%2$d之%1$d</string>
+    <string name="quick_reply__message_group">[[%1$s:]] %2$s</string>
+    <string name="quick_reply__open_wire">开启Secret</string>
+    <!-- Save image notification -->
+    <string name="notification__image_saving__content__title">Secret图片已储存。</string>
+    <string name="notification__image_saving__content__subtitle">点击查看。</string>
+    <string name="notification__image_saving__action__share">共享</string>
+    <!-- See: https://code.google.com/p/android/issues/detail?id=36744 -->
+    <dimen name="notification__image_saving__image_width">512dp</dimen>
+    <string name="notification__file_saving__content__title">Secret文件已保存。</string>
+    <!-- forced update -->
+    <string name="forced_update__header">重要更新</string>
+    <string name="forced_update__sub_header">请安装最新版的Secret。</string>
+    <string name="forced_update__download_button">下载</string>
+    <string name="forced_update__update_now">立即更新</string>
+    <string name="forced_update__downloading">下载中...</string>
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Sharing -->
+    <string name="sharing__image_preview__confirm_action">发送</string>
+    <string name="sharing__image_preview__title__single">发送1张图片到\n_%1$s_</string>
+    <string name="sharing__image_preview__title__multiple">发送 %1$s 张图片 到\n_%2$s_</string>
+    <string name="sharing__user_not_logged_in__dialog__title">请登录</string>
+    <string name="sharing__user_not_logged_in__dialog__message">登录Secret，开始分享。</string>
+    <string name="sharing__user_not_logged_in__dialog__confirm">好</string>
+    <string name="sharing__files__ok">共享</string>
+    <plurals name="sharing__files__message">
+        <item quantity="other">您将和%2$s分享 %1$d 个文件。</item>
+    </plurals>
+    <!-- Sync errors -->
+    <string name="in_app_notification__sync_error__create_group_convo__title">无法创建</string>
+    <string name="in_app_notification__sync_error__create_group_convo__body">无法和%1$s建立聊天室</string>
+    <string name="in_app_notification__sync_error__add_user__body">%1$s 不想被新增到聊天室。</string>
+    <string name="in_app_notification__sync_error__add_multiple_user__body">您选择的参与者之一无法被新增到聊天室。</string>
+    <string name="in_app_notification__sync_error__unknown__body">出了点问题，请再试一次。</string>
+    <string name="in_app_notification__sync_error__create_convo__button">继续</string>
+    <!--Timestamp formatting -->
+    <string name="timestamp__just_now">刚刚</string>
+    <string name="timestamp__a_minute_ago">一分钟前</string>
+    <plurals name="timestamp__x_minutes_ago">
+        <item quantity="other">%1$d分钟前</item>
+    </plurals>
+    <plurals name="timestamp__x_hours_ago">
+        <item quantity="other">%1$d小时前</item>
+    </plurals>
+    <plurals name="timestamp__x_days_ago">
+        <item quantity="other">%1$d天前</item>
+    </plurals>
+    <plurals name="timestamp__x_weeks_ago">
+        <item quantity="other">%1$d星期前</item>
+    </plurals>
+    <plurals name="timestamp__x_months_ago">
+        <item quantity="other">%1$d个月前</item>
+    </plurals>
+    <plurals name="timestamp__x_years_ago">
+        <item quantity="other">%1$d年前</item>
+    </plurals>
+    <!-- http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html -->
+    <!-- Example: FRIDAY, MAR 9, 11:29 -->
+    <string name="timestamp_pattern__date_and_time__no_year">EEE，MMM d %1$s</string>
+    <!-- Example: FRIDAY, MAR 9, 2015, 11:29 -->
+    <string name="timestamp_pattern__date_and_time__with_year">EEE，MMM d，YYYY，%1$s</string>
+    <!-- Example: MAR 9, 11:29 -->
+    <string name="timestamp_pattern__date_and_time__no_year_no_weekday">MMM d，%1$s</string>
+    <!-- Example: MAR 9, 2015, 11:29 -->
+    <string name="timestamp_pattern__date_and_time__with_year_no_weekday">MMM d，YYYY，%1$s</string>
+    <!-- Example: MONDAY, 9 MARCH 2015 \u30FB 12:08 -->
+    <string name="timestamp_pattern__single_message">EEEE, d MMMM YYYY \u30FB %1$s</string>
+    <!-- MONDAY -->
+    <string name="timestamp_pattern__separator_header__this_week">EEEE</string>
+    <!-- MARCH 2 -->
+    <string name="timestamp_pattern__separator_header__this_year">MMMM d</string>
+    <!-- MARCH 2, 2015 -->
+    <string name="timestamp_pattern__separator_header__last_year">MMMM d YYYY</string>
+    <string name="timestamp_pattern__separator_header__today">今天</string>
+    <string name="timestamp_pattern__separator_header__yesterday">昨天</string>
+    <!-- 23:15 -->
+    <string name="timestamp_pattern__year_format">yyyy-MM-dd</string>
+    <string name="timestamp_pattern__date_format">MM-dd</string>
+    <string name="timestamp_pattern__24h_format">HH:mm</string>
+    <string name="timestamp_pattern__12h_format">hh:mm a</string>
+    <string name="reg__phone_alert__button">好</string>
+    <string name="country">国家</string>
+    <string name="register">注册</string>
+    <string name="password_placeholder">密码</string>
+    <string name="email_placeholder">电子邮箱地址</string>
+    <string name="name_placeholder">名称</string>
+    <string name="registration_back">返回</string>
+    <!-- Strings -->
+    <string name="edit_phone_number">编辑手机号码</string>
+    <string name="i_have_an_account">登录</string>
+    <plurals name="welcome__resend__timer_label">
+        <item quantity="other">您可以在 %1$d 秒后申请新的验证码</item>
+    </plurals>
+    <string name="welcome__resend__manual">重新发送</string>
+    <string name="welcome__resend__callme">来电</string>
+    <string name="activation_code_info_manual">输入我们发送到 \n&lt;b&gt;%s&lt;/b&gt;的验证码</string>
+    <string name="enter_name">我们应该怎么称呼您？</string>
+    <string name="enter_name_hint">输入全名</string>
+    <string name="set_a_picture">设置头像</string>
+    <string name="new_reg__password__forgot">忘记密码</string>
+    <string name="phone_sign_in">电话</string>
+    <string name="go_to_register">创建账户</string>
+    <string name="email_sign_in">电子邮箱地址</string>
+    <string name="edit_email">修改电子邮箱地址</string>
+    <string name="hello">您好，&lt;b&gt;%s&lt;/b&gt;</string>
+    <string name="sign_in">登录</string>
+    <string name="new_reg__password_length">至少需要%1$s字符</string>
+    <string name="username__set__toast_error">更新用户名时出错</string>
+    <!-- Giphy -->
+    <string name="giphy_preview__search_hint">搜寻Giphy</string>
+    <string name="giphy_preview__title_search">#%s</string>
+    <string name="giphy_preview__title_random">随机</string>
+    <string name="giphy_preview__error">找不到GIF。</string>
+    <string name="giphy_preview__message_via_random_trending">来源 giphy.com</string>
+    <string name="giphy_preview__message_via_search">%s · 来源 giphy.com</string>
+    <string name="service_giphy_name">Giphy</string>
+    <!--Sketch-->
+    <string name="drawing__tip__picture__message">点击颜色来更改画笔大小。\n\n摇一摇手机可移除照片。</string>
+    <string name="drawing__tip__message">点击颜色更改画笔大小。\n\n点击不放可填充整个区域。</string>
+    <string name="add_a_sketch">添加一个剪影</string>
+    <string name="sketch__emoji_keyboard__size_label__small">小</string>
+    <string name="sketch__emoji_keyboard__size_label__medium">中</string>
+    <string name="sketch__emoji_keyboard__size_label__large">大</string>
+    <string name="toolbar__sketch__action_close">关闭</string>
+    <string name="drawing__text_hint">请输入信息</string>
+    <!-- Location sharing -->
+    <string name="location_sharing__tip">拖拽地图来改变位置</string>
+    <string name="location_sharing__permission_error">无法检测当前位置，未授权</string>
+    <string name="location_sharing__send_button">发送</string>
+    <string name="location_sharing__enable_system_location__title">使用此位置？</string>
+    <string name="location_sharing__enable_system_location__message">在手机的「设置」中的「位置信息」开启权限来显示您目前的位置</string>
+    <string name="location_sharing__enable_system_location__confirm">设置</string>
+    <string name="location_sharing__missing_play_services">使用位置分享需要Google Play服务</string>
+    <!-- From SyncEngine -->
+    <string name="new_reg__phone_signup__create_account">新增帐户</string>
+    <!-- OTR -->
+    <string name="otr__remove_device__title">移除%1$s</string>
+    <string name="otr__remove_device__message">输入您的密码</string>
+    <string name="otr__remove_device__default">设备</string>
+    <string name="otr__remove_device__button_delete">好</string>
+    <string name="otr__remove_device__button_cancel">取消</string>
+    <string name="otr__remove_device__error">错误的密码</string>
+    <string name="otr__remove_device__button_approve">好</string>
+    <string name="otr__remove_device__button_remove">移除</string>
+    <string name="otr__error_dialog__cannot_register__message">使用此设备前请先移除一个您的其他设备。</string>
+    <string name="otr__error_dialog__cannot_register__manage_devices_button">设备管理</string>
+    <string name="otr__error_dialog__cannot_register__log_out_button">登出</string>
+    <!-- OTR Participants -->
+    <string name="otr__participant__device_header">Secret为每个设备设置了一个唯一的指纹。您可以和%1$s进行比对来验证聊天室。</string>
+    <string name="otr__participant__device_header__no_devices">%1$s使用旧版本的Secret，无法显示设备。</string>
+    <string name="otr__participant__device_header__link_text">_为什么验证聊天室？_</string>
+    <string name="otr__participant__device_class__unknown">未知</string>
+    <string name="otr__participant__device_class__phone">电话</string>
+    <string name="otr__participant__device_class__tablet">平板电脑</string>
+    <string name="otr__participant__device_class__desktop">台式电脑</string>
+    <string name="otr__participant__tab_details">详细信息</string>
+    <string name="otr__participant__tab_devices">設備</string>
+    <string name="otr__device_activated_info">于 %s 激活</string>
+    <string name="otr__participant__single_device__my_fingerprint_link">显示我的设备指纹</string>
+    <string name="otr__participant__single_device__reset_session_link">重設session</string>
+    <string name="otr__participant__my_device__description">您的设备指纹</string>
+    <string name="otr__participant__my_device__show_all_devices_link">显示我所有的设备</string>
+    <string name="otr__participant__single_device__description">验证此设备指纹符合%1$s设备上的指纹。</string>
+    <string name="otr__participant__single_device__how_to_link">_我该怎么做？_</string>
+    <string name="otr__device_id">ID: %s</string>
+    <string name="otr__first_launch__header">这是您第一次在此设备使用Secret。</string>
+    <string name="otr__first_launch__sub_header">基于隐私考虑，您的历史聊天记录将不会被显示。</string>
+    <string name="otr__first_launch__button">好</string>
+    <string name="otr__device_approve__header">您有新的设备连接到您的Secret账户。</string>
+    <string name="otr__device_approve__note">如果您没有新增该设备，请移除该设备并且重设您的密码。</string>
+    <string name="otr__signin__info_text">登录</string>
+    <string name="otr__reset_session__message_ok">Session已被重设</string>
+    <string name="otr__reset_session__message_fail">无法重设session</string>
+    <string name="otr__reset_session__button_ok">好</string>
+    <string name="otr__reset_session__button_fail">再试一次</string>
+    <string name="otr__remove_device__no_internet__title">没有互联网</string>
+    <string name="otr__remove_device__no_internet__message">下次上线时，尝试移除该设备。</string>
+    <string name="otr__remove_device__no_internet__button">好</string>
+    <string name="otr__device_inbox__header">您的账号被使用在：</string>
+    <string name="otr__device_inbox__name">从:[[%s]]</string>
+    <string name="advanced_image_download_wifi_info">图片会在您重新连接 Wi-Fi 后显示。</string>
+    <string name="change_settings">更改设置</string>
+    <string name="single_image__save_to_disk__error">没有储存空间使用的权限，无法储存图片</string>
+    <string name="conversation_list__label_action__contacts">联系人</string>
+    <string name="conversation_list__hint_header">从这里开始对话</string>
+    <string name="conversation_list__hint_text">开始一段对话。电话、 邮件和份额在私营或与团体。</string>
+    <string name="conversation_list__action_join_call">加入</string>
+    <!-- Conversation Toolbar -->
+    <string name="conversation_toolbar__collection">资源库</string>
+    <string name="conversation_toolbar__call_video">视频通话</string>
+    <string name="conversation_toolbar__call_audio">语音通话</string>
+    <string name="conversation_toolbar__delete">删除</string>
+    <string name="conversation_toolbar__copy">复制</string>
+    <string name="conversation_toolbar__fwd">共享</string>
+    <!-- Asset upload errors -->
+    <string name="asset_upload_error__not_found__title">找不到该文件</string>
+    <string name="asset_upload_error__not_found__message">无法打开指定的文件</string>
+    <string name="asset_upload_error__not_found__button">好</string>
+    <string name="asset_upload_error__file_too_large__title">文件太大</string>
+    <string name="asset_upload_error__file_too_large__message_default">文件过大，无法上传。</string>
+    <string name="asset_upload_error__file_too_large__message">您可以发送最大%1$s的文件。</string>
+    <string name="asset_upload_error__file_too_large__button">好</string>
+    <string name="asset_upload_warning__large_file__title">您不在 Wi-Fi上</string>
+    <string name="asset_upload_warning__large_file__message_default">您确定要通过蜂窝网络发送大文件吗？</string>
+    <string name="asset_upload_warning__large_file__message">您确定要通过蜂窝网络发送%1$s？</string>
+    <string name="asset_upload_warning__large_file__message__video">您确定要通过蜂窝网络发送视频？</string>
+    <string name="asset_upload_warning__large_file__button_accept">好</string>
+    <!-- Video message errors -->
+    <string name="video_message_error__too_big__title">视频太大</string>
+    <string name="video_message_error__too_big__message">您可以发送25MB以下的视频。</string>
+    <string name="video_message_error__title">视频错误</string>
+    <string name="video_message_error__message">无法处理该视频文件</string>
+    <string name="video_message_error__button">好</string>
+    <string name="video_message_error__missing_camera_permissions">若您要传送视频信息，请确保打开手机的相机和文件的存取权限。</string>
+    <string name="audio_message_error__missing_audio_permissions">若您要发送语音信息，请先同意录制语音的存储权限。</string>
+    <string name="audio_message_error__generic">无法播放语音</string>
+    <!-- Audio bit rate mode -->
+    <string name="audio_message__constant_bit_rate">固定码率</string>
+    <!-- no contacts -->
+    <string name="no_conversation_in_list__header">暂无对话</string>
+    <string name="all_archived__header">全部内容均已存档</string>
+    <string name="no_conversation_in_list__message">开始一段对话或创建一个组。</string>
+    <string name="cursor__type_a_message">请输入信息</string>
+    <string name="cursor__ephemeral_message">阅后即焚</string>
+    <!-- ephemeral duration e.g. "30s" or "1h"-->
+    <string name="cursor__ephemeral_message__timer_seconds">%1$s秒</string>
+    <string name="cursor__ephemeral_message__timer_min">%1$s分</string>
+    <string name="cursor__ephemeral_message__timer_days">%1$s天</string>
+    <string name="tooltip_record">录制视频</string>
+    <string name="tooltip_camera">新增相片</string>
+    <string name="tooltip_sketch">画图</string>
+    <string name="tooltip_ping">打招呼</string>
+    <string name="tooltip_emoji">表情包</string>
+    <string name="tooltip_location">位置</string>
+    <string name="tooltip_more">更多操作</string>
+    <string name="tooltip_audio_message">请点击并按住要发送音频信息</string>
+    <string name="tooltip_file">发送文件</string>
+    <string name="tooltip_gif">动图</string>
+    <string name="new_feature">新增</string>
+    <!-- Delete -->
+    <string name="conversation__message_action__delete_for_me">确定仅为自己删除该信息？</string>
+    <string name="conversation__message_action__delete_for_everyone">确定为每个接收者删除该信息？</string>
+    <string name="conversation__message_action__delete_details">此操作将不可撤销。</string>
+    <string name="conversation__message_action__delete__dialog__cancel">取消</string>
+    <string name="conversation__message_action__delete__dialog__ok">删除</string>
+    <string name="conversation__message_action__delete__confirmation">信息已被删除</string>
+    <string name="conversation__action_mode__copy__description">来自%1$s的信息</string>
+    <string name="conversation__action_mode__copy__toast">已复制</string>
+    <string name="conversation__action_mode__fwd__dialog__title">准备内容中</string>
+    <string name="conversation__action_mode__fwd__dialog__message">请稍候&#8230;</string>
+    <string name="conversation__action_mode__fwd__chooser__title">分享：</string>
+    <!-- video message preview -->
+    <string name="video_message__preview__header">发送到%1$s</string>
+    <string name="video_message__quick_menu__send_label">发送</string>
+    <string name="video_message__preview__compressing">压缩中...</string>
+    <string name="audio_message__recording__slide_control__slide_hint">向上滑动来发送</string>
+    <string name="audio_message__recording__slide_control__tap_hint">点击来发送</string>
+    <string name="audio_message__recording__tap_to_record">点击来录制语音信息\n之后您可_GLYPH_该信息</string>
+    <string name="audio_message__recording__failure__title">无法录制语音信息</string>
+    <string name="audio_message__recording__failure__message">请再试一次</string>
+    <string name="audio_message__recording__limit_reached__title">录音停止</string>
+    <string name="audio_message__recording__limit_reached__message">语音信息最大容量上限为25MB。发送此消息？</string>
+    <string name="audio_message__recording__limit_reached__confirmation">发送</string>
+    <string name="hint_change_filter">选择一个筛选器</string>
+    <string name="message_bottom_menu_action_forward">共享</string>
+    <string name="message_bottom_menu_action_copy">复制</string>
+    <string name="message_bottom_menu_action_edit">修改</string>
+    <string name="message_bottom_menu_action_like">赞</string>
+    <string name="message_bottom_menu_action_unlike">取消赞</string>
+    <string name="message_bottom_menu_action_save">保存</string>
+    <string name="message_bottom_menu_action_open">开启</string>
+    <string name="message_bottom_menu_action_report">举报</string>
+    <string name="message_bottom_menu_action_delete">删除</string>
+    <string name="message_bottom_menu_action_delete_local">为自己删除</string>
+    <string name="message_bottom_menu_action_delete_global">为所有接收者删除</string>
+    <string name="message_bottom_menu_action_reveal">显示更多</string>
+    <string name="message_bottom_menu_action_favorite_add">加入收藏</string>
+    <string name="message_bottom_menu_action_favorite_remove">取消收藏</string>
+    <string name="message_bottom_menu_action_translate">翻译</string>
+    <string name="message_bottom_menu_action_hide_translate">隐藏翻译</string>
+    <string name="likes_list__header">被赞</string>
+    <string name="message_bottom_menu_action_save_ok">图片已保存</string>
+    <string name="message_footer__tap_to_like">点击赞我</string>
+    <plurals name="message_footer__number_of_likes">
+        <item quantity="one">%1$d 人</item>
+        <item quantity="other">%1$d 人</item>
+    </plurals>
+    <string name="message_footer__status__sending">正在发送...</string>
+    <string name="message_footer__status__sent">%1$s \u30FB 已送出</string>
+    <string name="message_footer__status__delivered">%1$s \u30FB 已送达</string>
+    <string name="message_footer__status__failed">发送失败。请_重试_</string>
+    <string name="message_footer__status__deleted">%1$s \u30FB 已删除</string>
+    <string name="ephemeral_message__timeout_selection_info">设置信息自销毁时间</string>
+    <string name="ephemeral_message__timeout__off">关闭</string>
+    <string name="ephemeral_message__timeout__5_sec">5 秒</string>
+    <string name="ephemeral_message__timeout__15_sec">15 秒</string>
+    <string name="ephemeral_message__timeout__30_sec">30 秒</string>
+    <string name="ephemeral_message__timeout__1_min">1 分钟</string>
+    <string name="ephemeral_message__timeout__5_min">5 分钟</string>
+    <string name="ephemeral_message__timeout__1_day">1 天</string>
+    <string name="message_footer__status__ephemeral_summary">倒数 %1$s \u30FB _%2$s</string>
+    <string name="usernames__learn_more__link">https://www.isecret.im/support/username/</string>
+    <string name="usernames__take_over__summary">认领你在Secret的名称ID._Learn more._</string>
+    <string name="usernames__take_over__choose">自定义</string>
+    <string name="usernames__take_over__keep">推荐使用</string>
+    <string name="pref_account_username_empty_title">添加用户名</string>
+    <string name="collection_header_all">收藏</string>
+    <string name="collection_header_pictures">图片</string>
+    <string name="collection_header_files">文件</string>
+    <string name="collection_header_links">链接</string>
+    <string name="collection_header_today">今日</string>
+    <string name="collection_header_yesterday">昨日</string>
+    <string name="collection_empty">空空如也...</string>
+    <string name="collection_send_to">发送给...</string>
+    <string name="collection_all">显示 %1$s</string>
+    <string name="multi_share_toast_sending">@string/message_footer__status__sending</string>
+    <string name="multi_share_toast_failed">发送失败</string>
+    <string name="multi_share_search_hint">发送给...</string>
+    <string name="search__box__hint_text">搜索文本消息</string>
+    <string name="search__no_results">没有结果。</string>
+    <!-- Conversation List -->
+    <plurals name="conversation_list__new_message_count">
+        <item quantity="other">%1$s 新消息</item>
+    </plurals>
+    <plurals name="conversation_list__missed_calls_count">
+        <item quantity="other">%1$s 未接来电</item>
+    </plurals>
+    <plurals name="conversation_list__pings_count">
+        <item quantity="other">%1$s ping了一下</item>
+    </plurals>
+    <plurals name="conversation_list__new_likes_count">
+        <item quantity="one">%1$s ♥</item>
+        <item quantity="other">%1$s ♥</item>
+    </plurals>
+    <string name="conversation_list__unsent_message_long">⚠ 未发送信息</string>
+    <string name="conversation_list__unsent_message_short">⚠</string>
+    <string name="conversation_list__shared__image">分享了一张图片</string>
+    <string name="conversation_list__shared__file">分享了文件</string>
+    <string name="conversation_list__shared__video">分享了影片</string>
+    <string name="conversation_list__shared__audio">分享了语音信息</string>
+    <string name="conversation_list__shared__location">分享了位置</string>
+    <string name="conversation_list__missed_call">未接电话</string>
+    <string name="conversation_list__pinged">打了招呼</string>
+    <string name="conversation_list__ephemeral">阅后即焚</string>
+    <string name="conversation_list__typing">输入信息</string>
+    <string name="conversation_list__someone">某人</string>
+    <string name="conversation_list__added">[[%1$s]] 已加入</string>
+    <string name="conversation_list__added_you">[[%1$s]] 新增了您</string>
+    <string name="conversation_list__left">[[%1$s]] 已离开</string>
+    <string name="conversation_list__left_you">您退出了</string>
+    <string name="conversation_list__removed_you">[[%1$s]] 移除了 您</string>
+    <string name="conversation_list__removed">[[%1$s]] 被移除</string>
+    <string name="conversation_list__empty_conv__subtitle">所有人都已离开</string>
+    <string name="conversation_list__header__title">会话</string>
+    <string name="conversation_list__header__archive_title">归档</string>
+    <string name="guest_indicator">客人</string>
+    <string name="participant_tab_guest_indicator_label">游客</string>
+    <string name="preferences_profile_new">新团队或帐户</string>
+    <string name="preferences_profile_add_account">添加帐户</string>
+    <string name="preferences_profile_create_team">创建团队</string>
+    <string name="preferences_profile_in_team">于 %1$s</string>
+    <string name="new_devices_dialog_title">您有新的设备连接到您的Secret账户。</string>
+    <string name="new_devices_dialog_info">如果您没有新增该设备，请移除该设备并且重设您的密码。</string>
+    <string name="new_devices_dialog_manage_devices">设备管理</string>
+
+    <string name="teams_set_email_title">你的账户</string>
+    <string name="teams_set_email_subtitle">输入你的邮箱地址</string>
+    <string name="teams_set_email_hint">YOU@YOURCOMPANY.COM</string>
+    <string name="teams_set_email_about">了解更多</string>
+    <string name="teams_set_password_title">设置密码</string>
+    <string name="teams_set_password_hint">至少8个字母</string>
+    <string name="teams_set_username_title">设置用户名</string>
+    <string name="teams_set_username_hint">用户名</string>
+    <string name="teams_set_team_name_title">给你的团队起名</string>
+    <string name="teams_set_team_name_subtitle">你可以稍后更换</string>
+    <string name="teams_set_team_name_hint">团队名称</string>
+    <string name="teams_set_team_name_about">关于Secret对于团队</string>
+    <string name="teams_verify_email_title">你收到了邮件</string>
+    <string name="teams_verify_email_subtitle">输入验证码，我们已发送至 %1$s.</string>
+    <string name="teams_verify_email_resend">重新发送验证码</string>
+    <string name="teams_verify_email_change">更改邮箱</string>
+    <string name="teams_set_name_title">你的名字</string>
+    <string name="teams_set_name_hint">完整的名称</string>
+    <string name="app_entry_create_account">个人的</string>
+    <string name="app_entry_create_account_sub">创建账户</string>
+    <string name="app_entry_create_team">专业版</string>
+    <string name="app_entry_create_team_sub">创建团队</string>
+    <string name="app_entry_login_sub">已经有了账户？</string>
+    <string name="app_entry_login">登录</string>
+    <string name="app_entry_tc_dialog_title">服务条款</string>
+    <string name="app_entry_tc_dialog_message">你必须接受才能继续</string>
+    <string name="app_entry_notifications_dialog_title">通知</string>
+    <string name="app_entry_notifications_dialog_message">通知可能包括警报、声音和图标徽章。这些可以在设置中配置。</string>
+    <string name="app_entry_dialog_accept">接受</string>
+    <string name="app_entry_dialog_cancel">取消</string>
+    <string name="app_entry_dialog_log_in">登录</string>
+    <string name="app_entry_dialog_no_thanks">不了，谢谢</string>
+    <string name="app_entry_dialog_not_now">现在不</string>
+    <string name="app_entry_dialog_view">阅览</string>
+    <string name="app_entry_dialog_privacy_policy">隐私政策</string>
+    <string name="app_entry_email_sent">邮件已发送</string>
+    <string name="teams_set_username_subtitle">用户名可帮助人们找到你</string>
+    <string name="app_entry_sso_dialog_title">公司登录</string>
+    <string name="app_entry_sso_dialog_message">输入公司的安全认证码。</string>
+    <string name="app_entry_sso_input_hint"/>
+    <string name="pick_user_teams_invite">邀请人加入团队</string>
+    <string name="teams_invitations_skip">跳过</string>
+    <string name="teams_invitations_done">完成</string>
+    <string name="teams_invitations_error_too_many">已经发出了最大数量的邀请</string>
+    <string name="teams_invitations_error_already_sent">已经发送了</string>
+    <string name="teams_invitations_error_generic">出问题了，请再试一次</string>
+    <string name="teams_invite_email_hint">COLLEAGUE@YOURCOMPANY.COM</string>
+    <string name="teams_invitations_error_invalid_email">请输入一个有效的电子邮件地址</string>
+    <string name="teams_invitations_error_email_exists">此电子邮件地址已在使用中</string>
+    <string name="teams_invitations_error_no_internet">没有网络</string>
+    <string name="invitation_screen_title">建立你的团队</string>
+    <string name="invitation_screen_subtitle">邀请你的伙伴加入</string>
+    <string name="open_service_conversation_button_text">开启聊天</string>
+    <string name="remove_service_button_text">删除服务</string>
+    <string name="integrations_create_conversation">创建新的对话</string>
+    <string name="no_matches_found">没有发现</string>
+    <string name="loading_services">下载服务中…</string>
+    <string name="empty_services_list">服务器是可以改进工作流的助手。要启用它们，请询问管理员。</string>
+    <string name="empty_services_list_admin">服务是可以改进工作流的助手。</string>
+    <string name="create_guest_room_conversation">创建访客房间</string>
+    <string name="manage_services">管理服务器</string>
+    <string name="next_button">下一步</string>
+    <string name="skip_button">跳过</string>
+    <string name="done_button">完成</string>
+    <string name="new_group_header">创建群</string>
+    <string name="add_participants_empty_header">加入成员</string>
+    <string name="add_participants_count_header">添加成员 (%1$s)</string>
+    <string name="new_conv_no_results">没有结果</string>
+    <string name="new_conv_no_contacts">没有联系人</string>
+    <string name="participants_divider_services">服务 (%1$s)</string>
+    <string name="participants_divider_people">人员 (%1$s)</string>
+    <string name="group_name_hint">群名称</string>
+    <string name="allow_guests_toggle_text">允许访客服务</string>
+    <string name="allow_guests_toggle_info_text">将此对话开放给团队之外的服务人员和人员。</string>
+    <string name="read_receipts_toggle_text">已读回执</string>
+    <string name="read_receipts_toggle_info_text">当它打开时，人们可以看到他们在对话中的信息何时被读取。</string>
+    <string name="read_receipts_info_title_enabled">您已启用已读回执</string>
+    <string name="read_receipts_info_title_disabled">您已禁用已读回执</string>
+    <string name="read_receipts_info_1">如果两边都打开已读回执，您可以看到何时已读回执。</string>
+    <string name="read_receipts_info_2">你可在账号设置中更改此选项</string>
+    <string name="create_conv_options_title_text">对话选项</string>
+    <string name="create_conv_options_subtitle_allow_guests">允许访客</string>
+    <string name="create_conv_options_subtitle_read_receipts">已读回执</string>
+    <string name="create_conv_options_subtitle_on">开启</string>
+    <string name="create_conv_options_subtitle_off">关闭</string>
+    <string name="open_this_conversation_to_people_outside_your_team">将此对话开放给团队之外的服务人员和人员</string>
+    <string name="allow_guests">允许客户和服务</string>
+    <string name="guest_options_title">访客服务</string>
+    <string name="notifications_options_title">通知</string>
+    <string name="ephemeral_explanation_text">所有参与对话的人都将收到阅后即焚的消息</string>
+    <string name="notifications_explanation_text">你可以被通知任何事情(包括音频和视频通话)，或者只有当你被提到的时候才会被通知。</string>
+    <string name="allow_guests_error_title">发生了一些错误</string>
+    <string name="allow_guests_error_body">不允许访客服务。请再试一次。</string>
+    <string name="allow_guests_warning_body">当前访客服务将从对话中删除。新访客服务将不被允许</string>
+    <string name="allow_guests_warning_confirm">移除</string>
+    <string name="guests_are_present">当前访客</string>
+    <string name="services_are_present">当前服务</string>
+    <string name="guests_and_services_are_present">当前访客服务</string>
+    <string name="participants_details_header_title">详情</string>
+    <string name="invitation_link_description">任何有链接的人都可以加入对话，即使他们没有安装Secret</string>
+    <string name="create_link_button">创建链接</string>
+    <string name="copy_link_button">复制链接</string>
+    <string name="share_link_button">分享链接</string>
+    <string name="revoke_link_button">废除链接</string>
+    <string name="invitation_link_title">用链接要求其他人</string>
+    <string name="link_copied_toast">链接已复制</string>
+    <string name="revoke_link_message">新访客将无法加入此链接。目前的客人仍然可以访问</string>
+    <string name="revoke_link_confirm">废除链接</string>
+    <string name="invite_button_description">团队之外的人可以加入这个对话。</string>
+    <string name="invite_people">邀请好友</string>
+    <string name="guest_room_name">访客房间</string>
+    <string name="guest_time_left_hours">剩下 %1$sh</string>
+    <string name="guest_time_left_hours_minutes">剩下 %1$s.%2$sh</string>
+    <string name="guest_time_left_minutes">剩余时间不超过 %1$sm</string>
+    <string name="backup_description">
+        创建一个归档来保存您的会话历史。如果您丢失了您的设备或切换到一个新的设备，您可以使用此功能来恢复历史记录。归档文件不受Secret的端到端加密保护，因此将其存储在安全的地方。
+    </string>
+    <string name="backup_description_path">默认存储到SD卡的%1$s目录下。</string>
+    <string name="pref_account_backup_title">归档对话</string>
+    <string name="backup_password_dialog_title">设置密码</string>
+    <string name="backup_password_dialog_message">备份将被压缩，并且如果您设置密码，也将被加密。 确保将其存放在安全的地方</string>
+    <string name="backup_password_dialog_ok">确定</string>
+    <string name="add_email_address">添加你的邮箱地址</string>
+    <string name="set_a_password">设置密码</string>
+    <string name="email_and_password_explanation">您需要一个电子邮件地址和密码才能在多个设备上使用Secret。</string>
+    <string name="new_device_password">新设备</string>
+    <string name="new_device_password_explanation">为你的Secret账号设置密码.\n%1$s</string>
+    <string name="restore_from_backup_button">从归档中恢复</string>
+    <string name="second_launch__header">你以前在这个设备上用过Secret。</string>
+    <string name="second_launch__sub_header">如果那是很久以前的事了，这里可能不会出现一些消息。</string>
+    <string name="restore_override_alert_title">恢复历史</string>
+    <string name="restore_override_alert_text">备份内容将替换此设备上的对话历史记录。您只能从同一平台的备份中还原历史记录</string>
+    <string name="restore_override_alert_ok">选择归档文件</string>
+    <string name="back_up_progress">正在归档…</string>
+    <string name="back_up_progress_complete">完成</string>
+    <string name="restore_progress">恢复中…</string>
+    <string name="pref_account_backup_warning_title">设一个邮箱和密码</string>
+    <string name="pref_account_backup_warning_message">您需要电子邮件和密码来备份您的会话历史。您可以从帐户页面的设置</string>
+    <string name="pref_account_backup_warning_ok">好的</string>
+    <string name="export_generic_error_title">文件不能保存</string>
+    <string name="export_generic_error_text">您可能没有足够的空间或权限来保存它。</string>
+    <string name="backup_button">现在归档</string>
+    <string name="backup_import_error_unknown_title">出现错误</string>
+    <string name="backup_import_error_unknown">你的历史无法恢复。</string>
+    <string name="backup_import_error_unsupported_version_title">不兼容的归档</string>
+    <string name="backup_import_error_unsupported_version">此备份是由更新的或过时的Secret版本创建的，无法在此还原。</string>
+    <string name="backup_import_error_wrong_account_title">归档发送错误</string>
+    <string name="backup_import_error_wrong_account">无法从其他帐户还原历史</string>
+    <string name="video_paused">视频暂停</string>
+    <string name="calling_degraded_title">新设备</string>
+    <string name="call_info_text">多达300人可以加入一个小组对话。视频电话最多可以和3个人以及你一起工作</string>
+    <string name="markdown_link_dialog_title">查看链接</string>
+    <string name="markdown_link_dialog_message">这将把你带到 \n%1$s</string>
+    <string name="markdown_link_dialog_confirmation">好的</string>
+    <string name="markdown_link_dialog_cancel">取消</string>
+    <string name="max_participants_alert_title">群已满</string>
+    <string name="max_participants_create_alert_message">多达300人可以加入对话</string>
+    <string name="max_participants_add_alert_message">多达300人可以加入对话。目前只剩下%1$s的空间。</string>
+    <string name="sso_signin_button">公司账号登录</string>
+    <string name="sso_signin_error_title">出问题了</string>
+    <string name="sso_signin_error_message">详细信息请与团队管理员联系(错误%1$s)。</string>
+    <string name="sso_signin_error_try_again_message">请稍后再试 (Error %1$s).</string>
+    <string name="sso_signin_wrong_code_title">无效验证码</string>
+    <string name="sso_signin_wrong_code_message">请验证您的公司安全认证码，然后重试</string>
+    <string name="participant_search_hint">搜索名字</string>
+    <string name="participant_search_title">人</string>
+    <string name="generic_service_warning">服务器可以访问此对话的内容</string>
+    <string name="add_services_button_text">管理服务器</string>
+    <string name="wire_notification_name">Secret通知</string>
+    <string name="wire_ping_name">Secret Ping</string>
+    <string name="reply_self_name">你</string>
+    <string name="reply_message_type_image">图片</string>
+    <string name="reply_message_type_video">视频</string>
+    <string name="reply_message_type_audio">音频信息</string>
+    <string name="reply_message_type_location">位置</string>
+    <string name="reply_message_type_asset">附件</string>
+    <string name="reply_message_type_unknown">你无法看到这条信息</string>
+    <!--Two identical strings are needed for German translation-->
+    <string name="quote_timestamp_message_time">消息来自 %s</string>
+    <string name="quote_timestamp_message_date">消息来自 %s</string>
+    <string name="read_receipts_remotely_enabled_title">您已启用已读回执</string>
+    <string name="read_receipts_remotely_disabled_title">您已禁用已读回执</string>
+    <string name="read_receipts_remotely_changed_message">您可以在帐户设置中更改此选项。</string>
+    <string name="pref_data_backup_title">数据备份</string>
+    <string name="add_participants_max_count_tips">每次最多添加(%1$s)人</string>
+
+
+    <string name="toast_conv_report_nocreate">你不是群主</string>
+    <string name="toast_conv_report_noblocked">该群没有被封禁</string>
+    <string name="toast_conv_report_noconv">你不属于该群</string>
+    <string name="toast_conv_report_suc">举报成功</string>
+    <string name="toast_conv_report_always">已经举报过</string>
+    <string name="toast_conv_report_appeal_suc">申诉提交成功</string>
+    <string name="toast_conv_report_appeal_always">已经申诉过</string>
+    <string name="toast_conv_report_fail">操作失败，请稍后重试！</string>
+    <string name="toast_conv_report_min_pic">上传图片(最少一张)</string>
+
+    <string name="conversation_unknow_textjson_message_display">不支持该消息类型，请更新到最新版本</string>
+
+</resources>

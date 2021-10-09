@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<resources
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
+    <string name="conversation_detail_settings_msg_record">聊天记录</string>
+    <string name="conversation_detail_settings_create_group_chat">创建群聊</string>
+    <string name="conversation_detail_settings_remove_from_group">从群聊中移除</string>
+    <string name="conversation_detail_settings_to_chat">开始聊天</string>
+    <string name="conversation_detail_settings_push_on_black_list">加入黑名单</string>
+    <string name="conversation_detail_settings_group_name">群聊名称</string>
+    <string name="conversation_detail_settings_invite_friends_to_join_group">添加群好友</string>
+    <string name="conversation_detail_settings_leave_group">退出</string>
+    <string name="conversation_detail_settings_show_all_members">查看更多群成员</string>
+    <string name="conversation_detail_settings_code_encrypted">加密安全码</string>
+    <string name="conversation_detail_settings_burn_after_reading">阅后即焚</string>
+    <string name="conversation_detail_settings_burn_after_reading_notice">如果设置了该选项，该聊天里面发送和接收的消息将在阅读后消失。</string>
+    <string name="conversation_detail_settings_msg_has_been_encrypted">聊天信息已加密</string>
+    <string name="conversation_detail_settings_remark">设置备注</string>
+    <string name="conversation_detail_settings_chat_background">聊天背景</string>
+    <string name="conversation_detail_settings_change_chat_background">更改聊天背景</string>
+    <string name="conversation_list_encrypte_notifications">消息和通话都进行端到端加密。对话之外的任何人，甚至包含 SecretApp 都无法读取或接听。</string>
+    <string name="conversation_list_no_encrypte_notifications">此对话中的消息和通话已进行加密。对话之外的任何人，甚至包含 SecretApp 都无法读取或接听。</string>
+    <string name="conversation_detail_settings_group_nick">设置群昵称</string>
+    <string name="conversation_detail_settings_save">保存</string>
+    <string name="conversation_detail_remark">备注</string>
+    <string name="conversation_detail_group_nick">群昵称</string>
+    <string name="conversation_detail_setting_success">设置成功</string>
+    <string name="conversation_detail_setting_failure">设置失败</string>
+    <string name="conversation_detail_settings_background_apply">应用</string>
+    <string name="conversation_detail_settings_background_try_other_style">试试其他风格。</string>
+    <string name="conversation_detail_settings_background_try_other_style_anytime">随时都能尝试新鲜的主题背景。</string>
+    <string name="pick_user_warning">警告</string>
+    <string name="pick_user_ok">确定</string>
+    <string name="launch_guide_start_using">Start Using</string>
+    <string name="profile_setting_account_manager">账号管理</string>
+    <string name="profile_setting_my_qrcode">我的二维码</string>
+    <string name="head_portrait_title">头像</string>
+    <string name="device_detail_title">设备详情</string>
+    <string name="pickuser_contacts">通讯录</string>
+    <string name="conversation_group_profile_photo">群头像</string>
+    <string name="show_all_participants">查看全部 (%1$s)</string>
+    <string name="conversation_detail_settings_join_group">加入</string>
+    <string name="conversation_detail_settings_aks_join">是否加入群聊</string>
+    <string name="group_participant_invite_title">邀请%1$s加入群聊</string>
+    <string name="group_participant_invite_content">%1$s邀请%2$s加入群聊%3$s，进入可查看详情。</string>
+    <string name="group_participant_invite_tips">聊天</string>
+    <string name="group_participant_invite_confirm">确认加入群聊</string>
+    <string name="group_participant_invite_joined">已加入</string>
+    <string name="group_participant_invite_confirm_tips">加入该群聊</string>
+    <string name="group_participant_invite_refuse">拒绝加入</string>
+    <string name="group_participant_invite_total_memsum">共(%1$s)人</string>
+    <string name="navigation_menu_item_close">关闭</string>
+    <string name="group_participant_add_default_group">添加至菜单栏</string>
+    <string name="group_participant_remove_default_group">从菜单栏移除</string>
+    <string name="group_participant_user_row_creator_and_me">群主 \u0026 我</string>
+    <string name="conversation_setting_group_manage_and_me">管理员 \u0026 我</string>
+    <string name="group_participant_user_row_creator">群主</string>
+    <string name="group_participant_user_row_me">我</string>
+    <string name="group_participant_invite_enter_group_conversation">进入该群聊</string>
+    <string name="conversation_image_original">原图</string>
+    <string name="conversation_detail_settings_top_placement">置顶</string>
+    <string name="conversation_detail_settings_forbidden_title">全员禁言</string>
+    <string name="conversation_detail_settings_forbidden_describe">全员禁言启用后，只允许群主发言，进入群成员名片可对单个成员设置禁言</string>
+    <string name="conversation_detail_settings_invite_visible_title">成员邀请退出不可见</string>
+    <string name="conversation_detail_settings_forbidden_settings">设置群内禁言</string>
+    <string name="conversation_detail_settings_add_friend_settings">禁止群成员互加好友</string>
+    <string name="conversation_detail_settings_forbidden_option_title">禁言时长</string>
+    <string name="conversation_detail_settings_forbidden_open">%1$s开启了全员禁言</string>
+    <string name="conversation_detail_settings_forbidden_close">%1$s关闭了全员禁言</string>
+    <string name="conversation_detail_settings_forbidden_state">禁言中</string>
+    <string name="conversation_detail_settings_forbidden_state2">禁言中(%1$s)</string>
+    <string name="conversation_detail_settings_invite_visible_open">%1$s关闭了成员邀请退出不可见</string>
+    <string name="conversation_detail_settings_invite_visible_close">%1$s开启了成员邀请退出不可见</string>
+    <string name="conversation_detail_settings_add_friend_open">%1$s关闭了禁止群成员互加好友</string>
+    <string name="conversation_detail_settings_add_friend_close">%1$s开启了禁止群成员互加好友</string>
+    <string name="conversation_detail_settings_msg_only_to_manager_open">%1$s开启了其他成员发消息不可见</string>
+    <string name="conversation_detail_settings_msg_only_to_manager_close">%1$s关闭了其他成员发消息不可见</string>
+    <string name="conversation_detail_settings_forbidden_option_open">%1$s被群主永久禁言</string>
+    <string name="conversation_detail_settings_forbidden_option_close">%1$s被群主解除禁言</string>
+    <string name="conversation_detail_settings_forbidden_option_open2">%1$s被你永久禁言</string>
+    <string name="conversation_detail_settings_forbidden_option_close2">%1$s被你解除禁言</string>
+    <string name="conversation_detail_settings_forbidden_option_custom">自定义</string>
+    <string name="conversation_detail_settings_forbidden_option_recovery">%1$s已解禁，可以正常发言</string>
+    <string name="conversation_detail_settings_forbidden_option_time_params">%1$s被群主禁言%2$s</string>
+    <string name="conversation_detail_settings_forbidden_option_time_params2">%1$s被你禁言%2$s</string>
+    <string name="conversation_detail_settings_forbidden_option_open3">%1$s被管理员永久禁言</string>
+    <string name="conversation_detail_settings_forbidden_option_close3">%1$s被管理员解除禁言</string>
+    <string name="conversation_detail_settings_forbidden_option_time_params3">%1$s被管理员禁言%2$s</string>
+    <string name="conversation_detail_settings_forbidden_option_time_day">天</string>
+    <string name="conversation_detail_settings_forbidden_option_time_hour">小时</string>
+    <string name="conversation_detail_settings_forbidden_option_time_minute">分钟</string>
+    <string name="conversation_detail_settings_screenshot_title">截屏通知</string>
+    <string name="conversation_detail_settings_screenshot_describe">开启截屏通知后，截屏时将会在聊天页面内发送通知消息</string>
+    <string name="conversation_detail_user_permissions">无权限查看该用户信息</string>
+    <string name="conversation_detail_item_add_friend">加为好友</string>
+    <string name="conversation_detail_item_add_group_manager">%1$s 成为管理员</string>
+    <string name="conversation_detail_item_del_group_manager">%1$s 被群主解除管理员</string>
+    <string name="conversation_just_now">刚刚</string>
+    <string name="conversation_minutes_ago">分钟前</string>
+    <string name="conversation_hours_ago">小时前</string>
+    <string name="conversation_days_ago">天前</string>
+    <string name="group_total_mems">%1$s人</string>
+    <string name="server_notification_open_status">消息通知提醒</string>
+    <string name="server_notification_settings">服务通知设置</string>
+    <string name="server_notification_to_add_user">点击添加好友</string>
+    <string name="conversation_top_menu_start_group_chat">发起群聊</string>
+    <string name="conversation_top_menu_add_friend">添加好友</string>
+    <string name="conversation_top_menu_scan">扫一扫</string>
+    <string name="create_group_conversation">创建群聊</string>
+    <string name="ycuwq_datepicker_decide">确认</string>
+    <string name="more">更多</string>
+    <string name="conversation__action__sticky_top">置顶</string>
+    <string name="conversation__action__un_sticky_top">取消置顶</string>
+    <string name="basic_block_time_close">关闭</string>
+    <string name="basic_block_time_open">永久</string>
+    <string name="basic_time_minute_10">10分钟</string>
+    <string name="basic_time_hour_1">1小时</string>
+    <string name="basic_time_hour_12">12小时</string>
+    <string name="basic_time_day_1">1天</string>
+    <string name="conversation_detail_settings_inviter_list">邀请人列表</string>
+    <string name="conversation_detail_settings_invite_me">邀请我的</string>
+    <string name="conversation_detail_settings_me_invite">我邀请的 (%1$s)</string>
+    <string name="conversation_detail_check_permissions">请检查手机权限是否允许</string>
+    <string name="conversation_detail_settings_msg_only_to_manager_title">其他成员发消息不可见</string>
+    <string name="conversation_msg_only_to_manager_show">当前发送消息只有您和群内管理员可见</string>
+    <string name="conversation_mobile_contacts">手机联系人</string>
+    <string name="record_time_too_short">录音时间太短</string>
+
+    <string name="conversation_detail_settings_group_nickname">我的群昵称</string>
+    <string name="conversation_detail_settings_forbid_message_tip">管理员%1$s隐藏了一条%2$s的违规消息</string>
+    <string name="conversation_detail_settings_forbid_message_tip2">此内容违规，被管理员隐藏显示</string>
+    <string name="conversation_detail_settings_forbid_message_tip3">群主%1$s隐藏了一条%2$s的违规消息</string>
+    <string name="conversation_detail_settings_forbid_message_tip4">您隐藏了一条%1$s的违规消息</string>
+    <string name="conversation_leave_without_transfer_creator">您是本群群主，请转让群主管理权限或解散群后退出群组</string>
+
+    <string name="report_blocked_title">由于用户举报，当前群已被系统自动封禁。如群内没有违规内容，群主可申请对本群进行解封。</string>
+    <string name="report_blocked_msg">举报人数：%1$s/%2$s</string>
+    <string name="report_apply_unblock_group">申请解封</string>
+    <string name="report_content_title">请描述举报内容</string>
+    <string name="report_content_submit">提交举报</string>
+    <string name="report_apply_unblock_submit">提交</string>
+    <string name="report_type_select">请选择投诉该群的原因</string>
+    <string name="report_content_hint">请清晰详细描述举报原因</string>
+    <string name="report_apply_unblock_hint">申请解封说明</string>
+    <string name="report_content_image_title">上传图片</string>
+    <string name="picture_max_num">你最多可以选择%1$s张图片</string>
+    <string name="report_notice_content_text">当前已被%1$s%的成员举报，当举报达到%2$s%时，自动封禁群</string>
+
+    <string name="report_type_item_porn">色情</string>
+    <string name="report_type_item_contraband">违法犯罪及违禁品</string>
+    <string name="report_type_item_gaming">赌博</string>
+    <string name="report_type_item_rumor">政治谣言</string>
+    <string name="report_type_item_terror">暴恐血腥</string>
+    <string name="report_type_item_other">其他违规内容</string>
+
+    <string name="conversation_detail_settings_show_memsum_settings">显示成员数量</string>
+    <string name="conversation_detail_settings_show_memsum_open">%1$s开启了显示成员数量</string>
+    <string name="conversation_detail_settings_show_memsum_close">%1$s关闭了显示成员数量</string>
+    <string name="conversation_detail_settings_edit_msg_settings">消息可编辑、删除</string>
+    <string name="conversation_detail_settings_edit_msg_open">%1$s开启了消息可编辑、删除</string>
+    <string name="conversation_detail_settings_edit_msg_close">%1$s关闭了消息可编辑、删除</string>
+    <string name="show_all_participants_no_num">查看全部</string>
+    <string name="participants_divider_people_no_num">人员</string>
+    <string name="participants_divider_services_no_num">服务</string>
+
+    <string name="conversation_detail_settings_add_to_launcher">添加桌面快捷方式</string>
+    <string name="conversation_join_group_closed">该群已关闭链接进群</string>
+    <string name="conversation_join_group_already_in">您已经在该群中</string>
+
+    <string name="conversation_join_group_tips_warring">该群被大量用户举报，可能存在欺诈、违反地区法律等风险，请谨慎加入</string>
+    <string name="conversation_join_group_tips_error">该群被大量用户举报，可能存在欺诈、违反地区法律等风险，已禁止该链接加群</string>
+    <string name="conversation_join_group_confirm">我要加入</string>
+    <string name="conversation_join_group_cancel">暂不加入</string>
+    <string name="conversation_join_group_know">我知道了</string>
+
+    <string name="conversation_setting_not_disturb">免打扰助手</string>
+    <string name="conversation_list_stick_fold">%1$s个置顶聊天</string>
+
+    <string name="conversation_edit_single_other">对方</string>
+    <string name="conversation_edit_single_open">%1$s开启了“%2$s”功能</string>
+    <string name="conversation_edit_single_close">%1$s关闭了“%2$s”功能</string>
+    <string name="conversation_edit_single_open_sure">%1$s开启了“%2$s”功能，您是否同意？</string>
+    <string name="conversation_edit_single_close_sure">%1$s关闭了“%2$s”功能，您是否同意？</string>
+    <string name="conversation_edit_single_open_cancel">%1$s撤回了“%2$s”功能的开启</string>
+    <string name="conversation_edit_single_close_cancel">%1$s撤回了“%2$s”功能的关闭</string>
+    <string name="conversation_edit_single_open_reject">%1$s拒绝了“%2$s”功能的开启</string>
+    <string name="conversation_edit_single_close_reject">%1$s拒绝了“%2$s”功能的关闭</string>
+    <string name="conversation_edit_single_open_agree">本对话“%1$s”功能已开启</string>
+    <string name="conversation_edit_single_close_agree">本对话“%1$s”功能已关闭</string>
+
+</resources>

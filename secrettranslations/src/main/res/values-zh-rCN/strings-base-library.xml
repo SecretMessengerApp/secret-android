@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    Secret
+    Copyright (C) 2018 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+  <string name="generic_error_header">出问题了</string>
+  <string name="generic_error_message">请再次尝试</string>
+  <string name="internet_connectivity_error_header">没有网络</string>
+  <string name="internet_connectivity_error_message">请检查网络并重试</string>
+  <string name="too_many_attempts_header">尝试过多</string>
+  <string name="login_later_message">请尝试稍后登录</string>
+  <string name="email_exists_header">邮箱已存在</string>
+  <string name="email_exists_message">该邮箱已被注册</string>
+  <string name="email_invalid_header">无效邮箱地址</string>
+  <string name="email_invalid_message">请输入有效的邮箱地址</string>
+  <string name="invalid_credentials_header">无效信息</string>
+  <string name="invalid_credentials_message">请审核你的信息再尝试</string>
+  <string name="phone_exists_header">手机号码已被使用</string>
+  <string name="phone_exists_message">你提供的手机号已被注册，请重试</string>
+  <string name="phone_invalid_format_header">无效手机号</string>
+  <string name="phone_invalid_format_message">请输入有效的手机号</string>
+  <string name="phone_password_exists_header">密码已存在</string>
+  <string name="phone_password_exists_message">这个账户的密码跟邮箱关联，请用邮箱登录</string>
+  <string name="invalid_code_header">无效的验证码</string>
+  <string name="incorrect_code_header">验证码错误</string>
+  <string name="wrong_code_message">请输入正确的验证码</string>
+  <string name="phone_pending_login_header">验证码已发送</string>
+  <string name="phone_pending_login_message">我们已经通过SMS发送你一个验证码，10分钟后点击重新发送获得新的验证码</string>
+  <string name="phone_budget_exhausted_header">操作过于频繁</string>
+  <string name="phone_budget_exhausted_message">请稍后尝试</string>
+  <!--*********************************************** ERRORS ***********************************************-->
+  <!-- Registration and Sign in -->
+  <string name="new_reg__email_code_resent">一个新的验证码已发送到你的邮箱</string>
+  <!-- consider updating this for every new language -->
+  <!-- Receive email/sms invitation -->
+  <!-- People picker/start UI -->
+  <string name="choose_conversation">搜索</string>
+  <string name="people_picker__search_people">人</string>
+  <string name="people_picker__search_services">服务</string>
+  <string name="receive_news_and_offers_request_title">新闻信件</string>
+  <string name="receive_news_and_offers_request_body">你想通过Secret邮箱收取新闻和产品动态吗？你可以随时取消</string>
+  <string name="crashes_and_analytics_request_title">帮助我们让Secret更好</string>
+  <string name="crashes_and_analytics_request_body">我同意Secret可以创建并使用匿功能和错误报告来改进Secret应用程序。我可以随时撤销此同意。</string>
+  <string name="crashes_and_analytics_request_no">不</string>
+  <string name="crashes_and_analytics_request_agree">我同意</string>
+  <!-- Bots / Integrations / Services -->
+  <string name="integrations_picker__section_title">服务</string>
+  <string name="integrations_errors_add_service">不能添加服务</string>
+  <string name="integrations_errors_service_unavailable">设备目前无法使用</string>
+  <string name="conversation_errors_full">聊天已满</string>
+  <!-- start ui / people picker, contacts sharing -->
+  <!-- Invite -->
+  <!-- Should not use newline in the dialog message, not supported by all devices, text will be cut off -->
+  <!-- Conversation: Quick menu -->
+  <!-- Conversation: System messages -->
+  <string name="content__system__other_joined">[[%1$s]] 已加入</string>
+  <string name="content__system__you_joined">[[You]] 已加入</string>
+  <!-- Read receipts: System messages -->
+  <string name="content__system__read_receipts_on">已读回执已开启</string>
+  <string name="content__system__read_receipts_off">已读回执已关闭</string>
+  <string name="content__system__read_receipts_someone_turned_on">[[%1$s]] 已切换已读回执</string>
+  <string name="content__system__read_receipts_someone_turned_off">[[%1$s]] 已切换已读回执</string>
+  <string name="content__system__read_receipts_you_turned_on">[[You]] 已切换已读回执</string>
+  <string name="content__system__read_receipts_you_turned_off">[[You]] 已切换已读回执</string>
+  <!-- Add people -->
+  <string name="content__system__someone_added_people">[[%1$s]] 已添加 %2$s 到本群</string>
+  <plurals name="content__system__someone_added_people_with_others">
+    <item quantity="one">[[%1$s]] 已添加 %2$s 和 _%3$s 等人到本群_</item>
+    <item quantity="other">[[%1$s]] 已添加 %2$s 和 _%3$s 等人到本群_</item>
+  </plurals>
+  <string name="content__system__someone_added_you">[[%1$s]] 已添加你到本群</string>
+  <plurals name="content__system__someone_added_people_and_you_with_others">
+    <item quantity="one">[[%1$s]] 已添加 %2$s, 你和 _%3$s 等人到本群_</item>
+    <item quantity="other">[[%1$s]] 已添加 %2$s, 你和 _%3$s 等人到本群_</item>
+  </plurals>
+  <string name="content__system__you_added_people">你已添加 %1$s 到本群</string>
+    <string name="content__system__you_added_suc">你已添加成功</string>
+  <plurals name="content__system__you_added_people_with_others">
+    <item quantity="one">你已添加 %1$s 和 _%2$s 等人到本群_</item>
+    <item quantity="other">你已添加 %1$s 和 _%2$s 等人到本群_</item>
+  </plurals>
+  <!-- Remove people -->
+  <!-- Create conversation -->
+  <string name="content__system__you_started_conversation">你已开始聊天</string>
+  <string name="content__system__other_started_conversation">%1$s 已开始聊天</string>
+  <string name="content__system__with_you_only">和你</string>
+  <string name="content__system__with_list_only">和 %1$s</string>
+  <plurals name="content__system__with_others_only">
+    <item quantity="one">跟 %1$s 和 _%2$s 等人_</item>
+    <item quantity="other">跟 %1$s 和 _%2$s 等人_</item>
+  </plurals>
+  <string name="content__system__with_list_and_you">跟 %1$s 和你</string>
+  <plurals name="content__system__with_others_and_you">
+    <item quantity="one">跟 %1$s, 你和 _%2$s 等人_</item>
+    <item quantity="other">跟 %1$s, 你和 _%2$s 等人_</item>
+  </plurals>
+  <!-- Conversation: missed call -->
+  <!-- Conversation: E2EE system messages -->
+  <string name="content__otr__message_error_you">来自你的短信未收到，_重置Session？_</string>
+  <string name="content__otr__identity_changed_error_you">你的设备身份变了，短信未发送成功._更多_</string>
+  <string name="content__otr__someone_added_new_device__message">%1$s 开始使用_此设备_</string>
+  <string name="content__otr__someone_and_you_added_new_device__message">%1$s 和你开始使用_此设备_</string>
+  <string name="content__otr__someone_and_others_added_new_device__message">%1$s 和 %2$s 等人开始使用_此设备_</string>
+  <string name="content__otr__someone_others_and_you_added_new_device__message">%1$s, %2$s 等人和你开始使用_此设备_</string>
+  <!-- File transfer -->
+  <!-- used when there's a non-empty file extension, e.g. "300KB · PDF" -->
+  <!-- Conversation actions -->
+  <string name="conversation__action__add_participants">添加成员</string>
+  <string name="conversation__action__notifications">通知</string>
+  <string name="conversation__action__block">拉黑…</string>
+  <string name="conversation__action__unblock">取消拉黑…</string>
+  <string name="conversation__action__leave_and_delete">\t离开并删除内容</string>
+  <string name="conversation__action__leave_only">\t离开群组</string>
+  <string name="conversation__action__delete_and_leave">\t删除内容并离开</string>
+  <string name="conversation__action__delete_only">\t删除内容</string>
+  <string name="conversation__action__notifications_everything">任何内容</string>
+  <string name="conversation__action__notifications_mentions_and_replies">提醒并回复</string>
+  <string name="conversation__action__notifications_nothing">没有内容</string>
+  <string name="conversation__action__notifications_title">通知我关于：</string>
+  <!-- Conversation: Profile Popover -->
+  <!-- Calling/voice -->
+  <string name="calling__cannot_start__cancel__message">删除</string>
+  <string name="calling__cannot_start__no_camera_permission__message">Secret没有相机权限</string>
+  <string name="incoming__controls__ongoing__flip">翻转</string>
+  <string name="calling__header__incoming_subtitle__group">%1$s 正在通话…</string>
+  <string name="call_banner_joining">正在连接…</string>
+  <string name="call_banner_outgoing">正在通话 %1$s…</string>
+  <string name="call_banner_incoming">%1$s 正在通话…</string>
+  <string name="call_banner_incoming_group">%1$s \u30FB %2$s 正在通话…</string>
+  <string name="call_banner_tap_to_return_to_call">轻触回到通话 \u30FB %1$s</string>
+  <string name="calling_ongoing_call_title">正在进行的呼叫</string>
+  <string name="calling_ongoing_call_start_message">一个电话在另一个对话中是活跃的。\n在这里打电话会挂断另一个电话。</string>
+  <string name="calling_ongoing_call_start_anyway">随时打电话</string>
+  <string name="calling_ongoing_call_join_message">一个电话在另一个对话中是活跃的。\n加入这个电话将挂断其它通话。</string>
+  <string name="calling_ongoing_call_join_anyway">随时加入</string>
+  <string name="calling_ongoing_call_participants_header">成员</string>
+  <string name="calling_ongoing_call_audio_message">您不能在通话时录制音频信息</string>
+  <string name="calling_ongoing_call_video_message">您不能在通话时录制音频信息</string>
+  <!-- Calling in group conversation -->
+  <!-- Connect request -->
+  <!-- Otr-->
+  <!-- Picture selection confirmation -->
+  <!-- ADD TO CONVERSATION offline -->
+  <!-- CREATE GROUP CONVERSATION FROM 1:1 offline -->
+  <!-- Leave conversation -->
+  <!-- RE-USING: confirmation_menu.cancel -->
+  <!-- Remove from conversation dialogue -->
+  <!-- RE-USING: confirmation_menu.cancel -->
+  <!-- Block someone dialogue -->
+  <!-- RE-USING: confirmation_menu.cancel -->
+  <!-- Delete conversation -->
+  <!-- Rich media -->
+  <!-- Invite banner -->
+  <!-- Self profile -->
+  <!-- Options and settings -->
+  <!-- Options menu -->
+  <!-- Manage Team -->
+  <!-- About screen -->
+  <!-- Account -->
+  <string name="pref_account_personal_information_category_title">个人信息</string>
+  <string name="pref_account_conversations_category_title">历史</string>
+  <string name="pref_account_data_usage_permissions">数据使用权限</string>
+  <string name="pref_backup_screen_title">备份会话</string>
+  <!-- Data Usage Permissions -->
+  <string name="pref_advanced_send_anonymous_data_title">发送匿名数据</string>
+  <string name="pref_advanced_send_anonymous_data_summary">通过发送匿名使用和崩溃报告，帮助让secret 更好</string>
+  <string name="pref_advanced_receive_news_and_offers_title">收到简讯</string>
+  <string name="pref_advanced_receive_news_and_offers_summary">通过电子邮件接收来自Secret的新闻和产品更新</string>
+  <!-- Options -->
+  <string name="pref_options_vibration_title_o">振动对环</string>
+  <!-- Devices -->
+  <!-- Advanced -->
+  <string name="pref_advanced_ws_foreground_title">维护与服务器的连接</string>
+  <string name="pref_advanced_ws_foreground_summary">我们检测到没有安装谷歌服务或谷歌服务不可用。Secret将尝试保持与服务器的连接打开，以便在应用程序不在前台时接收通知。</string>
+  <string name="pref_advanced_ws_notify_manager">开启通知权限</string>
+  <string name="pref_advanced_ws_selfstart_manager">开启自启动</string>
+  <string name="pref_advanced_ws_foreground_notify">我们检测到没有开启通知权限，以便在应用程序不在前台时接收通知，请开启Secret通知权限。</string>
+  <string name="pref_advanced_ws_setting_autostart">以便在应用程序不在前台时接收通知，需要手动设置Secret允许自启动</string>
+  <!-- Support -->
+  <!-- About -->
+  <!-- Pref invite -->
+  <!-- Preference Account Actions -->
+  <string name="pref__account_privacy">隐私</string>
+  <string name="pref__account_send_read_receipts_title">发送已读回执</string>
+  <string name="pref__account_send_read_receipts_summary">当这个选项关闭时，您将无法看到其他人的收据。此设置不适用于群组对话</string>
+  <!-- No Internet connection -->
+  <!-- SHARING -->
+  <!-- Lockscreen and notifications -->
+  <string name="message_notifications_channel_name">消息</string>
+  <string name="message_notifications_channel_description">所有消息类型的通知，包括文本、图像、音频和视频消息</string>
+  <string name="incoming_call_notifications_channel_name">来电</string>
+  <string name="ping_notifications_channel_name">Pings</string>
+  <string name="ping_notifications_channel_description">当其他用户向您发出ping时的通知</string>
+  <string name="ongoing_channel_name">后台通知</string>
+  <string name="ongoing_channel_description">关于正在进行的进程或辅助操作的>通知，例如调用或保存映像</string>
+  <!-- %1$s == username, %2$s == conversation -->
+  <string name="notification__message_with_mention__name__prefix__text">提醒来自 %1$s: \u0020</string>
+  <string name="notification__message_with_mention__group__prefix__text">提醒来自 %1$s in %2$s: \u0020</string>
+  <string name="notification__message_with_quote__name__prefix__text_one2one">回复: \u0020</string>
+  <string name="notification__message_with_quote__name__prefix__text">回复来自 %1$s: \u0020</string>
+  <string name="notification__message_with_quote__group__prefix__text">回复来自 %1$s in %2$s: \u0020</string>
+  <!-- %1$s == username, %2$s == conversation -->
+  <string name="notification__message__ephemeral">发送消息</string>
+  <string name="notification__message_with_mention__ephemeral">提到你</string>
+  <string name="notification__message_with_quote__ephemeral">回复了你</string>
+  <!-- ephemeral -->
+  <string name="notification__message__ephemeral_someone">某人</string>
+  <string name="other_set_message_timer">[[%1$s]] 将消息时限设置为 [[%2$s]]</string>
+  <string name="you_set_message_timer">[[你]] 将消息时限设置为 [[%1$s]]</string>
+  <string name="other_turned_off_message_timer">[[%1$s]] 关闭了消息时限</string>
+  <string name="you_turned_off_message_timer">[[你]] 关闭了消息时限</string>
+  <!-- Others -->
+  <plurals name="content__system__other_members">
+    <item quantity="one">%1$s 等</item>
+    <item quantity="other">%1$s 等</item>
+  </plurals>
+  <!-- System notifications -->
+  <string name="system_notification__calling_one">通话中…</string>
+  <string name="system_notification__calling_group">%1$s 正在通话…</string>
+  <string name="system_notification__video_calling_one">正在视频通话…</string>
+  <string name="system_notification__video_calling_group">%1$s 正在视频通话…</string>
+  <string name="ws_foreground_notification_connected_title">连接到secret服务器</string>
+  <string name="ws_foreground_notification_no_internet_title">等待网络连接…</string>
+  <string name="ws_foreground_notification_connecting_title">建立连接…</string>
+  <!-- Notification actions -->
+  <!-- Quick reply -->
+  <!-- Save image notification -->
+  <!-- See: https://code.google.com/p/android/issues/detail?id=36744 -->
+  <!-- forced update -->
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Sharing -->
+  <!-- Sync errors -->
+  <!--Timestamp formatting-->
+  <plurals name="timestamp__x_minutes_ago_1">
+    <item quantity="zero">%1$s 分钟前</item>
+    <item quantity="one">%1$s 分钟前</item>
+    <item quantity="two">%1$s 分钟前</item>
+    <item quantity="few">%1$s 分钟前</item>
+    <item quantity="many">%1$s 分钟前</item>
+    <item quantity="other">%1$s 分钟前</item>
+  </plurals>
+  <!-- http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html -->
+  <!-- Example: FRIDAY, MAR 9, 11:29 -->
+  <!-- Example: FRIDAY, MAR 9, 2015, 11:29 -->
+  <!-- Example: MAR 9, 11:29 -->
+  <!-- Example: MAR 9, 2015, 11:29 -->
+  <!-- Example: MONDAY, 9 MARCH 2015 \u30FB 12:08 -->
+  <!-- MONDAY -->
+  <!-- MARCH 2 -->
+  <!-- MARCH 2, 2015 -->
+  <!-- 23:15 -->
+  <!-- Strings -->
+  <!-- Giphy -->
+  <!--Sketch-->
+  <!-- Location sharing -->
+  <!-- From SyncEngine -->
+  <!-- OTR -->
+  <string name="otr__remove_device__are_you_sure">确定吗?</string>
+  <!-- OTR Participants -->
+  <!-- Conversation Toolbar -->
+  <!-- Asset upload errors -->
+  <!-- Video message errors -->
+  <!-- Audio bit rate mode -->
+  <!-- no contacts -->
+  <string name="tooltip_mention">添加提醒</string>
+  <string name="empty_string"></string>
+  <!-- Delete -->
+  <!-- video message preview -->
+    <string name="message_bottom_menu_action_hideforbid">违规</string>
+    <string name="message_bottom_menu_action_hideforbid_prompt">是否把这条消息标记为违规消息？ 标记之后将会隐藏展示</string>
+  <string name="message_bottom_menu_action_details">详情</string>
+  <string name="message_liked_title">点赞</string>
+  <string name="message_details_sent">已发送</string>
+  <string name="message_details_last_edited">编辑</string>
+  <string name="message_footer__status__waiting_for_connection">等待连接…</string>
+  <string name="message_footer__status__read">%1$s \u30FB @ %2$s</string>
+  <string name="message_footer__status__read_group">%1$s \u30FB @ %2$s</string>
+  <string name="message_footer__status__edited">被编辑: %1$s</string>
+  <string name="ephemeral_message__options_header">阅后即焚消息</string>
+  <plurals name="unit_years">
+    <item quantity="zero">%1$s 年</item>
+    <item quantity="one">%1$s 年</item>
+    <item quantity="other">%1$s 年</item>
+  </plurals>
+  <plurals name="unit_weeks">
+    <item quantity="zero">%1$s 周</item>
+    <item quantity="one">%1$s 周</item>
+    <item quantity="other">%1$s 周</item>
+  </plurals>
+  <plurals name="unit_days">
+    <item quantity="zero">%1$s 天</item>
+    <item quantity="one">%1$s 天</item>
+    <item quantity="other">%1$s 天</item>
+  </plurals>
+  <plurals name="unit_hours">
+    <item quantity="zero">%1$s 小时</item>
+    <item quantity="one">%1$s 小时</item>
+    <item quantity="other">%1$s 小时</item>
+  </plurals>
+  <plurals name="unit_minutes">
+    <item quantity="zero">%1$s 分钟</item>
+    <item quantity="one">%1$s 分钟</item>
+    <item quantity="other">%1$s 分钟</item>
+  </plurals>
+  <plurals name="unit_seconds">
+    <item quantity="zero">%1$s 秒</item>
+    <item quantity="one">%1$s 秒</item>
+    <item quantity="other">%1$s 秒</item>
+  </plurals>
+  <string name="ephemeral_message_footer_multiple_units">还剩下%1$s:%2$s</string>
+  <string name="ephemeral_message_footer_single_unit">还剩下%1$s</string>
+  <!-- Conversation List -->
+  <plurals name="conversation_list__missed_calls_plural">
+    <item quantity="one">%1$s 未接电话</item>
+    <item quantity="other">%1$s 未接电话</item>
+  </plurals>
+  <string name="conversation_list__missed_calls_count">未接电话</string>
+  <string name="conversation_list__missed_calls_count_group">未接电话来自 %1$s</string>
+  <plurals name="conversation_list__mentions_count">
+    <item quantity="one">%1$s 提醒</item>
+    <item quantity="other">%1$s 提醒</item>
+  </plurals>
+  <plurals name="conversation_list__quotes_count">
+    <item quantity="one">%1$s 回复</item>
+    <item quantity="other">%1$s 回复</item>
+  </plurals>
+  <string name="conversation_list__single_eph_and_mention">提到了你</string>
+  <string name="conversation_list__group_eph_and_mention">有人提到了你</string>
+  <string name="conversation_list__single_eph_and_quote">回复了你</string>
+  <string name="conversation_list__group_eph_and_quote">有人回复了你</string>
+  <string name="conversation_list__single_with_quote">回复: %1$s</string>
+  <string name="conversation_list__group_with_quote">回复来自 %1$s: %2$s</string>
+  <string name="conversation_list__single_without_quote">%1$s</string>
+  <string name="conversation_list__group_without_quote">[[%1$s]]: %2$s</string>
+  <string name="availability_none">空</string>
+  <string name="availability_available">可行</string>
+  <string name="availability_away">离开</string>
+  <string name="availability_busy">忙碌</string>
+  <string name="availability_text_available">%1$s 是可用的</string>
+  <string name="availability_text_away">%1$s 离开了</string>
+  <string name="availability_text_busy">%1$s 正忙</string>
+  <string name="availability_setstatus">设置一个状态</string>
+  <string name="friend_request_text">好友申请</string>
+
+
+  <string name="emoji_add">添加</string>
+  <string name="emoji_set_add">添加</string>
+  <string name="emoji_set_remove">移除</string>
+  <string name="emoji_already_add">已添加</string>
+  <string name="emoji_menu_send">发送表情</string>
+  <string name="emoji_menu_favorite">加入收藏</string>
+  <string name="emoji_menu_sticker_set">查看专辑</string>
+  <string name="emoji_gif_message_subtitle">[动画表情]</string>
+  <string name="emoji_gif_empty_saved">暂无数据</string>
+  <string name="emoji_gif_empty_recently">暂无数据</string>
+  <string name="emoji_gif_recently_tips">最近使用</string>
+  <string name="emoji_settings">表情设置</string>
+  <string name="emoji_settings_hot">热门表情包</string>
+  <string name="emoji_settings_my_tips">我的表情</string>
+  <string name="emoji_gif_count">%1$d 个表情</string>
+
+  <string name="group_notice_saving">正在保存…</string>
+  <string name="group_notice_clear">清空</string>
+  <string name="group_notice_know">我知道了</string>
+  <string name="group_notice_continue_edit">继续编辑</string>
+  <string name="group_notice_already_publish">已发布</string>
+  <string name="group_notice_already_clear">已清空</string>
+  <string name="group_notice_tip_clear">确定清空群公告？</string>
+  <string name="group_notice_tip_publish">该公告会通知全部群成员，且会自动通知新成员，是否发布？</string>
+  <string name="group_notice_tip_exit">退出本次编辑？</string>
+
+
+  <string name="dark_mode">深色模式</string>
+  <string name="dark_mode_normal">普通模式</string>
+  <string name="dark_mode_enabled">已开启</string>
+  <string name="dark_mode_disabled">已关闭</string>
+  <string name="dark_mode_follow_system">跟随系统</string>
+  <string name="dark_mode_follow_system_tip">开启后，将跟随系统打开或关闭深色模式</string>
+  <string name="dark_mode_select_manually">手动选择</string>
+
+
+</resources>

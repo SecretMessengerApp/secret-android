@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+    <string name="generic_error_header">Something went wrong</string>
+    <string name="generic_error_message">Please try again</string>
+    <string name="internet_connectivity_error_header">No Internet Connection</string>
+    <string name="internet_connectivity_error_message">Please check your Internet connection and try again</string>
+    <string name="too_many_attempts_header">Too many attempts</string>
+    <string name="login_later_message">Please try to log in later</string>
+    <string name="email_exists_header">Email address already taken</string>
+    <string name="email_exists_message">This email address has already been registered</string>
+    <string name="email_invalid_header">Invalid email address</string>
+    <string name="email_invalid_message">Please enter a valid email address</string>
+    <string name="invalid_credentials_header">Invalid information</string>
+    <string name="invalid_credentials_message">Please verify your details and try again</string>
+    <string name="phone_exists_header">Phone number already taken</string>
+    <string name="phone_exists_message">The phone number you provided has already been registered. Please try again
+    </string>
+    <string name="phone_invalid_format_header">Invalid phone number</string>
+    <string name="phone_invalid_format_message">Please enter a valid phone number</string>
+    <string name="phone_password_exists_header">Password exists</string>
+    <string name="phone_password_exists_message">This account already has a password and email associated. Please log in
+        by email.
+    </string>
+    <string name="invalid_code_header">Invalid code</string>
+    <string name="incorrect_code_header">Incorrect Code</string>
+    <string name="wrong_code_message">Please enter a valid code</string>
+    <string name="phone_pending_login_header">Code Already Sent</string>
+    <string name="phone_pending_login_message">We already sent you a code via SMS. Tap Resend after 10 minutes to get a
+        new one.
+    </string>
+    <string name="phone_budget_exhausted_header">Too many requests</string>
+    <string name="phone_budget_exhausted_message">Please try again later.</string>
+    <!--*********************************************** ERRORS ***********************************************-->
+    <!-- Registration and Sign in -->
+    <string name="new_reg__email_code_resent">A new code was sent to you via email</string>
+    <!-- consider updating this for every new language -->
+    <!-- Receive email/sms invitation -->
+    <!-- People picker/start UI -->
+    <string name="choose_conversation">SEARCH</string>
+    <string name="people_picker__search_people">PEOPLE</string>
+    <string name="people_picker__search_services">SERVICES</string>
+    <string name="receive_news_and_offers_request_title">Newsletter</string>
+    <string name="receive_news_and_offers_request_body">Do you want to receive news and product updates from Secret via
+        email? You can unsubscribe at any time.
+    </string>
+    <string name="crashes_and_analytics_request_title">Help us make Secret better</string>
+    <string name="crashes_and_analytics_request_body">I agree that Secret may create and use anonymous usage and error
+        reports to improve the Secret App. I can revoke this consent at any time.
+    </string>
+    <string name="crashes_and_analytics_request_no">No</string>
+    <string name="crashes_and_analytics_request_agree">I Agree</string>
+    <!-- Bots / Integrations / Services -->
+    <string name="integrations_picker__section_title">Services</string>
+    <string name="integrations_errors_add_service">Adding service not possible</string>
+    <string name="integrations_errors_service_unavailable">The service is unavailable at the moment</string>
+    <string name="conversation_errors_full">The conversation is full</string>
+    <!-- start ui / people picker, contacts sharing -->
+    <!-- Invite -->
+    <!-- Should not use newline in the dialog message, not supported by all devices, text will be cut off -->
+    <!-- Conversation: Quick menu -->
+    <!-- Conversation: System messages -->
+    <string name="content__system__other_joined">[[%1$s]] joined</string>
+    <string name="content__system__you_joined">[[You]] joined</string>
+    <!-- Read receipts: System messages -->
+    <string name="content__system__read_receipts_on">Read receipts are on</string>
+    <string name="content__system__read_receipts_off">Read receipts are off</string>
+    <string name="content__system__read_receipts_someone_turned_on">[[%1$s]] turned read receipts on for everyone
+    </string>
+    <string name="content__system__read_receipts_someone_turned_off">[[%1$s]] turned read receipts off for everyone
+    </string>
+    <string name="content__system__read_receipts_you_turned_on">[[You]] turned read receipts on for everyone</string>
+    <string name="content__system__read_receipts_you_turned_off">[[You]] turned read receipts off for everyone</string>
+    <!-- Add people -->
+    <string name="content__system__someone_added_people">[[%1$s]] added %2$s to the conversation</string>
+    <plurals name="content__system__someone_added_people_with_others">
+        <item quantity="one">[[%1$s]] added %2$s and _%3$s other to the conversation_</item>
+        <item quantity="other">[[%1$s]] added %2$s and _%3$s others to the conversation_</item>
+    </plurals>
+    <string name="content__system__someone_added_you">[[%1$s]] added you to the conversation</string>
+    <plurals name="content__system__someone_added_people_and_you_with_others">
+        <item quantity="one">[[%1$s]] added %2$s, you and _%3$s other to the conversation_</item>
+        <item quantity="other">[[%1$s]] added %2$s, you and _%3$s others to the conversation_</item>
+    </plurals>
+    <string name="content__system__you_added_people">You added %1$s to the conversation</string>
+    <string name="content__system__you_added_suc">You added to the conversation</string>
+    <plurals name="content__system__you_added_people_with_others">
+        <item quantity="one">You added %1$s and _%2$s other to the conversation_</item>
+        <item quantity="other">You added %1$s and _%2$s others to the conversation_</item>
+    </plurals>
+    <!-- Remove people -->
+    <!-- Create conversation -->
+    <string name="content__system__you_started_conversation">You started the conversation</string>
+    <string name="content__system__other_started_conversation">%1$s started the conversation</string>
+    <string name="content__system__with_you_only">with you</string>
+    <string name="content__system__with_list_only">with %1$s</string>
+    <plurals name="content__system__with_others_only">
+        <item quantity="one">with %1$s and _%2$s other_</item>
+        <item quantity="other">with %1$s and _%2$s others_</item>
+    </plurals>
+    <string name="content__system__with_list_and_you">with %1$s and you</string>
+    <plurals name="content__system__with_others_and_you">
+        <item quantity="one">with %1$s, you and _%2$s other_</item>
+        <item quantity="other">with %1$s, you and _%2$s others_</item>
+    </plurals>
+    <!-- Conversation: missed call -->
+    <!-- Conversation: E2EE system messages -->
+    <string name="content__otr__message_error_you">A MESSAGE FROM YOU WAS NOT RECEIVED. _RESET SESSION?_</string>
+    <string name="content__otr__identity_changed_error_you">YOUR DEVICE IDENTITY CHANGED. UNDELIVERED MESSAGE. _LEARN
+        MORE_
+    </string>
+    <string name="content__otr__someone_added_new_device__message">%1$s started using a _new device_</string>
+    <string name="content__otr__someone_and_you_added_new_device__message">%1$s and you started using a _new device_
+    </string>
+    <string name="content__otr__someone_and_others_added_new_device__message">%1$s and %2$s others started using a _new
+        device_
+    </string>
+    <string name="content__otr__someone_others_and_you_added_new_device__message">%1$s, %2$s others and you started
+        using a _new device_
+    </string>
+    <!-- File transfer -->
+    <!-- used when there's a non-empty file extension, e.g. "300KB · PDF" -->
+    <!-- Conversation actions -->
+    <string name="conversation__action__add_participants">ADD PARTICIPANTS</string>
+    <string name="conversation__action__notifications">Notifications…</string>
+    <string name="conversation__action__block">Block…</string>
+    <string name="conversation__action__unblock">Unblock</string>
+    <string name="conversation__action__leave_and_delete">\tLeave and delete content</string>
+    <string name="conversation__action__leave_only">\tLeave group</string>
+    <string name="conversation__action__delete_and_leave">\tDelete content and leave</string>
+    <string name="conversation__action__delete_only">\tDelete content</string>
+    <string name="conversation__action__notifications_everything">Everything</string>
+    <string name="conversation__action__notifications_mentions_and_replies">Mentions and Replies</string>
+    <string name="conversation__action__notifications_nothing">Nothing</string>
+    <string name="conversation__action__notifications_title">Notify me about:</string>
+    <!-- Conversation: Profile Popover -->
+    <!-- Calling/voice -->
+    <string name="calling__cannot_start__cancel__message">CANCEL</string>
+    <string name="calling__cannot_start__no_camera_permission__message">Secret doesn\'t have access to the camera
+    </string>
+    <string name="incoming__controls__ongoing__flip">FLIP</string>
+    <string name="calling__header__incoming_subtitle__group">%1$s is calling…</string>
+    <string name="call_banner_joining">Connecting…</string>
+    <string name="call_banner_outgoing">Calling %1$S…</string>
+    <string name="call_banner_incoming">%1$s is calling…</string>
+    <string name="call_banner_incoming_group">%1$s \u30FB %2$s is calling…</string>
+    <string name="call_banner_tap_to_return_to_call">Tap to return to call \u30FB %1$s</string>
+    <string name="calling_ongoing_call_title">Ongoing call</string>
+    <string name="calling_ongoing_call_start_message">A call is active in another conversation.\nCalling here will hang
+        up the other call.
+    </string>
+    <string name="calling_ongoing_call_start_anyway">CALL ANYWAY</string>
+    <string name="calling_ongoing_call_join_message">A call is active in another conversation.\nJoining this call will
+        hang up the other one.
+    </string>
+    <string name="calling_ongoing_call_join_anyway">JOIN ANYWAY</string>
+    <string name="calling_ongoing_call_participants_header">PARTICIPANTS</string>
+    <string name="calling_ongoing_call_audio_message">You can\'t record an audio message while on a call</string>
+    <string name="calling_ongoing_call_video_message">You can\'t record a video message while on a call</string>
+    <!-- Calling in group conversation -->
+    <!-- Connect request -->
+    <!-- Otr-->
+    <!-- Picture selection confirmation -->
+    <!-- ADD TO CONVERSATION offline -->
+    <!-- CREATE GROUP CONVERSATION FROM 1:1 offline -->
+    <!-- Leave conversation -->
+    <!-- RE-USING: confirmation_menu.cancel -->
+    <!-- Remove from conversation dialogue -->
+    <!-- RE-USING: confirmation_menu.cancel -->
+    <!-- Block someone dialogue -->
+    <!-- RE-USING: confirmation_menu.cancel -->
+    <!-- Delete conversation -->
+    <!-- Rich media -->
+    <!-- Invite banner -->
+    <!-- Self profile -->
+    <!-- Options and settings -->
+    <!-- Options menu -->
+    <!-- Manage Team -->
+    <!-- About screen -->
+    <!-- Account -->
+    <string name="pref_account_personal_information_category_title">Personal Information</string>
+    <string name="pref_account_conversations_category_title">History</string>
+    <string name="pref_account_data_usage_permissions">Data Usage Permissions</string>
+    <string name="pref_backup_screen_title">Back Up Conversations</string>
+    <!-- Data Usage Permissions -->
+    <string name="pref_advanced_send_anonymous_data_title">Send Anonymous Data</string>
+    <string name="pref_advanced_send_anonymous_data_summary">Help make Secret better by sending anonymous usage and
+        crash reports.
+    </string>
+    <string name="pref_advanced_receive_news_and_offers_title">Receive Newsletter</string>
+    <string name="pref_advanced_receive_news_and_offers_summary">Receive news and product updates from Secret via
+        email.
+    </string>
+    <!-- Options -->
+    <string name="pref_options_vibration_title_o">Vibrate on ring</string>
+    <!-- Devices -->
+    <!-- Advanced -->
+    <string name="pref_advanced_ws_foreground_title">Maintain connection to server</string>
+    <string name="pref_advanced_ws_foreground_summary">We have detected that Google Play Services are not installed. Secret will try to keep a connection with the server open to receive notifications while the application is not in the foreground.
+    </string>
+    <string name="pref_advanced_ws_notify_manager">Turn on notification permissions</string>
+    <string name="pref_advanced_ws_selfstart_manager">Turn on self-start permissions</string>
+    <string name="pref_advanced_ws_foreground_notify">We detected no notification permission, To receive notifications when the app is not in the foreground, Please turn on Secret notification permissions.</string>
+    <string name="pref_advanced_ws_setting_autostart">To receive notifications when the app is not in the foreground, Need to manually set the Secret to allow self-starting.</string>
+    <!-- Support -->
+    <!-- About -->
+    <!-- Pref invite -->
+    <!-- Preference Account Actions -->
+    <string name="pref__account_privacy">Privacy</string>
+    <string name="pref__account_send_read_receipts_title">Send Read Receipts</string>
+    <string name="pref__account_send_read_receipts_summary">When this is off, you won’t be able to see read receipts
+        from other people. This setting does not apply to group conversations.
+    </string>
+    <!-- No Internet connection -->
+    <!-- SHARING -->
+    <!-- Lockscreen and notifications -->
+    <string name="message_notifications_channel_name">Messages</string>
+    <string name="message_notifications_channel_description">Notifications for all message types, including text,
+        images, audio and video messages.
+    </string>
+    <string name="incoming_call_notifications_channel_name">Incoming Calls</string>
+    <string name="ping_notifications_channel_name">Pings</string>
+    <string name="ping_notifications_channel_description">Notifications when other users ping you</string>
+    <string name="ongoing_channel_name">Background notifications</string>
+    <string name="ongoing_channel_description">Notifications about ongoing processes or secondary actions, such as calls
+        or saving an image
+    </string>
+    <!-- %1$s == username, %2$s == conversation -->
+    <string name="notification__message_with_mention__name__prefix__text">Mention from %1$s: \u0020</string>
+    <string name="notification__message_with_mention__group__prefix__text">Mention from %1$s in %2$s: \u0020</string>
+    <string name="notification__message_with_quote__name__prefix__text_one2one">Reply: \u0020</string>
+    <string name="notification__message_with_quote__name__prefix__text">Reply from %1$s: \u0020</string>
+    <string name="notification__message_with_quote__group__prefix__text">Reply from %1$s in %2$s: \u0020</string>
+    <!-- %1$s == username, %2$s == conversation -->
+    <string name="notification__message__ephemeral">Sent a message</string>
+    <string name="notification__message_with_mention__ephemeral">Mentioned you</string>
+    <string name="notification__message_with_quote__ephemeral">Replied to you</string>
+    <!-- ephemeral -->
+    <string name="notification__message__ephemeral_someone">Someone</string>
+    <string name="other_set_message_timer">[[%1$s]] set the message timer limit to [[%2$s]]</string>
+    <string name="you_set_message_timer">[[You]] set the message timer limit to [[%1$s]]</string>
+    <string name="other_turned_off_message_timer">[[%1$s]] turned off the message timer limit</string>
+    <string name="you_turned_off_message_timer">[[You]] turned off the message timer limit</string>
+    <!-- Others -->
+    <plurals name="content__system__other_members">
+        <item quantity="one">%1$s other</item>
+        <item quantity="other">%1$s others</item>
+    </plurals>
+    <!-- System notifications -->
+    <string name="system_notification__calling_one">Calling…</string>
+    <string name="system_notification__calling_group">%1$s is calling…</string>
+    <string name="system_notification__video_calling_one">Calling with video…</string>
+    <string name="system_notification__video_calling_group">%1$s is calling with video…</string>
+    <string name="ws_foreground_notification_connected_title">Connected to Secret server</string>
+    <string name="ws_foreground_notification_no_internet_title">Waiting for Internet connection…</string>
+    <string name="ws_foreground_notification_connecting_title">Establishing connection…</string>
+    <!-- Notification actions -->
+    <!-- Quick reply -->
+    <!-- Save image notification -->
+    <!-- See: https://code.google.com/p/android/issues/detail?id=36744 -->
+    <!-- forced update -->
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Sharing -->
+    <!-- Sync errors -->
+    <!--Timestamp formatting-->
+    <plurals name="timestamp__x_minutes_ago_1">
+        <item quantity="zero">%1$s minutes ago</item>
+        <item quantity="one">%1$s minute ago</item>
+        <item quantity="two">%1$s minutes ago</item>
+        <item quantity="few">%1$s minutes ago</item>
+        <item quantity="many">%1$s minutes ago</item>
+        <item quantity="other">%1$s minutes ago</item>
+    </plurals>
+    <!-- http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html -->
+    <!-- Example: FRIDAY, MAR 9, 11:29 -->
+    <!-- Example: FRIDAY, MAR 9, 2015, 11:29 -->
+    <!-- Example: MAR 9, 11:29 -->
+    <!-- Example: MAR 9, 2015, 11:29 -->
+    <!-- Example: MONDAY, 9 MARCH 2015 \u30FB 12:08 -->
+    <!-- MONDAY -->
+    <!-- MARCH 2 -->
+    <!-- MARCH 2, 2015 -->
+    <!-- 23:15 -->
+    <!-- Strings -->
+    <!-- Giphy -->
+    <!--Sketch-->
+    <!-- Location sharing -->
+    <!-- From SyncEngine -->
+    <!-- OTR -->
+    <string name="otr__remove_device__are_you_sure">Are you sure?</string>
+    <!-- OTR Participants -->
+    <!-- Conversation Toolbar -->
+    <!-- Asset upload errors -->
+    <!-- Video message errors -->
+    <!-- Audio bit rate mode -->
+    <!-- no contacts -->
+    <string name="tooltip_mention">Add mention</string>
+    <string name="empty_string"></string>
+    <!-- Delete -->
+    <!-- video message preview -->
+    <string name="message_bottom_menu_action_hideforbid">Violation message</string>
+    <string name="message_bottom_menu_action_hideforbid_prompt">Would you like to mark this message as a violation? It will be hidden after marking</string>
+    <string name="message_bottom_menu_action_details">Details</string>
+    <string name="message_liked_title">Liked</string>
+    <string name="message_details_sent">Sent</string>
+    <string name="message_details_last_edited">Edited</string>
+    <string name="message_footer__status__waiting_for_connection">Waiting for connection…</string>
+    <string name="message_footer__status__read">%1$s \u30FB @ %2$s</string>
+    <string name="message_footer__status__read_group">%1$s \u30FB @ %2$s</string>
+    <string name="message_footer__status__edited">Edited: %1$s</string>
+    <string name="ephemeral_message__options_header">Timed messages</string>
+    <plurals name="unit_years">
+        <item quantity="zero">%1$s years</item>
+        <item quantity="one">%1$s year</item>
+        <item quantity="other">%1$s years</item>
+    </plurals>
+    <plurals name="unit_weeks">
+        <item quantity="zero">%1$s weeks</item>
+        <item quantity="one">%1$s week</item>
+        <item quantity="other">%1$s weeks</item>
+    </plurals>
+    <plurals name="unit_days">
+        <item quantity="zero">%1$s days</item>
+        <item quantity="one">%1$s day</item>
+        <item quantity="other">%1$s days</item>
+    </plurals>
+    <plurals name="unit_hours">
+        <item quantity="zero">%1$s hours</item>
+        <item quantity="one">%1$s hour</item>
+        <item quantity="other">%1$s hours</item>
+    </plurals>
+    <plurals name="unit_minutes">
+        <item quantity="zero">%1$s minutes</item>
+        <item quantity="one">%1$s minute</item>
+        <item quantity="other">%1$s minutes</item>
+    </plurals>
+    <plurals name="unit_seconds">
+        <item quantity="zero">%1$s seconds</item>
+        <item quantity="one">%1$s second</item>
+        <item quantity="other">%1$s seconds</item>
+    </plurals>
+    <string name="ephemeral_message_footer_multiple_units">%1$s and %2$s remaining</string>
+    <string name="ephemeral_message_footer_single_unit">%1$s remaining</string>
+    <!-- Conversation List -->
+    <plurals name="conversation_list__missed_calls_plural">
+        <item quantity="one">%1$s missed call</item>
+        <item quantity="other">%1$s missed calls</item>
+    </plurals>
+    <string name="conversation_list__missed_calls_count">Missed call</string>
+    <string name="conversation_list__missed_calls_count_group">Missed call from %1$s</string>
+    <plurals name="conversation_list__mentions_count">
+        <item quantity="one">%1$s mention</item>
+        <item quantity="other">%1$s mentions</item>
+    </plurals>
+    <plurals name="conversation_list__quotes_count">
+        <item quantity="one">%1$s reply</item>
+        <item quantity="other">%1$s replies</item>
+    </plurals>
+    <string name="conversation_list__single_eph_and_mention">Mentioned you</string>
+    <string name="conversation_list__group_eph_and_mention">Someone mentioned you</string>
+    <string name="conversation_list__single_eph_and_quote">Replied to you</string>
+    <string name="conversation_list__group_eph_and_quote">Someone replied to you</string>
+    <string name="conversation_list__single_with_quote">Reply: %1$s</string>
+    <string name="conversation_list__group_with_quote">Reply from %1$s: %2$s</string>
+    <string name="conversation_list__single_without_quote">%1$s</string>
+    <string name="conversation_list__group_without_quote">[[%1$s]]: %2$s</string>
+    <string name="availability_none">None</string>
+    <string name="availability_available">Available</string>
+    <string name="availability_away">Away</string>
+    <string name="availability_busy">Busy</string>
+    <string name="availability_text_available">%1$s IS AVAILABLE</string>
+    <string name="availability_text_away">%1$s IS AWAY</string>
+    <string name="availability_text_busy">%1$s IS BUSY</string>
+    <string name="availability_setstatus">SET A STATUS</string>
+    <string name="friend_request_text">Friend requests</string>
+
+
+    <string name="emoji_add">ADD</string>
+    <string name="emoji_set_add">Add</string>
+    <string name="emoji_set_remove">Remove</string>
+    <string name="emoji_already_add">ADDED</string>
+    <string name="emoji_menu_send">Send Sticker</string>
+    <string name="emoji_menu_favorite">Add to Favorites</string>
+    <string name="emoji_menu_sticker_set">View Sticker Set</string>
+    <string name="emoji_gif_message_subtitle">[Sticker]</string>
+    <string name="emoji_gif_empty_saved">No Saved GIFs</string>
+    <string name="emoji_gif_empty_recently">No Recently</string>
+    <string name="emoji_gif_recently_tips">RECENTLY USED</string>
+    <string name="emoji_settings">Emoji Settings</string>
+    <string name="emoji_settings_hot">Popular Emoticons</string>
+    <string name="emoji_settings_my_tips">My Emoticons</string>
+    <string name="emoji_gif_count">%1$d stickers</string>
+
+    <string name="group_notice_saving">Saving...</string>
+    <string name="group_notice_clear">Clear</string>
+    <string name="group_notice_know">I know</string>
+    <string name="group_notice_continue_edit">Continue editing</string>
+    <string name="group_notice_already_publish">Released</string>
+    <string name="group_notice_already_clear">Have to empty</string>
+    <string name="group_notice_tip_clear">Determine clear group notice?</string>
+    <string name="group_notice_tip_publish">This notice will be notified to all group members and new members will be automatically notified,will it be released?</string>
+    <string name="group_notice_tip_exit">Exit this edit?</string>
+
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_normal">Normal Mode</string>
+    <string name="dark_mode_enabled">Enabled</string>
+    <string name="dark_mode_disabled">Disabled</string>
+    <string name="dark_mode_follow_system">Auto</string>
+    <string name="dark_mode_follow_system_tip">When enabled，Secret will switch dark mode on/off to match your system settings.</string>
+    <string name="dark_mode_select_manually">Select manually</string>
+
+
+</resources>

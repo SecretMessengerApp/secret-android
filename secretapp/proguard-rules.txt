@@ -1,0 +1,331 @@
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+   public *;
+}
+
+
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-keepclassmembers class com.waz.zclient.views.** {
+   void set*(***);
+   *** get*();
+}
+
+-keepclassmembers class com.jsy.common.views.** {
+   void set*(***);
+   *** get*();
+}
+
+# Needed for logging
+-keepclassmembers class * { public java.lang.String toString(); }
+
+-keep class scala.concurrent.forkjoin.** { *; }
+-keep class org.webrtc.** { *; }
+-keep class com.waz.call.FlowManager { *; }
+-keep class com.waz.avs.VideoRenderer { *; }
+-keep class com.waz.call.CaptureDevice { *; }
+-keep class com.waz.media.manager.** { *; }
+-keep class com.waz.service.call.** { *; }
+-keep class com.jsy.secret.BuildConfig { *; }
+-keep class com.waz.zclient.BuildConfig { *; }
+-keep class com.waz.utils.** { *; }
+-keep class com.waz.Control { *; }
+-keep class com.waz.CacheLike { *; }
+-keep class com.waz.ControlMacros { *; }
+
+
+-keepclassmembers class **.R$* {public static <fields>;}
+-keep class **.R$*
+
+-dontwarn org.joda.convert.**
+-dontwarn scala.**
+# temporary workaround; see Scala issue SI-5397
+-keep class scala.collection.SeqLike {
+    public protected *;
+}
+-dontwarn sun.misc.Unsafe
+
+# keep line numbers
+-renamesourcefileattribute SourceFile
+-keepattributes SourceFile,LineNumberTable
+
+# Google play services specific
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+-keepnames class * implements java.io.Serializable
+-keepclassmembers class * implements java.io.Serializable {
+static final long serialVersionUID;
+private static final java.io.ObjectStreamField[] serialPersistentFields;
+!static !transient <fields>;
+private void writeObject(java.io.ObjectOutputStream);
+private void readObject(java.io.ObjectInputStream);
+java.lang.Object writeReplace();
+java.lang.Object readResolve();
+}
+
+# keep setters in controllers so that animations can still work
+-keepclassmembers class com.waz.zclient.controllers.** {
+   void set*(***);
+   *** get*();
+}
+
+-ignorewarnings
+
+# For Localytics
+-keep class com.localytics.android.** { *; }
+-keepattributes JavascriptInterface
+-keepclassmembers class * {
+@android.webkit.JavascriptInterface <methods>;
+}
+
+-keepattributes Annotation
+
+# Required for attribution
+-keep class com.google.android.gms.ads.** { *; }
+
+# Required for Google Play Services (see http://developer.android.com/google/play-services/setup.html)
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+# End of Localytics config
+
+# For Spotify
+-dontwarn retrofit.**
+-keep class retrofit.** { *; }
+-keepattributes Exceptions, Signature, InnerClasses, *Annotation*
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.** {*;}
+-keep public class com.google.gson.**
+-keep public class com.google.gson.** {public private protected *;}
+-keep class kaaes.spotify.webapi.android.** { *; }
+-keep class com.spotify.** { *; }
+-keepclasseswithmembernames,includedescriptorclasses class * {
+    native <methods>;
+}
+
+-keep class com.waz.utils.wrappers.** { *; }
+-keep public class * extends com.waz.utils.wrappers.**
+
+# For JSR310
+-dontwarn java.util.spi.LocaleServiceProvider
+-dontwarn sun.util.calendar.*
+-keep class org.threeten.bp.zone.*
+
+# For Localytics GCM
+-keep class com.google.android.gms.gcm.** { *; }
+
+# For E2EE
+-keep class com.wire.cryptobox.** { *; }
+
+# For funky MiPad NDK crash
+-keep class com.waz.utils.scrypt.** { *; }
+
+# Avs SoundLink
+-keep class com.waz.soundlink.SoundLinkAPI { *; }
+
+# Video parsing tools for video message preview
+-keep class * implements com.coremedia.iso.boxes.Box { *; }
+-dontwarn com.coremedia.iso.boxes.**
+-dontwarn com.googlecode.mp4parser.authoring.tracks.mjpeg.**
+-dontwarn com.googlecode.mp4parser.authoring.tracks.ttml.**
+
+## JNA classes for calling v3
+-keep class * extends com.sun.jna.** { *; }
+-keep class com.sun.jna.** { *; }
+
+-keep class com.tencent.**
+-keep class com.tencent.**{*;}
+
+#ormlite START
+-dontwarn com.j256.ormlite.**
+-keep class com.j256.**
+-keepclassmembers class com.j256.** { *; }
+-keep enum com.j256.**
+-keepclassmembers enum com.j256.** { *; }
+-keep interface com.j256.**
+-keepclassmembers interface com.j256.** { *; }
+
+-keepclasseswithmembers class com.jsy.common.model.db.OrmliteDbHelper {
+    <fields>;
+    <methods>;
+}
+-keepclassmembers class * {
+    @com.j256.ormlite.field.DatabaseField *;
+}
+# Keep the helper class and its constructor
+-keep class * extends com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper
+-keepclassmembers class * extends com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper {
+  public <init>(android.content.Context);
+}
+
+-keep class com.google.gson.examples.android.model.** { *; }
+-keep class com.jsy.common.model.**
+-keep class com.jsy.common.model.** { *; }
+
+-keep class com.waz.zclient.conversationlist.ConversationListManagerFragment
+-keepclassmembers class com.waz.zclient.conversationlist.ConversationListManagerFragment {
+  <fields>;
+  <methods>;
+}
+
+#ormlite START
+
+#PictureSelector 2.0
+-keep class com.luck.picture.lib.** { *; }
+
+-dontwarn com.yalantis.ucrop**
+-keep class com.yalantis.ucrop** { *; }
+-keep interface com.yalantis.ucrop** { *; }
+
+#glide
+-dontwarn com.bumptech.glide.**
+-keep class com.bumptech.glide.**{*;}
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public class * extends com.bumptech.glide.module.AppGlideModule
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+
+-keep public class * extends android.view.View{
+    *** get*();
+    void set*(***);
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * {
+    @com.jsy.common.utils.rxbus2.Subscribe <methods>;
+}
+
+-keep enum com.jsy.common.utils.rxbus2.ThreadMode { *; }
+
+-keepattributes *Annotation*
+
+# for DexGuard only
+#-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
+
+-keep class org.ocpsoft.prettytime.i18n.**
+-dontwarn
+
+-keep class android.support.**{ *; }
+-keep class net.xpece.android.support.**{ *; }
+
+-keep class scala.** { *; }
+
+#httpcore
+-dontwarn org.apache.http.**
+-keep class org.apache.http.** { *; }
+
+#httpcore-4.4.5
+-dontwarn org.apache.http.**
+-keep class org.apache.http.** { *; }
+
+#=================  retrofit2  =================
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keep interface retrofit2.** { *; }
+
+#=================  rxjava2  =================
+-dontwarn io.reactivex.**
+-keep class io.reactivex.** { *; }
+-keep interface io.reactivex.** { *; }
+
+#=================  retrofit2.adapter.rxjava2  =================
+-keep class retrofit2.adapter.rxjava2.** { *; }
+
+#=================  rxandroid  =================
+-dontwarn io.reactivex.android.**
+-keep class io.reactivex.android.** { *; }
+-keep class io.reactivex.android.plugins.** { *; }
+-keep class io.reactivex.android.schedulers.** { *; }
+
+
+#=================  net.xpece.android.support.widget  =================
+-dontwarn net.xpece.android.support.**
+-dontnote net.xpece.android.support.**
+-keep class net.xpece.android.support.** { *; }
+-keep public class * extends net.xpece.android.support.**
+
+#=================  io.circe.generic  =================
+-dontwarn io.circe.generic.**
+-dontnote io.circe.generic.**
+-keep class io.circe.generic.** { *; }
+-keep public class * extends io.circe.generic.**
+
+#=================  com.ibm.icu  =================
+-dontwarn com.ibm.icu.**
+-dontnote com.ibm.icu.**
+-keep class com.ibm.icu.** { *; }
+-keep public class * extends com.ibm.icu.**
+
+#=================  evernote  =================
+-dontwarn com.evernote.android.job.gcm.**
+-dontwarn com.evernote.android.job.GcmAvailableHelper
+-dontwarn com.evernote.android.job.work.**
+-dontwarn com.evernote.android.job.WorkManagerAvailableHelper
+
+-keep public class com.evernote.android.job.v21.PlatformJobService
+-keep public class com.evernote.android.job.v14.PlatformAlarmService
+-keep public class com.evernote.android.job.v14.PlatformAlarmReceiver
+-keep public class com.evernote.android.job.JobBootReceiver
+-keep public class com.evernote.android.job.JobRescheduleService
+-keep public class com.evernote.android.job.gcm.PlatformGcmService
+
+#Push Notification dependency
+-keep class com.google.android.gms.tasks.** { *; }
+
+#=================  arouter  =================
+-keep public class com.alibaba.android.arouter.routes.**{*;}
+-keep public class com.alibaba.android.arouter.facade.**{*;}
+-keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
+
+-keep interface * implements com.alibaba.android.arouter.facade.template.IProvider
+
+
+#=================  agora  =================
+-keep class io.agora.**{*;}

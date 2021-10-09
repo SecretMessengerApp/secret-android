@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      >
+        <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+        <com.jsy.common.view.ConversationBackgroundLayout
+            android:id="@+id/rl_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+
+       </FrameLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.waz.zclient.pages.extendedcursor.ExtendedCursorContainer
+            android:id="@+id/ecc__conversation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/extend_container_height"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ecc__conversation">
+
+        <com.waz.zclient.messages.MessagesListView
+                android:id="@+id/messages_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:drawSelectorOnTop="false"
+                android:transcriptMode="disabled"
+                android:listSelector="@color/transparent"
+                android:paddingBottom="@dimen/wire__padding__regular"
+                android:clipToPadding="false"/>
+
+        <RelativeLayout
+                android:gravity="bottom"
+                android:id="@+id/llBottomCursorParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+            <com.waz.zclient.cursor.CursorView
+                    android:id="@+id/cv__cursor"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/SecretThreeBackgroundColor"
+                />
+
+            <com.waz.zclient.conversation.ReplyView
+                    android:id="@+id/reply_view"
+                    android:layout_above="@+id/cv__cursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="?attr/SecretThreeBackgroundColor"
+                    android:visibility="gone"/>
+
+            <com.waz.zclient.conversation.TypingIndicatorView
+                    android:visibility="gone"
+                    android:id="@+id/tiv_typing_indicator_view"
+                    android:layout_above="@+id/reply_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/typing_indicator_layout_height"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/cvJumpToLatestMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="25dp"
+                app:contentPaddingTop="@dimen/wire__padding__8"
+                app:contentPaddingBottom="@dimen/wire__padding__8"
+                app:cardBackgroundColor="@color/white"
+                android:visibility="gone"
+                app:cardCornerRadius="17dp"
+                app:cardElevation="2dp"
+                app:contentPaddingLeft="@dimen/conversation_toolbar_icon_padding"
+                app:contentPaddingRight="@dimen/conversation_toolbar_icon_padding">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/dp5"
+                    android:text="@string/conversation_jump_to_latest_message"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:drawableEnd="@drawable/ico_direction_down"
+                    android:textSize="14sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+                android:id="@+id/mentions_opacity"
+                android:layout_width="match_parent"
+                android:background="@color/black_32"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mentions_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:visibility="gone"
+                android:layout_gravity="bottom"/>
+
+
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/t_conversation_toolbar"
+            style="?conversationToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <com.waz.zclient.views.e2ee.ShieldView
+                    android:id="@+id/sv__conversation_toolbar__verified_shield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/wire__otr__shield__small_width"
+                    android:layout_marginEnd="@dimen/wire__padding__8"
+                    app:shieldVerified="true"/>
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                    android:id="@+id/tv__conversation_toolbar__title"
+                    style="?conversationToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/wire__padding__8"
+                    android:background="@null"
+                    android:ellipsize="middle"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+
+            <com.waz.zclient.ui.text.GlyphTextView
+                    android:id="@+id/gtvLinedown112"
+                    style="?conversationToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="@string/glyph__linedown"
+                    android:textSize="@dimen/wire__icon_button__text_size_half"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/group_notice_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="gone"
+        android:background="@android:color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAdvisoryParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/SecretBackgroundColor"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                layout="@layout/layout_line_c9ced2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/wire__divider__height__thin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivAdvisoryIcon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ico_advisory_notice"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/tvAdvisory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:singleLine="true"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivAdvisoryClose"
+                app:layout_constraintStart_toEndOf="@+id/ivAdvisoryIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="advisory" />
+
+            <ImageView
+                android:id="@+id/ivAdvisoryClose"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ico_messagee_notification_close"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/report_notice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/SecretBackgroundColor"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clAdvisoryParent">
+
+            <include
+                layout="@layout/layout_line_c9ced2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/wire__divider__height__thin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/report_imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_forbid_message"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/report_content_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:text="@string/report_notice_content_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/report_close_imageView"
+                app:layout_constraintStart_toEndOf="@+id/report_imageView"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/report_close_imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ico_messagee_notification_close"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.waz.zclient.conversation.toolbar.AudioMessageRecordingView
+            android:id="@+id/amrv_audio_message_recording"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"/>
+
+
+    <FrameLayout
+            android:id="@+id/fl__conversation_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"/>
+
+
+    <com.waz.zclient.views.LoadingIndicatorView
+            android:id="@+id/lbv__conversation__loading_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageButton
+        android:id="@+id/reply_close"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="22dp"
+        android:src="?actionModeCloseDrawable" />
+
+    <RelativeLayout
+        android:id="@+id/reply_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="43dp">
+
+        <Space
+            android:id="@+id/temp_space1"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/reply_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/temp_space1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/wire__padding__regular"
+            android:drawablePadding="@dimen/wire__padding__8"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__small"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/reply_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/wire__padding__12"
+            android:visibility="gone" />
+
+        <com.waz.zclient.ui.text.LinkTextView
+            android:id="@+id/reply_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_space1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/wire__padding__regular"
+            android:layout_marginEnd="56dp"
+            android:layout_toStartOf="@id/reply_image"
+            android:drawablePadding="@dimen/wire__padding__4"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__small" />
+    </RelativeLayout>
+
+</merge>

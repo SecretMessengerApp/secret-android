@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/conversation_list__avatar__size"
+    android:layout_height="@dimen/conversation_list__avatar__size"
+    android:background="@drawable/conversation_group_avatar_background">
+
+    <com.waz.zclient.common.views.ChatHeadViewNew
+        android:id="@+id/avatar_single"
+        app:is_round="true"
+        app:show_waiting="true"
+        app:default_background="@color/black_8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/conversation_list__avatar__inner_margin"
+        android:layout_gravity="center"
+        android:visibility="gone"
+    />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/avatar_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/conversation_list__avatar__inner_margin"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <com.waz.zclient.common.views.ChatHeadViewNew
+            android:id="@+id/conversation_avatar_start_top"
+            app:is_round="false"
+            app:show_waiting="false"
+            android:layout_width="@dimen/conversation_list__hint__marker_size"
+            android:layout_height="@dimen/conversation_list__hint__marker_size"
+            android:layout_gravity="start|top"
+            app:default_background="@color/black_8"
+        />
+
+        <com.waz.zclient.common.views.ChatHeadViewNew
+            android:id="@+id/conversation_avatar_end_top"
+            app:is_round="false"
+            app:show_waiting="false"
+            android:layout_width="@dimen/conversation_list__hint__marker_size"
+            android:layout_height="@dimen/conversation_list__hint__marker_size"
+            android:layout_gravity="end|top"
+            app:default_background="@color/black_8"
+        />
+
+        <com.waz.zclient.common.views.ChatHeadViewNew
+            android:id="@+id/conversation_avatar_start_bottom"
+            app:is_round="false"
+            app:show_waiting="false"
+            android:layout_width="@dimen/conversation_list__hint__marker_size"
+            android:layout_height="@dimen/conversation_list__hint__marker_size"
+            android:layout_gravity="start|bottom"
+            app:default_background="@color/black_8"
+        />
+
+        <com.waz.zclient.common.views.ChatHeadViewNew
+            android:id="@+id/conversation_avatar_end_bottom"
+            app:is_round="false"
+            app:show_waiting="false"
+            android:layout_width="@dimen/conversation_list__hint__marker_size"
+            android:layout_height="@dimen/conversation_list__hint__marker_size"
+            android:layout_gravity="end|bottom"
+            app:default_background="@color/black_8"
+        />
+
+        <com.waz.zclient.common.views.ChatHeadViewNew
+            android:id="@+id/conversation_avatar_single_group"
+            app:is_round="false"
+            app:show_waiting="false"
+            android:layout_width="@dimen/cursor__send_button__height"
+            android:layout_height="@dimen/cursor__send_button__height"
+            android:layout_gravity="center"
+            app:default_background="@color/transparent"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+</merge>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_marginTop="9dp"
+            android:id="@+id/ttvTitle"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:text="@string/group_participant_invite_title"
+            android:textSize="16sp"
+            app:w_font="@string/wire__typeface__regular"/>
+
+    <LinearLayout
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/ttvContent"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:lineSpacingExtra="4dp"
+                android:textColor="?attr/SecretSubTextColor"
+                android:textSize="12sp"
+                android:text="@string/app_name"
+                android:layout_gravity="center_vertical"
+                app:w_font="@string/wire__typeface__regular"/>
+
+        <com.waz.zclient.common.views.ChatHeadViewNew
+                android:id="@+id/civConversationHead"
+                android:layout_width="55dp"
+                android:layout_height="55dp"/>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+           android:background="?attr/SecretPrimaryDividerColor"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp">
+
+        <ImageView
+                android:id="@+id/vDetailIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ico_group_participant_invite"/>
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/group_participant_invite_tips"
+                android:textColor="?attr/SecretSubTextColor"
+                android:textSize="12sp"
+                app:w_font="@string/wire__typeface__regular"/>
+
+    </LinearLayout>
+
+</LinearLayout>

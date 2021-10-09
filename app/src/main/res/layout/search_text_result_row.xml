@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.waz.zclient.common.views.ChatHeadViewNew
+        android:id="@+id/chathead"
+        app:show_border="false"
+        android:layout_width="@dimen/search__chathead__size"
+        android:layout_height="@dimen/search__chathead__size"
+        android:layout_marginEnd="@dimen/wire__padding__regular"
+        android:layout_gravity="center_vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="?searchBackgroundDividerDrawable"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/message_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/wire__text_size__regular"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:w_font="@string/wire__typeface__light"
+                />
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/message_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/wire__text_size__small"
+                android:textColor="?wireSecondaryTextColor"
+                android:maxLines="1"
+                />
+
+        </LinearLayout>
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/search_result_count"
+            android:background="@drawable/search_result_counter_background"
+            android:layout_width="@dimen/search__result__counter_width"
+            android:layout_height="@dimen/search__result__counter_height"
+            android:layout_marginRight="@dimen/wire__padding__regular"
+            android:layout_marginLeft="@dimen/wire__padding__regular"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__bold"
+            />
+
+
+    </LinearLayout>
+
+</merge>

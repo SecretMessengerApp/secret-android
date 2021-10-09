@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/collections__item_inner_padding"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    >
+
+    <include layout="@layout/collection_item_metadata"/>
+
+    <com.waz.zclient.ui.text.LinkTextView
+        android:id="@+id/ttvOrgTextParent"
+        style="?colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:textColor="?attr/SecretPrimaryTextColor"
+        android:textSize="@dimen/wire__text_size__regular"
+        app:w_font="@string/wire__typeface__light" />
+
+    <View
+        android:id="@+id/vGoneWhenIsOnlyUrl"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></View>
+
+    <LinearLayout
+        android:id="@+id/vgWebContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_web_content_bg_self_side"
+        android:orientation="vertical">
+
+        <com.jsy.common.views.ShapePathImageView
+            android:id="@+id/ivImg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content__link_preview__image_height"
+            android:scaleType="centerCrop"
+            app:radiusHorizontal="5dp"
+            app:radiusVertical="5dp"
+            app:roundAngleDirection="leftTopRightTop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"></View>
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttvWebTitle"
+            style="?colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="@integer/content__link_preview__title__maxlines"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="14sp"
+            app:w_font="@string/wire__typeface__light" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="13dp"></View>
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttvWebDomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:ellipsize="middle"
+            android:gravity="start"
+            android:singleLine="true"
+            android:textColor="#FFA8CD8D"
+            android:textSize="11sp"
+            app:w_font="@string/wire__typeface__light" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="11dp"></View>
+    </LinearLayout>
+
+</LinearLayout>

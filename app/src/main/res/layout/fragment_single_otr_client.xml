@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:focusable="true"
+             android:clickable="true"
+             style="?wireBackground">
+
+    <com.waz.zclient.ui.text.GlyphTextView
+        android:id="@+id/back"
+        android:layout_gravity="top|left"
+        android:layout_width="@dimen/wire__icon_button__diameter"
+        android:layout_height="@dimen/wire__button__height_small"
+        android:layout_marginLeft="@dimen/wire__padding__big"
+        android:layout_marginTop="@dimen/wire__padding__big"
+        android:gravity="center"
+        android:text="@string/glyph__previous"
+        style="?attr/smallIconButton"
+        />
+
+    <com.waz.zclient.ui.text.GlyphTextView
+        android:id="@+id/close"
+        android:layout_gravity="top|right"
+        android:layout_width="@dimen/wire__icon_button__diameter"
+        android:layout_height="@dimen/wire__button__height_small"
+        android:layout_marginRight="@dimen/wire__padding__big"
+        android:layout_marginTop="@dimen/wire__padding__big"
+        android:gravity="center"
+        android:text="@string/glyph__close"
+        style="?attr/smallIconButton"
+        />
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/my_fingerprint"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/wire__button__height_small"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/wire__padding__big"
+        android:layout_marginTop="@dimen/wire__padding__big"
+        android:gravity="center|right"
+        android:text="@string/otr__participant__single_device__my_fingerprint_link"
+        app:w_font="@string/wire__typeface__regular"
+        style="?otrClientLink"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/wire__padding__big"
+        android:layout_marginRight="@dimen/wire__padding__big"
+        android:orientation="vertical"
+        >
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/client_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/content__line_spacing_extra"
+            app:w_font="@string/wire__typeface__light"
+            style="?otrClientText"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/how_to_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:w_font="@string/wire__typeface__light"
+            style="?userOtrHeader"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire__divider__height__thin"
+            android:layout_marginTop="@dimen/wire__padding__regular"
+            android:layout_marginBottom="@dimen/wire__padding__regular"
+            android:background="@color/separator_light"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/client_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:w_font="@string/wire__typeface__bold"
+            style="?userOtrDevice"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/client_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wire__padding__regular"
+            app:w_font="@string/wire__typeface__light"
+            style="?userOtrDevice"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/fingerprint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wire__padding__large"
+            android:lineSpacingExtra="@dimen/wire__text_spacing__large"
+            app:w_font="@string/wire__typeface__light"
+            style="?otrClientText"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/wire__padding__big"
+            >
+
+            <com.waz.zclient.ui.views.e2ee.OtrSwitch
+                android:id="@+id/verify_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                />
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/my_devices"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/wire__button__height_small"
+                android:layout_gravity="left|center"
+                android:gravity="center"
+                android:text="@string/otr__participant__my_device__show_all_devices_link"
+                app:w_font="@string/wire__typeface__regular"
+                style="?otrClientLink"
+                />
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/client_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/wire__button__height_small"
+                android:layout_gravity="right|center"
+                android:gravity="center"
+                android:text="@string/otr__participant__single_device__reset_session_link"
+                app:w_font="@string/wire__typeface__regular"
+                style="?otrClientLink"
+                />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

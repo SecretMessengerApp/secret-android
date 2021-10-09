@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp20"
+    android:layout_marginRight="@dimen/dp20"
+    android:background="@drawable/dialog_publish_cancel_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/conversation_detail_transfer_group_description"
+        android:textColor="?attr/SecretPrimaryTextColor"
+        android:lineSpacingExtra="3dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:textSize="17sp"
+        android:textColor="?attr/SecretPrimaryTextColor" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="?attr/SecretPrimaryDividerColor" />
+
+    <LinearLayout
+        android:id="@+id/rl_i_know"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_not_save"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/secret_cancel"
+            android:textSize="17sp"
+            android:textColor="@color/blue"
+             />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:background="?attr/SecretPrimaryDividerColor" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/secret_confirm"
+            android:textSize="17sp"
+            android:textColor="@color/blue"
+            />
+    </LinearLayout>
+
+</LinearLayout>

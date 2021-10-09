@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<com.waz.zclient.pages.main.ImagePreviewLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="match_parent"
+                                                               style="?wireBackground"
+    >
+
+    <ImageView
+        android:id="@+id/iv__conversation__preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        />
+
+    <FrameLayout
+        android:id="@+id/ttv__image_preview__title__container"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        style="?conversationToolbar"
+        >
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttv__image_preview__title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:inputType="none"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:background="@null"
+            android:clickable="false"
+            style="?conversationToolbar"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll__preview__sketch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_preview__sketch_menu__height"
+            android:background="?attr/ImagePreviewToolbarBg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/compress_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:button="@null"
+                android:drawableStart="@drawable/base_radio_selector_preview"
+                android:drawablePadding="7dp"
+                android:text="@string/conversation_image_original"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.waz.zclient.ui.text.GlyphTextView
+                android:id="@+id/gtv__preview__drawing_button__sketch"
+                android:layout_width="@dimen/wire__icon_button__diameter"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="@string/glyph__paint"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__icon_button__text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gtv__preview__drawing_button__emoji"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.waz.zclient.ui.text.GlyphTextView
+                android:id="@+id/gtv__preview__drawing_button__emoji"
+                android:layout_width="@dimen/wire__icon_button__diameter"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/glyph__emoji"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__icon_button__text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.waz.zclient.ui.text.GlyphTextView
+                android:id="@+id/gtv__preview__drawing_button__text"
+                android:layout_width="@dimen/wire__icon_button__diameter"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:text="@string/glyph__keyboard"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__icon_button__text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gtv__preview__drawing_button__emoji"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.waz.zclient.pages.main.profile.views.ConfirmationMenu
+            android:id="@+id/cm__cursor_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/wire__padding__16"
+            android:paddingBottom="@dimen/wire__padding__16"
+            style="?wireBackground"
+            />
+
+    </LinearLayout>
+
+</com.waz.zclient.pages.main.ImagePreviewLayout>

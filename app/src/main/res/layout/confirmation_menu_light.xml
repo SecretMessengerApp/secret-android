@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/fl__confirmation_dialog__background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_overlay_light"
+        />
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="@dimen/confirmation_menu__degradation_overlay_width"
+        android:layout_height="@dimen/confirmation_menu__degradation_overlay_height"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll__confirmation_dialog__message_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start|bottom"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/framework_confirmation_menu_horizontal_padding"
+        android:paddingTop="@dimen/framework_confirmation_menu_padding_top"
+        android:paddingEnd="@dimen/framework_confirmation_menu_horizontal_padding"
+        android:paddingBottom="@dimen/framework_confirmation_menu_padding_bottom"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/wire__icon_button__text_size"
+            android:layout_marginBottom="@dimen/wire__padding__big"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/framework_confirmation_menu_header_font_size"
+            android:visibility="gone"
+            app:w_font="@string/wire__typeface__medium"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wire__padding__small"
+            android:gravity="start"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/framework_confirmation_menu_text_font_size"
+            android:visibility="gone"
+            android:lineSpacingExtra="@dimen/content__line_spacing_extra"
+            app:w_font="@string/wire__typeface__light"
+            />
+
+        <com.waz.zclient.views.CheckBoxView
+            android:id="@+id/ll_confirmation_menu__checkbox_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/framework_confirmation_menu_button_padding_top"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.waz.zclient.ui.views.ZetaButton
+                android:id="@+id/negative"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/framework_confirmation_menu_button_height"
+                android:layout_marginBottom="@dimen/framework_confirmation_menu_button_padding_bottom"
+                android:layout_marginEnd="@dimen/framework_confirmation_menu_button_space_between"
+                android:layout_marginTop="@dimen/framework_confirmation_menu_button_padding_top"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="@dimen/touch_target_buttons"
+                android:minWidth="@dimen/touch_target_buttons"
+                android:textColor="@color/framework_confirmation_menu_button"
+                android:textSize="@dimen/wire__text_size__small"
+                app:w_font="@string/wire__typeface__light"
+                android:textAllCaps="true"
+                />
+
+
+            <com.waz.zclient.ui.views.ZetaButton
+                android:id="@+id/positive"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/framework_confirmation_menu_button_height"
+                android:layout_marginBottom="@dimen/framework_confirmation_menu_button_padding_bottom"
+                android:layout_marginStart="@dimen/framework_confirmation_menu_button_space_between"
+                android:layout_marginTop="@dimen/framework_confirmation_menu_button_padding_top"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="@dimen/touch_target_buttons"
+                android:minWidth="@dimen/touch_target_buttons"
+                android:textColor="@color/text__primary_dark"
+                android:textSize="@dimen/wire__text_size__small"
+                app:w_font="@string/wire__typeface__light"
+                android:textAllCaps="true"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.waz.zclient.ui.text.GlyphTextView
+        android:id="@+id/cancel"
+        android:layout_width="@dimen/wire__icon_button__diameter"
+        android:layout_height="@dimen/wire__icon_button__diameter"
+        android:layout_marginTop="@dimen/wire__padding__big"
+        android:layout_marginEnd="@dimen/wire__padding__regular"
+        android:layout_gravity="top|end"
+        android:text="@string/glyph__close"
+        android:textSize="@dimen/wire__icon_button__text_size"
+        android:gravity="center"
+        />
+
+
+</FrameLayout>

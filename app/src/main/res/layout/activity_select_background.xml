@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/select_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/conversation_toolbar__base"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:clickable="false"
+            android:contentInsetStart="0dp"
+            android:navigationIcon="@drawable/action_back_dark">
+
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/select_title"
+                style="?conversationToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/conversation_detail_settings_change_chat_background"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="18sp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp80"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="40dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clipChildren="false"/>
+
+            <View
+                android:id="@+id/select_circle"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/select_circle" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/secret_cancel"
+            android:textColor="@color/conversation_bg_select_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/conversation_detail_settings_background_apply"
+            android:textColor="@color/conversation_bg_select_text"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

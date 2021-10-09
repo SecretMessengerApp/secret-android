@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/collections__header_height"
+       android:orientation="horizontal"
+       android:paddingTop="@dimen/collections__content_top_padding"
+    >
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="@dimen/wire__padding__18"
+                  android:orientation="horizontal"
+                  android:clipChildren="false"
+                  android:clipToPadding="false"
+        >
+
+        <com.waz.zclient.ui.text.GlyphTextView
+            android:id="@+id/gtv_collection_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/wire__padding__8"
+            android:text="@string/glyph__file"
+            android:textSize="@dimen/wire__text_size__regular"
+            android:visibility="visible"
+            android:textColor="@color/light_graphite"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttv__collection_header__name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__bold"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/view"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttv__collection_header__count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wire__padding__4"
+            android:paddingRight="@dimen/wire__padding__4"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__bold"
+            android:visibility="visible"
+            android:textColor="@color/accent_blue"
+            />
+
+        <com.waz.zclient.ui.text.GlyphTextView
+            android:id="@+id/gtv__arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/glyph__next"
+            android:textSize="@dimen/wire__text_size__small"
+            android:visibility="visible"
+            android:textColor="@color/accent_blue"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

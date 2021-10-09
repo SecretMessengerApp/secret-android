@@ -1,0 +1,109 @@
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.waz.zclient.sharing.ShareToMultipleFragment"
+    android:background="@null"
+    android:clickable="true"
+    >
+
+    <com.waz.zclient.common.views.AccountTabsView
+        android:id="@+id/account_tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingStart="@dimen/wire__padding__12"
+        android:paddingEnd="@dimen/wire__padding__12"
+        />
+
+    <RelativeLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/collections__multi_share__image_preview__height">
+    </RelativeLayout>
+
+    <com.waz.zclient.usersearch.views.SearchEditText
+        android:id="@+id/multi_share_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/collections__multi_share_search_height"
+        android:layout_margin="@dimen/wire__padding__8"
+        app:hintText="@string/multi_share_search_hint"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire__divider__height"
+        android:background="@color/light_graphite_16"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv__conversation_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire__divider__height"
+        android:background="@color/light_graphite_16"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/collections__multi_share_footer_height"
+        android:background="@null">
+
+        <com.waz.zclient.ui.views.CursorIconButton
+            android:id="@+id/cib__send_button"
+            android:layout_width="@dimen/share_extension__send_button__size"
+            android:layout_height="@dimen/share_extension__send_button__size"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/cursor__menu_button__padding"
+            android:text="@string/glyph__send"
+            android:textColor="@color/drawing__icon"
+            />
+
+        <com.waz.zclient.cursor.EphemeralTimerButton
+            android:id="@+id/ephemeral_toggle"
+            android:layout_width="@dimen/wire__margin__24"
+            android:layout_height="@dimen/wire__margin__24"
+            android:letterSpacing="-0.1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/wire__padding__16"
+            android:layout_marginBottom="@dimen/wire__padding__16"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <com.waz.zclient.common.views.AnimatedBottomContainer
+        android:id="@+id/ephemeral_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extend_container_height"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

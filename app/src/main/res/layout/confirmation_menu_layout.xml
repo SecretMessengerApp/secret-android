@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+    >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/framework__general__left_padding"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="right|center_vertical"
+        >
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttv__confirmation__cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/framework_confirmation_menu_button_height"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__light"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="@dimen/framework_confirmation_menu_button_space_between"
+        android:layout_height="1dp"
+        tools:ignore="com.waz.LayoutXmlValue"
+        />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/framework__general__right_padding"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="left|center_vertical"
+        >
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttv__confirmation__confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/framework_confirmation_menu_button_height"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:textSize="@dimen/wire__text_size__small"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            app:w_font="@string/wire__typeface__light"
+            />
+
+    </FrameLayout>
+</LinearLayout>

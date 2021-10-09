@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+            android:id="@+id/rlCenterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/preference_button_height"
+            android:paddingStart="@dimen/preference_button_padding"
+            android:paddingEnd="@dimen/preference_button_padding"
+            android:background="@drawable/selector__transparent_button_3">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/ttvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/ivEnd"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:text="123456"
+                android:textSize="@dimen/wire__text_size__regular"
+                android:visibility="visible"
+                app:w_font="@string/wire__typeface__light"/>
+
+        <ImageView
+                android:id="@+id/ivEnd"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/left_to_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/rlSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlCenterTitle"
+            android:orientation="vertical">
+
+        <View
+                android:id="@+id/vCenterLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wire__divider__height__thin"
+                android:background="?attr/SecretPrimaryDividerColor"
+        />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/ttvSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="21dp"
+                android:layout_marginEnd="@dimen/preference_button_padding"
+                android:layout_marginStart="@dimen/preference_button_padding"
+                android:text="123456"
+                android:textSize="11sp"
+                android:textColor="?attr/SecretSubTextColor"
+                app:w_font="@string/wire__typeface__light"/>
+    </LinearLayout>
+
+    <View
+            android:id="@+id/vBottomLine"
+            android:layout_below="@+id/rlSubTitle"
+            android:background="?attr/SecretPrimaryDividerColor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire__divider__height__thin"/>
+
+</merge>

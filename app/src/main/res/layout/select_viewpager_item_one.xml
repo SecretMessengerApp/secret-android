@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/tvText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wire__padding__20"
+        android:layout_marginTop="100dp"
+        android:text="@string/conversation_detail_settings_background_try_other_style"
+        android:textColor="?attr/SecretPrimaryTextColor"
+        android:textSize="18sp" />
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/tvText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wire__padding__20"
+        android:layout_marginTop="8dp"
+        android:text="@string/conversation_detail_settings_background_try_other_style_anytime"
+        android:textColor="?attr/SecretPrimaryTextColor"
+        android:textSize="18sp" />
+
+</LinearLayout>

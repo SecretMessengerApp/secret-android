@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.waz.zclient">
+
+    <!-- Vibrate to notify user -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application>
+
+        <activity
+            android:name="com.waz.zclient.calling.CallingActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:theme="@style/Theme.Calling"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.waz.zclient.preferences.PreferencesActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/empty_string"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Dark.Preferences" />
+
+        <activity
+            android:name=".PopupActivity"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Popup"
+            android:windowSoftInputMode="stateVisible" />
+
+        <activity
+            android:name=".ShareActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Share"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".controllers.notifications.ShareSavedImageActivity" />
+
+        <activity
+            android:name=".ForceUpdateActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/forceUpdateDialogTheme" />
+
+        <activity
+            android:name="com.jsy.common.acts.VideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.UserRemarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupUserSearchAddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupAdminManageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.SelectChatBackgroundActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupNoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupInviteMembersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupHeadPortraitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupShareSelectUserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupQRCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.SendConnectRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.SelfQrCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.PreferencesAdaptActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupSpeakerManageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.AccountMgrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name=".conversation.ServerNotificationSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name=".participants.GroupParticipantInviteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.GroupInviteConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.scan.ScanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+        <activity
+            android:name="com.jsy.common.acts.CursorImageSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+        <activity
+            android:name="com.jsy.common.acts.scan.ScanAuthorizeLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity android:name="com.jsy.common.acts.OpenUrlActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.ConversationReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.jsy.common.acts.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <activity
+            android:name="com.waz.zclient.emoji.activity.EmojiManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.waz.zclient.emoji.activity.EmojiMarketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.jsy.common.acts.FileRenderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.jsy.common.acts.LanguageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SecretAppThemeLight0" />
+
+        <service android:name="com.jsy.common.srv.DownloadManagerNotificationService"/>
+
+    </application>
+</manifest>

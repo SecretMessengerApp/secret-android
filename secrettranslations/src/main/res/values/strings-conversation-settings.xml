@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<resources
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
+    <string name="conversation_detail_settings_msg_record">Chat history</string>
+    <string name="conversation_detail_settings_create_group_chat">Create group</string>
+    <string name="conversation_detail_settings_remove_from_group">Delete from group</string>
+    <string name="conversation_detail_settings_to_chat">Start chatting</string>
+    <string name="conversation_detail_settings_push_on_black_list">Block</string>
+    <string name="conversation_detail_settings_group_name">Group name</string>
+    <string name="conversation_detail_settings_invite_friends_to_join_group">Add friend</string>
+    <string name="conversation_detail_settings_leave_group">Leave</string>
+    <string name="conversation_detail_settings_show_all_members">View more members</string>
+    <string name="conversation_detail_settings_code_encrypted">Security code</string>
+    <string name="conversation_detail_settings_burn_after_reading">Burn after reading</string>
+    <string name="conversation_detail_settings_burn_after_reading_notice">If this option is set, the message sent and received in the chat will disappear after reading.</string>
+    <string name="conversation_detail_settings_msg_has_been_encrypted">Chatting has beed encrypted </string>
+    <string name="conversation_detail_settings_remark">Set note</string>
+    <string name="conversation_detail_settings_chat_background">Set Chat Background</string>
+    <string name="conversation_detail_settings_change_chat_background">Change the chat background</string>
+    <string name="conversation_list_encrypte_notifications">Messages and calls are end-to-end encrypted.No one outside of this chat, not even SecretApp,can read or listen to them.</string>
+    <string name="conversation_list_no_encrypte_notifications">Messages and calls in this conversation have been encrypted.No one outside of this chat, not even SecretApp,can read or listen to them.</string>
+    <string name="conversation_detail_settings_group_nick">Group NickName</string>
+    <string name="conversation_detail_settings_save">Save</string>
+    <string name="conversation_detail_remark">Remark</string>
+    <string name="conversation_detail_group_nick">Group NickName</string>
+    <string name="conversation_detail_setting_success">Success</string>
+    <string name="conversation_detail_setting_failure">Failure</string>
+    <string name="conversation_detail_settings_background_apply">Apply</string>
+    <string name="conversation_detail_settings_background_try_other_style">Try other styles.</string>
+    <string name="conversation_detail_settings_background_try_other_style_anytime">Try fresh theme background at any time.</string>
+    <string name="pick_user_warning">Warning</string>
+    <string name="pick_user_ok">Ok</string>
+    <string name="launch_guide_start_using">Start Using</string>
+    <string name="profile_setting_account_manager">Account Manager</string>
+    <string name="profile_setting_my_qrcode">My QR code</string>
+    <string name="head_portrait_title">Head portrait</string>
+    <string name="device_detail_title">Device detail</string>
+    <string name="pickuser_contacts">Contacts</string>
+    <string name="conversation_group_profile_photo">Group profile photo</string>
+    <string name="show_all_participants">Show all (%1$s)</string>
+    <string name="conversation_detail_settings_join_group">Join</string>
+    <string name="conversation_detail_settings_aks_join">Whether to join the group chat</string>
+    <string name="group_participant_invite_title">Invite %1$s to join the group chat</string>
+    <string name="group_participant_invite_content">%1$s invite %2$s to join group chat %3$s, enter for more information.</string>
+    <string name="group_participant_invite_tips">Chat</string>
+    <string name="group_participant_invite_confirm">Confirm to join the group chat</string>
+    <string name="group_participant_invite_joined">Joined</string>
+    <string name="group_participant_invite_confirm_tips">Join the group</string>
+    <string name="group_participant_invite_refuse">Refuse to join</string>
+    <string name="group_participant_invite_total_memsum">Total(%1$s)</string>
+    <string name="navigation_menu_item_close">Close</string>
+    <string name="group_participant_add_default_group">Add this conversation to the menu</string>
+    <string name="group_participant_remove_default_group">Remove this conversation from the menu</string>
+    <string name="group_participant_user_row_creator_and_me">Creator \u0026 Me</string>
+    <string name="conversation_setting_group_manage_and_me">Group Manage \u0026 Me</string>
+    <string name="group_participant_user_row_creator">Creator</string>
+    <string name="group_participant_user_row_me">Me</string>
+    <string name="group_participant_invite_enter_group_conversation">Enter the group to chat</string>
+    <string name="conversation_image_original">Original</string>
+    <string name="conversation_detail_settings_top_placement">Sticky On Top</string>
+    <string name="conversation_detail_settings_forbidden_title">Full staff ban</string>
+    <string name="conversation_detail_settings_forbidden_describe">When all members are forbidden to send messages, only group creators can send messages, and forbidden messages can be set in group members\'personal centers.</string>
+    <string name="conversation_detail_settings_invite_visible_title">Members\'invitation to withdraw is not visible</string>
+    <string name="conversation_detail_settings_forbidden_settings">Set up a group to prohibit sending messages</string>
+    <string name="conversation_detail_settings_add_friend_settings">Ban group members from making friends with each other</string>
+    <string name="conversation_detail_settings_forbidden_option_title">Time when messages are forbidden</string>
+    <string name="conversation_detail_settings_forbidden_open">%1$s turned on the ban on everyone from sending messages</string>
+    <string name="conversation_detail_settings_forbidden_close">%1$s turned off the function of forbidding everyone to send messages.</string>
+    <string name="conversation_detail_settings_forbidden_state">Disable State</string>
+    <string name="conversation_detail_settings_forbidden_state2">Disable State(%1$s)</string>
+    <string name="conversation_detail_settings_invite_visible_open">%1$s closed the membership invitation to withdraw invisible</string>
+    <string name="conversation_detail_settings_invite_visible_close">%1$s opened the invitation to withdraw invisible</string>
+    <string name="conversation_detail_settings_add_friend_open">%1$s Closed banning group members from making friends with each other.</string>
+    <string name="conversation_detail_settings_add_friend_close">%1$s Opened the forbidden group members to be friends with each other.</string>
+    <string name="conversation_detail_settings_msg_only_to_manager_open">%1$s Messages are not visible to other members</string>
+    <string name="conversation_detail_settings_msg_only_to_manager_close">%1$s Messages closed by other members are not visible</string>
+    <string name="conversation_detail_settings_forbidden_option_open">%1$s was permanently banned from sending messages by the group\'s founders</string>
+    <string name="conversation_detail_settings_forbidden_option_close">%1$s was no longer banned from sending messages by the group Creator</string>
+    <string name="conversation_detail_settings_forbidden_option_open2">%1$s was permanently banned from sending messages by you</string>
+    <string name="conversation_detail_settings_forbidden_option_close2">%1$s was lifted from the information ban by you</string>
+    <string name="conversation_detail_settings_forbidden_option_custom">Custom</string>
+    <string name="conversation_detail_settings_forbidden_option_recovery">%1$s have lifted the ban and can speak normally.</string>
+    <string name="conversation_detail_settings_forbidden_option_time_params">%1$s was banned from sending messages by the group Creator %2$s.</string>
+    <string name="conversation_detail_settings_forbidden_option_time_params2">%1$s was banned from sending messages %2$s.</string>
+    <string name="conversation_detail_settings_forbidden_option_open3">%1$s was permanently banned from sending messages by the group\'s Manage</string>
+    <string name="conversation_detail_settings_forbidden_option_close3">%1$s was no longer banned from sending messages by the group Manage</string>
+    <string name="conversation_detail_settings_forbidden_option_time_params3">%1$s was banned from sending messages by the group Manage %2$s</string>
+    <string name="conversation_detail_settings_forbidden_option_time_day">days</string>
+    <string name="conversation_detail_settings_forbidden_option_time_hour">hours</string>
+    <string name="conversation_detail_settings_forbidden_option_time_minute">minutes</string>
+    <string name="conversation_detail_settings_screenshot_title">Screenshot Notification</string>
+    <string name="conversation_detail_settings_screenshot_describe">After the screenshot notification is enabled, a notification message will be sent in the chat page when the screenshot is taken</string>
+    <string name="conversation_detail_user_permissions">No permission to view this user information</string>
+    <string name="conversation_detail_item_add_friend">Add friends</string>
+    <string name="conversation_detail_item_add_group_manager">%1$s was promoted to Group Manage by group Creator</string>
+    <string name="conversation_detail_item_del_group_manager">%1$s was banned from Group Manage by the group Creator</string>
+    <string name="conversation_just_now">just now</string>
+    <string name="conversation_minutes_ago">minutes ago</string>
+    <string name="conversation_hours_ago">hours ago</string>
+    <string name="conversation_days_ago">days ago</string>
+    <string name="group_total_mems">%1$s members</string>
+    <string name="server_notification_open_status">Message notification reminder</string>
+    <string name="server_notification_settings">Service notification settings</string>
+    <string name="server_notification_to_add_user">Click to add friends</string>
+    <string name="conversation_top_menu_start_group_chat">Start group chat</string>
+    <string name="conversation_top_menu_add_friend">Add Friends</string>
+    <string name="conversation_top_menu_scan">Scan</string>
+    <string name="create_group_conversation">Create group</string>
+    <string name="ycuwq_datepicker_decide">Decide</string>
+    <string name="more">more</string>
+    <string name="conversation__action__sticky_top">Sticky On Top</string>
+    <string name="conversation__action__un_sticky_top">UnSticky On Top</string>
+    <string name="basic_block_time_close">Close</string>
+    <string name="basic_block_time_open">Permanent</string>
+    <string name="basic_time_minute_10">10 minutes</string>
+    <string name="basic_time_hour_1">1 hours</string>
+    <string name="basic_time_hour_12">12 hours</string>
+    <string name="basic_time_day_1">1 days</string>
+    <string name="conversation_detail_settings_inviter_list">Inviter List</string>
+    <string name="conversation_detail_settings_invite_me">The person who invited me</string>
+    <string name="conversation_detail_settings_me_invite">The person I invited (%1$s)</string>
+    <string name="conversation_detail_check_permissions">Please check your phone permissions</string>
+    <string name="conversation_detail_settings_msg_only_to_manager_title">Other members send messages invisible</string>
+    <string name="conversation_msg_only_to_manager_show">The current message is only visible to you and the group managers</string>
+    <string name="conversation_mobile_contacts">Mobile contacts</string>
+    <string name="record_time_too_short">Recording time is too short</string>
+
+    <string name="conversation_detail_settings_group_nickname">My group nickname</string>
+    <string name="conversation_detail_settings_forbid_message_tip">Administrators %1$s hidden %2$s violation message</string>
+    <string name="conversation_detail_settings_forbid_message_tip2">This content is illegal and hidden by the administrator</string>
+    <string name="conversation_detail_settings_forbid_message_tip3">Group creator %1$s hidden %2$s violation message</string>
+    <string name="conversation_detail_settings_forbid_message_tip4">You hidden %1$s violation message</string>
+    <string name="conversation_leave_without_transfer_creator">You are the group leader. To leave the group after transferring the group leader\'s management authority or dissolving the group</string>
+
+    <string name="report_blocked_title">The current group has been blocked automatically due to user reporting. If there’s no illegal content, the group owner can apply to unblock it</string>
+    <string name="report_blocked_msg">Total people reported：%1$s/%2$s</string>
+    <string name="report_apply_unblock_group">Apply for unblocking</string>
+    <string name="report_content_title">Please describe the report</string>
+    <string name="report_content_submit">Submit a report</string>
+    <string name="report_apply_unblock_submit">Submit</string>
+    <string name="report_type_select">Please select a reason for the complaint</string>
+    <string name="report_content_hint">Please explain in detail why this group is reported</string>
+    <string name="report_apply_unblock_hint">Instructions for dismissing a report</string>
+    <string name="report_content_image_title">Upload image</string>
+    <string name="picture_max_num">You can choose the most %1$s picture</string>
+    <string name="report_notice_content_text">Has been reported by %1$s% of members. When the report reaches %2$s%, the group is automatically banned</string>
+
+    <string name="report_type_item_porn">Pornography</string>
+    <string name="report_type_item_contraband">Illegal crimes and contraband</string>
+    <string name="report_type_item_gaming">Gambling</string>
+    <string name="report_type_item_rumor">Political rumors</string>
+    <string name="report_type_item_terror">Terrorist violence bloody</string>
+    <string name="report_type_item_other">Other offending content</string>
+
+    <string name="conversation_detail_settings_show_memsum_settings">Show total group members</string>
+    <string name="conversation_detail_settings_show_memsum_open">%1$s opened showing total group members</string>
+    <string name="conversation_detail_settings_show_memsum_close">%1$s closed showing total group members</string>
+    <string name="conversation_detail_settings_edit_msg_settings">Messages can be edited and deleted</string>
+    <string name="conversation_detail_settings_edit_msg_open">%1$s opened a message to edit, delete</string>
+    <string name="conversation_detail_settings_edit_msg_close">%1$s closed the message to edit, delete</string>
+    <string name="show_all_participants_no_num">Show all</string>
+    <string name="participants_divider_people_no_num">PEOPLE</string>
+    <string name="participants_divider_services_no_num">SERVICES</string>
+
+    <string name="conversation_detail_settings_add_to_launcher">Add desktop shortcut</string>
+    <string name="conversation_join_group_closed">The group has closed the link to the group</string>
+    <string name="conversation_join_group_already_in">You are already in the group</string>
+
+    <string name="conversation_join_group_tips_warring">This group is reported by a large number of users, and there may be risks such as fraud and violation of regional laws. Please join with caution</string>
+    <string name="conversation_join_group_tips_error">This group has been reported by a large number of users, and there may be risks such as fraud and violation of regional laws. The link has been prohibited from being added</string>
+    <string name="conversation_join_group_confirm">I want to join</string>
+    <string name="conversation_join_group_cancel">Don\'t join temporarily</string>
+    <string name="conversation_join_group_know">I know</string>
+
+    <string name="conversation_setting_not_disturb">Do not disturb assistant</string>
+    <string name="conversation_list_stick_fold">%1$s sticky chats</string>
+
+    <string name="conversation_edit_single_other">other side</string>
+    <string name="conversation_edit_single_open">%1$s has turned on the "%2$s" function</string>
+    <string name="conversation_edit_single_close">%1$s has turned off the "%2$s" function</string>
+    <string name="conversation_edit_single_open_sure">%1$s has turned on the "%2$s" function, do you agree?</string>
+    <string name="conversation_edit_single_close_sure">%1$s has turned off the "%2$s" function, do you agree?</string>
+    <string name="conversation_edit_single_open_cancel">%1$s withdrew the activation of the "%2$s" function</string>
+    <string name="conversation_edit_single_close_cancel">%1$s withdrew the closure of the "%2$s" function</string>
+    <string name="conversation_edit_single_open_reject">%1$s refused to enable the "%2$s" function</string>
+    <string name="conversation_edit_single_close_reject">%1$s rejected the closure of the "%2$s" function</string>
+    <string name="conversation_edit_single_open_agree">The "%1$s" function of this conversation has been turned on</string>
+    <string name="conversation_edit_single_close_agree">The "%1$s" function of this conversation has been turned off</string>
+
+</resources>

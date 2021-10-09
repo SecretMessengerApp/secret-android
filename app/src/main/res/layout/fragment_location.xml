@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              style="?wireBackground"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/t_location_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clickable="false"
+        app:contentInsetStart="@dimen/content__padding_left"
+        style="?conversationToolbar"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/tv__location_toolbar__title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginRight="@dimen/wire__padding__regular"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@null"
+                style="?conversationToolbar"
+                />
+
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.waz.zclient.ui.views.TouchRegisteringFrameLayout
+        android:id="@+id/trfl_location_touch_registerer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.google.android.gms.maps.MapView android:id="@+id/mv_map"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/iv__selected_location__background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pin"
+            />
+
+        <com.waz.zclient.ui.text.GlyphTextView
+            android:id="@+id/gtv__selected_location__pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wire__padding__13"
+            android:layout_gravity="center"
+            android:textSize="@dimen/content__location_message__pin_icon__text_size"
+            android:text="@string/glyph__location"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_selected_location_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/share_location__selected_indicator_offset"
+            android:elevation="@dimen/share_location__selected_indicator_elevation"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="UnusedAttribute"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/share_location__selected_bubble_height"
+                android:layout_marginLeft="@dimen/wire__padding__regular"
+                android:layout_marginRight="@dimen/wire__padding__regular"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corner_background_bubble"
+                android:gravity="center"
+                >
+
+                <com.waz.zclient.ui.text.GlyphTextView
+                    android:layout_width="@dimen/share_location__selected_bubble_height"
+                    android:layout_height="@dimen/share_location__selected_bubble_height"
+                    android:gravity="center"
+                    android:textSize="@dimen/wire__text_size__regular"
+                    android:text="@string/glyph__location"
+                    android:textColor="?attr/SecretPrimaryTextColor"
+                    />
+
+                <com.waz.zclient.ui.text.TypefaceTextView
+                    android:id="@+id/ttv__location_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/wire__padding__regular"
+                    android:ellipsize="end"
+                    android:textColor="?attr/SecretPrimaryTextColor"
+                    android:maxLines="1"
+                    app:w_font="@string/wire__typeface__thin"
+                    android:textSize="@dimen/wire__text_size__regular"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/conversation_list__hint__marker_size"
+                android:layout_height="@dimen/conversation_list__hint__marker_size"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_participant_dialog_marker"
+                />
+
+        </LinearLayout>
+
+    </com.waz.zclient.ui.views.TouchRegisteringFrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_cursor_height"
+        >
+
+        <com.waz.zclient.ui.text.GlyphTextView
+            android:id="@+id/gtv__location__current__button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingStart="@dimen/wire__padding__20"
+            android:paddingEnd="@dimen/wire__padding__20"
+            android:gravity="center"
+            android:text="@string/glyph__position"
+            style="?iconButton"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttv__location_send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:paddingStart="@dimen/wire__padding__20"
+            android:paddingEnd="@dimen/wire__padding__20"
+            android:gravity="center"
+            android:text="@string/location_sharing__send_button"
+            android:textSize="@dimen/wire__text_size__small"
+            style="?wirePrimaryTextColor"
+            />
+
+    </FrameLayout>
+</LinearLayout>

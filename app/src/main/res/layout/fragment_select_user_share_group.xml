@@ -1,0 +1,95 @@
+<!--
+
+    Wire
+    Copyright (C) 2016 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/SecretBackgroundColor"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/group_share_tool"
+        style="?conversationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="top"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin"
+        app:title=""
+        app:titleColor="?attr/SecretPrimaryTextColor"
+        android:contentInsetStart="@dimen/content__padding_left"
+        android:navigationIcon="@drawable/action_back_dark">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/tvTitle"
+            style="?conversationToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/conversation_detail_select_user_share"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="17sp" />
+
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/tvConfirm"
+            style="?conversationToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/complete"
+            android:textSize="16sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/SecretBackgroundColor"
+        android:orientation="vertical">
+
+        <com.waz.zclient.usersearch.views.SearchEditText
+            android:id="@+id/searchBoxView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/collections__multi_share_search_height"
+            android:layout_margin="@dimen/wire__padding__8"
+            app:hintText="@string/multi_share_search_hint" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchResultRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

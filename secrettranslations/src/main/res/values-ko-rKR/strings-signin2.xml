@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
+
+    <string name="sign_in2_worth_tips">연결이 더욱 가치 있게</string>
+
+    <string name="sign_up2_name_title">성명</string>
+    <string name="sign_up2_name_bottom_tips">보낸 메시지와 함께 이름도 함께 표시됩니다.</string>
+
+    <string name="sign_up2_your_email_title">이메일</string>
+    <string name="sign_up2_your_email_subtitle">즉시 로그인할수있게 이메일을 보내드립니다.</string>
+
+    <string name="sign_up2_your_password">비밀번호</string>
+    <string name="sign_up2_password_bottom_tips">비밀번호는 최소 8자 이상 설정해주세요</string>
+
+    <string name="sign_up2_check_your_email">이메일 보기</string>
+
+    <string name="sign_up2_email_verify_code">인증번호</string>
+    <string name="sign_up2_resend_code">인증번호 다시 받기</string>
+    <string name="sign_up2_change_email">이메일 변경</string>
+
+    <string name="sign_in2_your_email_title">이메일</string>
+    <string name="sign_in2_password_title">비밀번호</string>
+    <string name="sign_in2_password_subtitle">%1$s의 비밀번호</string>
+
+
+    <string name="sign_in2_forget_your_password">비밀번호 기억나지 않으세요?</string>
+    <string name="sign_in2_invalid_email">잘못된 이메일</string>
+
+</resources>

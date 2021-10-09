@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wire__padding__16"
+        android:padding="@dimen/wire__padding__regular"
+        android:background="@drawable/selector__transparent_button_3">
+
+    <com.jsy.common.views.CircleImageView
+            android:paddingEnd="@dimen/wire__padding__regular"
+            android:id="@+id/civ_single_image"
+            android:layout_width="@dimen/header_image"
+            android:layout_height="@dimen/header_image"
+            android:src="@drawable/upload_icon"/>
+
+    <LinearLayout
+            android:layout_toRightOf="@+id/civ_single_image"
+            android:layout_alignTop="@+id/civ_single_image"
+            android:layout_alignBottom="@+id/civ_single_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.waz.zclient.ui.text.TypefaceEditText
+                    android:id="@+id/conversation_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:textColor="?attr/SecretPrimaryTextColor"
+                    android:textStyle="bold"
+                    app:w_font="@string/wire__typeface__light"
+                    android:textSize="@dimen/wire__text_size__regular"
+                    android:background="@null"
+                    android:ellipsize="end"/>
+
+            <com.waz.zclient.ui.text.GlyphTextView
+                    android:layout_gravity="end|center_vertical"
+                    android:id="@+id/conversation_name_edit_glyph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/glyph__edit"
+                    android:textColor="?attr/SecretPrimaryTextColor"
+            />
+        </FrameLayout>
+
+        <TextView
+                android:layout_marginTop="@dimen/wire__padding__8"
+                android:id="@+id/conversation_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/SecretSubTextColor"
+                android:textSize="@dimen/conversation_row_mems"/>
+    </LinearLayout>
+
+</RelativeLayout>
+

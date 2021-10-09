@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selector__transparent_button"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.jsy.common.views.CircleImageView
+                android:id="@+id/ivHeader1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="14dp"/>
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/ttvName1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/ivHeader1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="16sp"/>
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/ttvHandler1"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/ivHeader1"
+                android:layout_below="@+id/ttvName1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColor="?attr/SecretSubTextColor"
+                android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="21dp"
+            android:background="?attr/SecretPrimaryDividerColor"/>
+</LinearLayout>

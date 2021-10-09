@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/conversation_list__row__height">
+
+    <com.waz.zclient.pages.main.conversationlist.views.row.MenuIndicatorView
+        android:id="@+id/conversation_menu_indicator"
+        android:layout_width="@dimen/conversation_list__left_icon_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"/>
+
+    <RelativeLayout
+        android:id="@+id/conversation_row_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <com.waz.zclient.conversationlist.views.ConversationAvatarView
+            android:id="@+id/conversation_icon"
+            android:layout_width="@dimen/conversation_list__avatar__size"
+            android:layout_height="@dimen/conversation_list__avatar__size"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/conversation_list__avatar__outer_margin"
+            android:layout_marginEnd="@dimen/conversation_list__avatar__outer_margin"/>
+
+        <FrameLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/rlHeadRing"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:src="@drawable/shape_ring_conv_row_avara"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/conversation_list__avatar__size"
+                android:layout_height="@dimen/conversation_list__avatar__size"/>
+            <ImageView
+                android:id="@+id/ivScaleRing"
+                android:layout_gravity="center"
+                android:src="@drawable/shape_ring_conv_row_avara"
+                android:layout_width="@dimen/conversation_list__avatar__size"
+                android:layout_height="@dimen/conversation_list__avatar__size"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/conversation_title"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/conversation_list__row_title__height"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxWidth="160dp"
+            android:maxLines="1"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:layout_toEndOf="@+id/conversation_icon"
+            android:textSize="@dimen/wire__text_size__regular"
+            tools:text="jiajia"/>
+
+        <com.waz.zclient.conversationlist.views.ConversationBadge
+            android:id="@+id/conversation_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/conversation_list__badge__height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/conversation_title"
+            android:layout_alignBottom="@+id/conversation_title"
+            android:layout_marginStart="@dimen/conversation_list__row__zero"
+            android:layout_marginEnd="@dimen/conversation_list__row__side_padding"/>
+
+        <ImageView
+            android:id="@+id/sticky_top_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/conversation_title"
+            android:layout_alignBottom="@+id/conversation_title"
+            android:layout_toStartOf="@+id/conversation_badge"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_stick_top"
+            android:tint="?attr/conversationStickTopIconColor"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/conversation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/conversation_list__row__side_padding"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="1"
+            android:textColor="?attr/SecretSubTextColor"
+            android:textSize="@dimen/wire__text_size__small"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="12dp"
+            tools:text="11"/>
+
+        <TextView
+            android:id="@+id/conversation_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/conversation_time"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="1"
+            android:textColor="?attr/SecretSubTextColor"
+            android:paddingBottom="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/conversation_subtitle_glyph"
+            android:textSize="@dimen/wire__text_size__small"
+            tools:text="jiajia"/>
+
+        <com.waz.zclient.ui.text.GlyphTextView
+            android:id="@+id/conversation_subtitle_glyph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="1"
+            android:textColor="?attr/SecretSubTextColor"
+            android:paddingBottom="12dp"
+            android:layout_toEndOf="@+id/conversation_icon"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__regular"
+            tools:text="liuliuhhhhaiiaiiissdshhdd"/>
+
+        <View
+            android:id="@+id/conversation_separator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/conversation_icon"
+            android:background="?attr/SecretPrimaryDividerColor"/>
+
+    </RelativeLayout>
+</merge>

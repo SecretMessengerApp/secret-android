@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<resources>
+
+    <!-- SwipLayout Start -->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="swipEdgeSize" format="dimension" />
+        <attr name="swipEdgeFlag" format="enum" />
+        <attr name="swipShadowLeft" format="reference" />
+        <attr name="swipShadowRight" format="reference" />
+        <attr name="swipShadowBottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+    <attr name="swipBorderRadius" format="dimension" />
+    <attr name="swipType">
+        <enum name="swipCircle" value="0" />
+        <enum name="swipRound" value="1" />
+    </attr>
+    <attr name="swipSrc" format="reference"></attr>
+    <!-- SwipLayout End -->
+</resources>

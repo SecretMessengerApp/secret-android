@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<com.waz.zclient.pages.extendedcursor.image.CursorImagesLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="match_parent"
+                                                               android:background="@color/graphite"
+                                                               android:orientation="vertical"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv__cursor_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/SecretBackgroundColor"
+        />
+
+    <RelativeLayout
+        android:id="@+id/gtv__cursor_image__nav_camera_back"
+        android:layout_width="@dimen/wire__icon_button_radius_big"
+        android:layout_height="@dimen/wire__icon_button_radius_big"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="@dimen/wire__padding__16"
+        android:layout_marginBottom="@dimen/wire__padding__20"
+        android:background="@drawable/selector__icon_button__background__cursor_camera"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/action_back_dark"
+            android:tint="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gtv__cursor_image_multiple"
+        android:layout_width="@dimen/wire__icon_button_radius_big"
+        android:layout_height="@dimen/wire__icon_button_radius_big"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="@dimen/wire__padding__20"
+        android:layout_marginEnd="@dimen/wire__padding__16"
+        android:background="@drawable/shape_cursor_multiple_image"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_multiple_image"/>
+
+    </RelativeLayout>
+
+    <com.waz.zclient.ui.text.GlyphTextView
+        android:id="@+id/gtv__cursor_image__nav_open_gallery"
+        android:layout_width="@dimen/wire__icon_button_radius_big"
+        android:layout_height="@dimen/wire__icon_button_radius_big"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/wire__padding__20"
+        android:layout_marginEnd="@dimen/wire__padding__16"
+        android:background="@drawable/selector__icon_button__background__cursor_camera"
+        android:gravity="center"
+        android:text="@string/glyph__picture"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wire__icon_button__text_size"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_multiple_send"
+        android:visibility="gone"
+        android:background="@drawable/cursor_rl_multiple_send_image"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <CheckBox
+            android:id="@+id/compress_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_centerInParent="true"
+            android:button="@null"
+            android:drawableStart="@drawable/base_radio_selector"
+            android:drawablePadding="7dp"
+            android:text="@string/conversation_image_original"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"
+            />
+
+        <Button
+            android:id="@+id/bt_multiple_send"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp10"
+            android:background="@drawable/cursor_send_multiple_images_button"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"
+            android:text="@string/sharing__image_preview__confirm_action"/>
+
+    </RelativeLayout>
+
+</com.waz.zclient.pages.extendedcursor.image.CursorImagesLayout>

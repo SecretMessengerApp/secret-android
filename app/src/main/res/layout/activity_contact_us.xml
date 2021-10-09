@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/SecretSecondaryBackgroundColor"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/verificaiton_center_tool"
+        style="?conversationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clickable="false"
+        android:contentInsetStart="@dimen/content__padding_left"
+        android:navigationIcon="@drawable/action_back_dark">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/verificaiton_center_title"
+            style="?conversationToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/pref_contact_us"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="18sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/ll_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector__transparent_button_3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/tv_contact_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/wire__padding__16"
+            android:text="secret@secret.chat"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

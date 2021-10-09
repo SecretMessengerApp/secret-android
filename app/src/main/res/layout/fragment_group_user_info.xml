@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="?attr/SecretBackgroundColor"
+    android:orientation="vertical">
+
+    <com.waz.zclient.common.views.ChatHeadViewNew
+        android:id="@+id/chathead"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        app:allow_icon="false"
+        app:gray_on_unconnected="false"
+        app:initials_font_size="@dimen/participant_initials_text_size"
+        app:isSelectable="false"
+        app:is_round="true"
+        app:show_border="false"
+        app:show_waiting="false" />
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/user_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:ellipsize="end"
+        android:textColor="?attr/SecretPrimaryTextColor"
+        android:textSize="@dimen/wire__text_size__regular"
+        app:w_font="@string/wire__typeface__light" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="50dp"
+        android:background="?attr/SecretPrimaryDividerColor" />
+
+    <RelativeLayout
+        android:id="@+id/user_remark_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di_55"
+        android:background="?attr/SecretBackgroundColor"
+        android:visibility="gone">
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/user_remark_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__regular"
+            app:w_font="@string/wire__typeface__light" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire__divider__height__thin"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:background="?attr/SecretPrimaryDividerColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_remove_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di_55"
+        android:background="?attr/SecretBackgroundColor">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/conversation_detail_settings_remove_from_group"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__regular"
+            app:w_font="@string/wire__typeface__light" />
+
+        <include
+            android:id="@+id/img_end_creat_group_chat"
+            layout="@layout/lay_settings_right_direction_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire__divider__height__thin"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:background="?attr/SecretPrimaryDividerColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_friend_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di_55"
+        android:background="@drawable/selector__transparent_button">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/conversation_detail_item_add_friend"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__regular"
+            app:w_font="@string/wire__typeface__light" />
+
+        <include
+            android:id="@+id/img_end_start_chat"
+            layout="@layout/lay_settings_right_direction_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire__divider__height__thin"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:background="?attr/SecretPrimaryDividerColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forbidden_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di_55"
+        android:background="@drawable/selector__transparent_button">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/conversation_detail_settings_forbidden_settings"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__regular"
+            app:w_font="@string/wire__typeface__light" />
+
+        <include
+            android:id="@+id/img_end_start_chat"
+            layout="@layout/lay_settings_right_direction_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire__divider__height__thin"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:background="?attr/SecretPrimaryDividerColor" />
+    </RelativeLayout>
+</LinearLayout>

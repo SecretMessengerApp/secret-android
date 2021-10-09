@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:text="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.waz.zclient.camera.views.CameraPreviewTextureView
+        android:id="@+id/cptv__camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/ttv__camera_not_available_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/camera_not_available"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wire__text_size__regular"
+        android:visibility="gone"
+        />
+
+    <com.waz.zclient.pages.main.profile.camera.controls.CameraTopControl
+        android:id="@+id/ctp_top_controls"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/camera_top_controls__height"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl__preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/framework__camera__preview_image_background"
+        android:visibility="gone"
+        />
+
+    <com.waz.zclient.pages.main.profile.camera.controls.CameraBottomControl
+        android:id="@+id/cbc__bottom_controls"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/camera__control__height"
+        android:layout_gravity="bottom"
+        android:background="@color/camera__control__background"
+        android:outAnimation="@anim/camera_control_out"
+        android:inAnimation="@anim/camera_control_in"
+        android:clickable="true"
+        />
+
+    <com.waz.zclient.views.ProgressView
+        android:id="@+id/pv__preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/SecretPrimaryTextColor"
+        android:textSize="@dimen/loading_spinner__size"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+    <com.waz.zclient.pages.main.profile.camera.CameraFocusView
+        android:layout_width="@dimen/camera__focus__max_size"
+        android:layout_height="@dimen/camera__focus__max_size"
+        android:id="@+id/cfv__focus"
+        />
+
+</FrameLayout>

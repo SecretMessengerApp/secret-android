@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/user_row_height"
+    android:background="@drawable/selector__transparent_button_3"
+    >
+
+    <com.waz.zclient.common.views.ChatHeadViewNew
+        android:id="@+id/chathead"
+        android:layout_width="@dimen/people_picker__chathead__width"
+        android:layout_height="@dimen/people_picker__chathead__width"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/wire__padding__regular"
+        android:layout_marginEnd="@dimen/wire__padding__regular" />
+
+    <LinearLayout
+        android:id="@+id/aux_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/wire__padding__small"
+        android:layout_marginEnd="@dimen/wire__padding__small"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/verified_shield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/wire__padding__small"
+            android:layout_marginEnd="@dimen/wire__padding__small"
+            android:src="@drawable/shield_full"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guest_indicator"
+            android:layout_width="@dimen/user_row_icon_size"
+            android:layout_height="@dimen/user_row_icon_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/wire__padding__small"
+            android:layout_marginEnd="@dimen/wire__padding__small"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/video_indicator"
+            android:layout_width="@dimen/user_row_icon_size"
+            android:layout_height="@dimen/user_row_icon_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/wire__padding__small"
+            android:layout_marginEnd="@dimen/wire__padding__small"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/share_extension__row__checkbox_size"
+            android:layout_height="@dimen/share_extension__row__checkbox_size"
+            android:layout_marginStart="@dimen/wire__padding__small"
+            android:focusable="false"
+            android:clickable="false"
+            android:longClickable="false"
+            android:layout_marginEnd="@dimen/wire__padding__small"
+            android:button="@drawable/checkbox"
+            android:visibility="gone"
+            tools:targetApi="lollipop" />
+
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttvIsCreatorOrSelf"
+            style="?startUiUserRowSubLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__light" />
+
+
+        <ImageView
+            android:id="@+id/next_indicator"
+            android:layout_width="@dimen/next_indicator_size"
+            android:layout_height="@dimen/next_indicator_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/wire__padding__small"
+            android:layout_marginEnd="@dimen/wire__padding__small"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/aux_container"
+        android:layout_toEndOf="@+id/chathead"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/name_text"
+            style="?startUiUserRowLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/wire__padding__6"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            app:w_font="@string/wire__typeface__light" />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/username_text"
+            style="?startUiUserRowSubLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__light" />
+
+    </LinearLayout>
+
+    <include
+            android:id="@+id/separator"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire__divider__height__thin"
+            android:layout_alignStart="@+id/chathead"
+            layout="@layout/layout_line_c9ced2"/>
+</RelativeLayout>

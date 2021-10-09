@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/SecretThreeBackgroundColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="?conversationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:contentInsetStart="@dimen/content__padding_left">
+
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:text="@string/conversation_detail_transfer_group_invite_detail"
+            android:textSize="17sp" />
+
+   </androidx.appcompat.widget.Toolbar>>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="?attr/SecretPrimaryDividerColor" />
+
+        <com.waz.zclient.common.views.ChatHeadViewNew
+            android:id="@+id/circle_image_view_avatar"
+            android:layout_width="@dimen/di_60"
+            android:layout_height="@dimen/di_60"
+            app:default_background="@color/black_8"
+            app:is_round="true"
+            app:show_border="false"
+            app:show_waiting="false"
+            android:layout_marginTop="@dimen/dp50"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:text="UserName"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_invite_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_invite_excuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="invite excuse" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="?attr/SecretPrimaryDividerColor"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/btn_confirm_join"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="@dimen/dp30"
+        android:background="@drawable/button_blue_selector"
+        android:gravity="center"
+        android:text="@string/conversation_detail_transfer_group_confirm_invite"
+        android:textColor="@color/white" />
+</LinearLayout>

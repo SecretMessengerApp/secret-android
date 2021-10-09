@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="#60000000"
+    android:orientation="vertical">
+    <LinearLayout
+            android:id="@+id/llAnimView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/SecretBackgroundColor"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/wire__padding__10"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+            <ImageView
+                    android:id="@+id/group_share_search"
+                    android:layout_width="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_share_search"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/mTvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/conversation_detail_share_to"
+                        android:textColor="?attr/SecretPrimaryTextColor"
+                        android:textSize="16sp"/>
+
+                <TextView
+                        android:id="@+id/mTvSubTitle"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/conversation_detail_share_select"
+                        android:textColor="?attr/SecretSubTextColor"
+                        android:textSize="10sp"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <com.jsy.common.views.ParticipantsGridView
+                android:id="@+id/pgv__participants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black_8"/>
+
+        <RelativeLayout
+                android:id="@+id/copy_link"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/conversation_detail_copy_url"
+                    android:textColor="?attr/SecretPrimaryTextColor"
+                    android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/send_link"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+            <TextView
+                    android:id="@+id/tv_send_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="?attr/SecretPrimaryTextColor"
+                    android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+               android:background="?attr/SecretPrimaryDividerColor"/>
+
+        <RelativeLayout
+                android:id="@+id/dismiss"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/secret_cancel"
+                    android:textColor="?attr/SecretPrimaryTextColor"
+                    android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

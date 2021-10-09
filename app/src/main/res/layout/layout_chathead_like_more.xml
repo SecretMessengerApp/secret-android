@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<com.waz.zclient.ui.text.GlyphTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/glyphTextViewLikeMored"
+        android:layout_width="@dimen/message_content_padding_16"
+        android:text="@string/glyph__more"
+        android:gravity="center"
+        android:layout_height="@dimen/message_content_padding_16"
+        android:layout_marginStart="@dimen/wire__padding__2"
+        android:layout_marginEnd="@dimen/wire__padding__2"
+        android:textSize="@dimen/wire__text_size__small">
+
+</com.waz.zclient.ui.text.GlyphTextView>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:clickable="true"
+              android:background="?attr/SecretBackgroundColor"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/t_drawing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clickable="true"
+        app:contentInsetStart="@dimen/content__padding_left"
+        style="?attr/conversationToolbar"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/tv__drawing_toolbar__title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/wire__padding__regular"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@null"
+                style="?attr/conversationToolbar"
+                />
+
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_color_picker_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/drawing__color__picker__height"
+        android:layout_gravity="center"
+        android:scrollbars="none"
+        >
+        <com.waz.zclient.ui.colorpicker.ColorPickerLayout
+            android:id="@+id/cpdl__color_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            />
+
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drawing__border_line__height"
+            android:background="@color/drawing__border_line"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.waz.zclient.ui.sketch.DrawingCanvasView
+            android:id="@+id/dcv__canvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/v__tip_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/drawing__tip__background"
+                android:visibility="invisible"
+                />
+
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/ttv__drawing__view__tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/drawing__tip__message"
+                android:textSize="@dimen/drawing__tip__font__size"
+                android:textColor="@color/drawing__tip"
+                app:w_font="@string/wire__typeface__light"
+                />
+
+        </FrameLayout>
+
+        <com.waz.zclient.ui.views.SketchEditText
+            android:id="@+id/et__sketch_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wire__padding__regular"
+            android:layout_marginStart="@dimen/wire__padding__regular"
+            android:minWidth="@dimen/drawing__text_min_width"
+            android:background="@null"
+            android:clickable="false"
+            android:ellipsize="middle"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wire__text_size__regular"
+            android:padding="@dimen/wire__padding__regular"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            tools:ignore="LabelFor"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:textColorHint="@color/white_32"
+            android:fontFamily="@string/wire__typeface__light"
+            />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/drawing__border_line__height"
+        android:background="@color/drawing__border_line"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingStart="@dimen/framework__general__left_padding"
+        android:paddingEnd="@dimen/framework__general__right_padding"
+        >
+
+        <com.waz.zclient.ui.text.GlyphTextView
+            android:id="@+id/gtv__drawing__gallery_button"
+            android:layout_width="@dimen/wire__icon_button__diameter"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|start"
+            android:gravity="center"
+            android:text="@string/glyph__picture"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__icon_button__text_size"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
+
+            <com.waz.zclient.ui.text.GlyphTextView
+                android:id="@+id/gtv__drawing_button__sketch"
+                android:layout_width="@dimen/wire__icon_button__diameter"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/glyph__paint"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__icon_button__text_size"
+                />
+
+            <com.waz.zclient.ui.text.GlyphTextView
+                android:id="@+id/gtv__drawing_button__emoji"
+                android:layout_width="@dimen/wire__icon_button__diameter"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/wire__padding__regular"
+                android:layout_marginEnd="@dimen/wire__padding__regular"
+                android:gravity="center"
+                android:text="@string/glyph__emoji"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__icon_button__text_size"
+                />
+
+            <com.waz.zclient.ui.text.GlyphTextView
+                android:id="@+id/gtv__drawing_button__text"
+                android:layout_width="@dimen/wire__icon_button__diameter"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/glyph__keyboard"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__icon_button__text_size"
+                />
+
+        </LinearLayout>
+        <com.waz.zclient.ui.views.CursorIconButton
+            android:id="@+id/tv__send_button"
+            android:clickable="false"
+            android:layout_width="@dimen/cursor__menu_button__diameter"
+            android:layout_height="@dimen/cursor__menu_button__diameter"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center"
+            android:padding="@dimen/cursor__menu_button__padding"
+            android:text="@string/glyph__send"
+            android:textColor="@color/drawing__icon"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

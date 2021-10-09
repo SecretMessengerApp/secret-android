@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    >
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/ttv_new_reg__signup__phone__country__row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="@dimen/framework__general__left_padding"
+        app:w_font="@string/wire__typeface__light"
+        android:textSize="@dimen/country_box__text_size"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_gravity="left|center_vertical"
+        />
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/ttv_new_reg__signup__phone__country__row_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/new_reg__country_code__text"
+        android:padding="@dimen/framework__general__left_padding"
+        app:w_font="@string/wire__typeface__light"
+        android:textSize="@dimen/country_box__text_size"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_gravity="right|center_vertical"
+        />
+
+
+</FrameLayout>

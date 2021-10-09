@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2019 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:background="@drawable/selector__transparent_button_3"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rlSwitchAccount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <com.waz.zclient.common.views.ChatHeadViewNew
+            android:id="@+id/chatHeadView"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="10dp"
+            app:show_border="false"
+            app:allow_icon="false" />
+
+        <ImageView
+            android:id="@+id/ivAccountMgrStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ico_account_mgr_ok" />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/tvAccountMgrName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivAccountMgrStatus"
+            android:layout_toRightOf="@+id/chatHeadView"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__regular"
+            app:w_font="@string/wire__typeface__light" />
+
+    </RelativeLayout>
+
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:background="@color/accent_red"
+        android:id="@+id/tvDeleteAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:text="@string/conversation__action__delete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wire__text_size__regular"
+        app:w_font="@string/wire__typeface__light" />
+
+
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

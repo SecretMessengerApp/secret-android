@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/SecretBackgroundColor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/report_content_toolbar"
+        style="?conversationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="@dimen/content__padding_left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/report_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/report_content_title"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__regular"
+            app:w_font="@string/wire__typeface__medium" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/report_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:layout_marginStart="@dimen/di_15"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginEnd="@dimen/di_15"
+        android:background="@drawable/bg_circle_comment_edit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_content_toolbar">
+
+        <EditText
+            android:id="@+id/report_content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:hint="@string/report_content_hint"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:paddingStart="@dimen/di_15"
+            android:paddingTop="@dimen/dp10"
+            android:paddingEnd="@dimen/dp10"
+            android:paddingBottom="@dimen/di_15"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textColorHint="@color/color_69"
+            android:textSize="@dimen/sp_16" />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/report_content_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:gravity="center"
+            android:text="0/200"
+            android:textColor="@color/color_69"
+            android:textSize="@dimen/di_12"
+            app:w_font="@string/wire__typeface__light" />
+    </FrameLayout>
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/report_image_tilte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/di_15"
+        android:layout_marginTop="@dimen/di_15"
+        android:gravity="start|center_vertical"
+        android:text="@string/report_content_image_title"
+        android:textColor="?attr/SecretPrimaryTextColor"
+        android:textSize="@dimen/wire__text_size__regular"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_content_layout"
+        app:w_font="@string/wire__typeface__medium" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/report_image_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/di_10"
+        android:layout_marginEnd="@dimen/dp10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_image_tilte" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_image_recycler">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/report_submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/di_15"
+            android:layout_marginRight="@dimen/di_15"
+            android:layout_marginBottom="@dimen/dp20"
+            android:background="@drawable/button_blue_selector"
+            android:gravity="center"
+            android:text="@string/report_content_submit"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            app:w_font="@string/wire__typeface__medium" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

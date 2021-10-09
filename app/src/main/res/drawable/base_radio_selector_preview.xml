@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:gravity="center">
+                <shape android:shape="oval">
+                    <stroke android:width="1dp" android:color="?attr/SecretBackgroundColorReverted" />
+                    <solid android:color="@android:color/transparent" />
+                    <size android:width="18dp" android:height="18dp" />
+                </shape>
+            </item>
+
+            <item android:gravity="center">
+                <shape android:shape="oval">
+                    <solid android:color="@color/SecretBlue" />
+                    <size android:width="13dp" android:height="13dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="1dp" android:color="?attr/SecretBackgroundColorReverted" />
+            <size android:width="18dp" android:height="18dp" />
+        </shape>
+    </item>
+</selector>

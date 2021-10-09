@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/llThousandsGroupItem"
+    android:background="@drawable/selector__transparent_button"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_row_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jsy.common.views.CircleImageView
+            android:id="@+id/ivHeader"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="15sp" />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttvSelfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:text="@string/conversation_thousands_group_me"
+            android:textColor="?attr/SecretSecondTextColor"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/icon_del"
+            android:layout_width="@dimen/content__footer__height"
+            android:layout_height="@dimen/collections__web_preview_image_size"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:visibility="gone"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/icon_checked" />
+
+        <ImageView android:id="@+id/icon_arrow"
+            android:layout_width="@dimen/content__footer__height"
+            android:layout_height="@dimen/collections__web_preview_image_size"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/left_to_right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="55dp"
+        android:background="?attr/SecretPrimaryDividerColor" />
+</LinearLayout>

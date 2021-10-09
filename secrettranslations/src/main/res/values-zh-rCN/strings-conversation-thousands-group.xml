@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<resources
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
+    <string name="content__system__you_change_conv_type">[[您]] 将群升级为万人群</string>
+    <string name="content__system__other_change_conv_type">[[%1$s]] 将群升级为万人群</string>
+    <string name="conversation_thousands_group_me">我</string>
+    <string name="conversation_thousands_group_mem_num">群成员(%1$s)</string>
+    <string name="conversation_detail_settings_thousands_group">升级为万人群</string>
+    <plurals name="conversation_detail_settings_thousands_group_notice">
+        <item quantity="one">群聊人数超过%1$d人方可升级</item>
+        <item quantity="other">群聊人数超过%1$d人方可升级</item>
+    </plurals>
+    <string name="conversation_detail_settings_thousands_group_error">只有群主且人数超过100人方可升级</string>
+    <string name="conversation_detail_settings_thousands_group_is_open">已升级为万人群</string>
+    <string name="conversation_detail_open_link_join">开启链接加入</string>
+    <string name="conversation_detail_show_mem">群成员列表展示</string>
+    <string name="conversation_detail_mem_confirm">群成员被邀请确认</string>
+    <string name="conversation_detail_open_qrcode_join">开启二维码加入</string>
+    <string name="conversation_detail_group_qrcode">群二维码</string>
+    <string name="conversation_detail_delete_member">删除成员</string>
+    <string name="conversation_detail_qrcode_tip">扫一扫上面的二维码图案，加入secret群聊</string>
+    <string name="conversation_detail_qrcode_save">保存secret群二维码</string>
+    <string name="conversation_detail_share_to">分享给</string>
+    <string name="conversation_detail_share_select">选择分享</string>
+    <string name="conversation_detail_copy_url">复制链接</string>
+    <string name="conversation_detail_select_user_share">选择好友</string>
+    <string name="conversation_detail_select_transfer_group">选择新群主</string>
+    <string name="conversation_detail_invited_member">完成(%s)</string>
+    <string name="conversation_detail_complete">完成</string>
+    <string name="conversation_share_user_mem">发送(%1$s)</string>
+    <string name="conversation_setting_group_setting">群管理</string>
+    <string name="conversation_setting_group_invite_confirm">群聊邀请确认</string>
+    <string name="conversation_setting_group_invite_confirm_tip">启用后，群成员需群主确认才能邀请朋友进群。扫描二维码进群将同时停用。</string>
+    <string name="conversation_setting_group_only_creator_invite">仅限群主邀请进入群聊</string>
+    <string name="conversation_setting_group_creator_change">群主管理权转让</string>
+    <string name="conversation_setting_group_speaker_manage">演讲者</string>
+    <string name="conversation_setting_group_admin_manage">管理员</string>
+    <string name="conversation_setting_group_speaker_add">添加</string>
+    <string name="conversation_setting_group_speaker_search_hint">通过名称或用户名搜索</string>
+    <string name="conversation_setting_group_bind">已绑定</string>
+    <string name="conversation_setting_invite_number">想邀请%1$s位朋友加入群聊</string>
+    <string name="conversation_setting_invite_to_confirm">去确认</string>
+    <string name="conversation_setting_invite_confirm">已确认</string>
+    <string name="conversation_setting_you">您</string>
+    <string name="conversation_setting_open_link_join">%1$s开启了群链接加入</string>
+    <string name="conversation_setting_close_link_join">%1$s关闭了群链接加入</string>
+    <string name="conversation_setting_open_confirm_join">%1$s开启了群聊邀请确认</string>
+    <string name="conversation_setting_close_confirm_join">%1$s关闭了群聊邀请确认</string>
+    <string name="conversation_setting_open_only_creator">%1$s开启了仅限群主邀请</string>
+    <string name="conversation_setting_close_only_creator">%1$s关闭了仅限群主邀请</string>
+    <string name="conversation_setting_open_show_mem">%1$s开启了群成员列表展示</string>
+    <string name="conversation_setting_close_show_mem">%1$s关闭了群成员列表展示</string>
+    <string name="conversation_setting_open_mem_confirm">%1$s开启了群成员被邀请确认</string>
+    <string name="conversation_setting_close_mem_confirm">%1$s关闭了群成员被邀请确认</string>
+    <string name="conversation_setting_be_new_creator">%1$s成为了新群主</string>
+    <string name="conversation_setting_change_new_creator">%1$s将群主转让给%2$s</string>
+    <string name="conversation_detail_invite_excuse">请输入邀请理由</string>
+    <string name="conversation_detail_invite_description">群主已启用“群聊邀请确认”，邀请朋友进群可向群主描述原因。</string>
+    <string name="conversation_detail_transfer_group_description">转让本群后，您将失去群主身份</string>
+    <string name="conversation_detail_transfer_group_confirm"><Data><![CDATA[确定将本群转让给 <font color="#009DFF"><b>%1$s</b></font>]]></Data></string>
+    <string name="conversation_detail_transfer_group_success">转让成功</string>
+    <string name="conversation_detail_add_member">邀请已发送，请等待群主确认</string>
+    <string name="conversation_detail_transfer_group_failed">转让失败</string>
+    <string name="conversation_detail_transfer_group_nvitation_failed">邀请失败</string>
+    <string name="conversation_detail_transfer_group_confirm_invite">确认邀请</string>
+    <string name="conversation_detail_transfer_group_invite_detail">邀请详情</string>
+    <string name="conversation_detail_transfer_group_invite_desc">邀请%1$d位朋友加入群聊</string>
+    <string name="conversation_send_failure">发送失败</string>
+    <string name="conversation_setting_group_notice">群公告</string>
+    <string name="conversation_setting_group_notice_publish">正在发布</string>
+    <string name="conversation_setting_group_notice_edit">编辑公告</string>
+    <string name="conversation_setting_group_notice_empty">本群暂无群公告</string>
+    <string name="conversation_add_exist_user">%1$s 已经在群内</string>
+</resources>

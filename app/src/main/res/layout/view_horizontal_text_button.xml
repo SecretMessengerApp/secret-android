@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector__transparent_button"
+                android:minHeight="@dimen/preference_button_height">
+
+    <RelativeLayout
+            android:id="@+id/rlIconStart"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+        <com.waz.zclient.ui.text.GlyphTextView
+                android:id="@+id/preference_icon_start"
+                android:layout_width="@dimen/preference_button_image_size"
+                android:layout_height="@dimen/preference_button_image_size"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black_90"
+                android:textSize="@dimen/wire__padding__16"/>
+
+        <ImageView
+                android:id="@+id/preference_icon_start_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black_90"
+                android:textSize="@dimen/wire__padding__16"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:background="#f00"
+            android:id="@+id/rlTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/preference_button_padding"
+            android:layout_marginStart="@dimen/preference_button_padding"
+            android:layout_toEndOf="@+id/rlIconStart"
+            android:layout_toStartOf="@+id/rlIconEnd">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/preference_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__text_size__regular"
+                android:visibility="visible"
+                app:w_font="@string/wire__typeface__light"/>
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/preference_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#aeaeae"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/wire__text_size__regular"
+                app:w_font="@string/wire__typeface__light"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:id="@+id/rlIconEnd"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/preference_button_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+        <com.waz.zclient.ui.text.GlyphTextView
+                android:id="@+id/preference_icon_end"
+                android:layout_width="@dimen/preference_button_image_size"
+                android:layout_height="@dimen/preference_button_image_size"
+        />
+
+        <ImageView
+                android:id="@+id/preference_icon_end_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+    </RelativeLayout>
+
+    <View
+            android:id="@+id/vLineBottom"
+            android:layout_alignStart="@+id/rlTitle"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/SecretPrimaryDividerColor"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+
+</RelativeLayout>

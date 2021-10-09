@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Wire Swiss GmbH
+
+-->
+<com.waz.zclient.messages.parts.assets.VideoAssetPartView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/message_video_asset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/message_content_video_height"
+        android:layout_marginEnd="@dimen/message_content_padding_48"
+        android:layout_marginStart="@dimen/message_content_padding_24"/>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="message_bottom_menu_item_details" type="id"/>
+    <item name="participants_section" type="id"/>
+    <item name="services_section" type="id"/>
+    <item name="guest_options" type="id"/>
+    <item name="timed_messages_options" type="id"/>
+    <item name="notifications_options" type="id"/>
+    <item name="read_receipts_options" type="id"/>
+    <item name="create_group_button" type="id"/>
+    <item name="add_friend_button" type="id"/>
+    <item name="scan_button" type="id"/>
+    <item name="invite_contacts_button" type="id"/>
+    <item name="create_guest_room_button" type="id"/>
+    <item name="manage_services_button" type="id"/>
+
+    <item name="conversation_pager" type="id" />
+
+    <!-- Adding placeholder to satisfy lint, otherwise lint thinks files are not used -->
+    <drawable name="placeholder1" tools:ignore="UnusedResources">@drawable/ic_launcher_wire
+    </drawable>
+    <drawable name="placeholder2" tools:ignore="UnusedResources">
+        @drawable/ic_launcher_wire_internal
+    </drawable>
+    <drawable name="placeholder3" tools:ignore="UnusedResources">@drawable/ic_launcher_wire_dev
+    </drawable>
+    <drawable name="placeholder4" tools:ignore="UnusedResources">
+        @drawable/ic_launcher_wire_candidate
+    </drawable>
+    <drawable name="placeholder5" tools:ignore="UnusedResources">
+        @drawable/ic_launcher_wire_playground
+    </drawable>
+    <drawable name="placeholder6" tools:ignore="UnusedResources">@drawable/ic_launcher_wire_qa
+    </drawable>
+    <item name="custom_full_id" type="id" />
+    <item name="custom_small_id" type="id" />
+
+
+    <item name="cursor" type="id"/>
+    <item name="cursor_menu_item_left_margin" type="id" />
+    <item name="cursor_menu_item_participant" type="id" />
+    <item name="cursor_menu_item_calling" type="id" />
+    <item name="cursor_menu_item_video" type="id" />
+    <item name="cursor_menu_item_camera" type="id" />
+    <item name="cursor_menu_item_draw" type="id" />
+    <item name="cursor_menu_item_ping" type="id" />
+    <item name="cursor_menu_item_location" type="id" />
+    <item name="cursor_menu_item_emoji" type="id" />
+    <item name="cursor_menu_item_keyboard" type="id" />
+    <item name="cursor_menu_item_file" type="id" />
+    <item name="cursor_menu_item_gif" type="id" />
+    <item name="cursor_menu_item_audio_message" type="id" />
+    <item name="cursor_menu_item_more" type="id" />
+    <item name="cursor_menu_item_less" type="id" />
+    <item name="cursor_menu_item_send" type="id" />
+    <item name="cursor_menu_item_dummy" type="id" />
+    <item name="cursor_menu_item_mention" type="id"/>
+    <item name="cursor_menu_item_line_down" type="id" />
+    <item name="cursor_menu_item_line_up" type="id" />
+    <item name="cursor_menu_item_call_group" type="id" />
+
+
+    <item name="message_bottom_menu_item_forward" type="id"/>
+    <item name="message_bottom_menu_item_copy" type="id"/>
+    <item name="message_bottom_menu_item_delete" type="id"/>
+    <item name="message_bottom_menu_item_delete_local" type="id"/>
+    <item name="message_bottom_menu_item_delete_global" type="id"/>
+    <item name="message_bottom_menu_item_edit" type="id"/>
+    <item name="message_bottom_menu_item_reply" type="id"/>
+    <item name="message_bottom_menu_item_like" type="id"/>
+    <item name="message_bottom_menu_item_unlike" type="id"/>
+    <item name="message_bottom_menu_item_save" type="id"/>
+    <item name="message_bottom_menu_item_open_file" type="id"/>
+    <item name="message_bottom_menu_item_forward_multiple" type="id"/>
+    <item name="message_bottom_menu_item_reveal" type="id"/>
+
+    <item name="video_calling_view" type="id"/>
+
+    <item name="emoji_keyboard_item" type="id"/>
+
+    <item name="content" type="id"/>
+
+    <item name="collection_image_view" type="id"/>
+    <item name="conversation_root_notice_flag" type="id" />
+    <item name="conversation_applet_notice_id" type="id" />
+    <item name="conversation_applet_notice_flag" type="id" />
+    <item name="conversation_group_notice_flag" type="id" />
+    <item name="conversation_report_notice_flag" type="id" />
+    <item name="conversation_house_notice_flag" type="id" />
+</resources>

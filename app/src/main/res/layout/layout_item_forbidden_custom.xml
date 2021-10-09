@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?wireBackground"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_item_height">
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:textSize="@dimen/wire__text_size__regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:w_font="@string/wire__typeface__light" />
+
+    <com.waz.zclient.ui.text.GlyphTextView
+        android:id="@+id/glyph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:text="@string/glyph__check"
+        android:textColor="#478CFE"
+        android:textSize="16dp"
+        android:visible="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.waz.zclient.ui.text.TypefaceTextView
+        android:id="@+id/custom_time_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:textColor="?attr/SecretSubTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/arrow_imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:w_font="@string/wire__typeface__light"
+        tools:text="custom time" />
+
+    <ImageView
+        android:id="@+id/arrow_imageView"
+        android:layout_width="14dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/left_to_right_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/wire__divider__height__thin"
+        android:layout_alignParentBottom="true"
+        android:background="?thinDividerColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

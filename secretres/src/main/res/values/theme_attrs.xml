@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2021 Secret
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<resources>
+    <attr name="themeName" format="string" />
+
+    <attr name="SecretBackgroundColor" format="color" />
+    <attr name="SecretBackgroundColorReverted" format="color" />
+    <attr name="SecretSecondaryBackgroundColor" format="color" />
+    <attr name="SecretThreeBackgroundColor" format="color" />
+    <attr name="SecretFourBackgroundColor" format="color" />
+    <attr name="SecretFiveBackgroundColor" format="color" />
+    <attr name="ToolbarBackgroundColor" format="color" />
+    <attr name="SecretPrimaryTextColor" format="color" />
+    <attr name="SecretSubTextColor" format="color" />
+    <attr name="SecretSecondTextColor" format="color" />
+
+    <attr name="DialogBackgroundColor" format="color" />
+    <attr name="SearchBoxBackgroundColor" format="color" />
+    <attr name="EditTextBackgroundColor" format="color" />
+    <attr name="EditTextHintColor" format="color" />
+
+    <!--secrethouse-->
+    <attr name="HouseMainBgColor" format="color|reference" />
+    <attr name="HouseMainFrameTopColor" format="color|reference" />
+    <attr name="HouseMainFrameBottomColor" format="color|reference" />
+    <attr name="HouseBackgroundColor" format="color|reference" />
+    <attr name="HouseTitleColor" format="color" />
+    <attr name="HouseSecondTitleColor" format="color" />
+    <attr name="HouseGlyphTextColor" format="color" />
+    <attr name="HouseCancleTitleColor" format="color" />
+    <attr name="HouseTextColor" format="color" />
+    <attr name="HouseEditTextColor" format="color" />
+    <attr name="HouseButtonBgColor" format="color|reference" />
+    <attr name="HouseMainBottomBgColor" format="color|reference" />
+    <attr name="HouseIconBgColor" format="color|reference" />
+    <attr name="HouseIconTintColor" format="color" />
+    <attr name="HouseIconTintDisableColor" format="color" />
+    <attr name="HouseSpeakerUserColor" format="color" />
+    <attr name="HouseStrokeUserColor" format="color" />
+    <attr name="HouseMuteUserBgColor" format="color" />
+    <attr name="HouseMuteUserFrameColor" format="color" />
+    <attr name="HouseUserConnectBgColor" format="color" />
+    <attr name="HouseUserConnectTextColor" format="color" />
+    <attr name="HouseMaterialBgColor" format="color|reference" />
+    <attr name="HouseSecondTextColor" format="color" />
+    <attr name="HouseDialogTextColor" format="color" />
+    <attr name="HouseDialogDescColor" format="color" />
+    <attr name="HouseDialogUserOpeateColor" format="color" />
+    <attr name="HouseDialogLineColor" format="color" />
+    <attr name="HousePopupBgColor" format="color|reference" />
+    <attr name="HouseDividerLineColor" format="color" />
+    <attr name="HouseSexIconTintColor" format="color|reference" />
+    <attr name="HouseSexSelectIconTintColor" format="color|reference" />
+
+</resources>

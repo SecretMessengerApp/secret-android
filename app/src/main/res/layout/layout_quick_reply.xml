@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/wire__padding__small"
+        android:layout_marginLeft="@dimen/quick_reply__padding"
+        android:layout_marginRight="@dimen/quick_reply__padding"
+        >
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttv__quick_reply__name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/quick_reply__text_size"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            app:w_font="@string/wire__typeface__regular"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/ttv__quick_reply__counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/quick_reply__text_size"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            app:w_font="@string/wire__typeface__regular"
+            />
+
+    </LinearLayout>
+
+    <com.waz.zclient.pages.main.popup.ViewPagerLikeRecyclerView
+        android:id="@+id/rv__quick_reply__content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/wire__padding__16"
+        />
+
+    <com.waz.zclient.ui.cursor.CursorEditText
+        android:id="@+id/tet__quick_reply__message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/wire__padding__16"
+        android:layout_marginLeft="@dimen/quick_reply__padding"
+        android:layout_marginRight="@dimen/quick_reply__padding"
+        android:paddingTop="@dimen/wire__padding__12"
+        android:paddingBottom="@dimen/wire__padding__12"
+        android:paddingLeft="@dimen/wire__padding__16"
+        android:paddingRight="@dimen/wire__padding__16"
+        android:imeOptions="actionSend"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines="3"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="@dimen/wire__text_spacing__medium"
+        android:scrollHorizontally="false"
+        android:textSize="@dimen/quick_reply__text_size"
+        android:textColor="?attr/SecretPrimaryTextColor"
+        android:background="@drawable/shape__edit_layout__background__dark"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:w_font="@string/wire__typeface__regular"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll__quick_reply__open_external"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:paddingLeft="@dimen/quick_reply__padding"
+        android:paddingRight="@dimen/quick_reply__padding"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/quick_reply__icon_size"
+            android:layout_height="@dimen/quick_reply__icon_size"
+            android:src="@drawable/ic_launcher_wire"
+            />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wire__padding__small"
+            android:text="@string/quick_reply__open_wire"
+            android:textAllCaps="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/wire__text_size__small"
+            android:textColor="@color/white_72"
+            app:w_font="@string/wire__typeface__regular"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

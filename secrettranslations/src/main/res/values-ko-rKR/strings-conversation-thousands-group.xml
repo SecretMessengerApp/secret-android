@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<resources
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
+    <string name="content__system__you_change_conv_type">[[님]] 그룹을 백만 명으로 업그레이드</string>
+    <string name="content__system__other_change_conv_type">[[%1$s]] 만인 그룹으로 승격</string>
+    <string name="conversation_thousands_group_me">나</string>
+    <string name="conversation_thousands_group_mem_num">그룹 멤버(%1$s)</string>
+    <string name="conversation_detail_settings_thousands_group">만명이상의 그룹으로 업그레이드</string>
+    <plurals name="conversation_detail_settings_thousands_group_notice">
+        <item quantity="one">그룹 멤버가%1$d명을 초과하면 승격할 수 있습니다</item>
+        <item quantity="other">그룹 멤버가%1$d명을 초과하면 승격할 수 있습니다</item>
+    </plurals>
+    <string name="conversation_detail_settings_thousands_group_error">그룹 멤버가 100인 이상이고 그룹 소유자만 승급할수 있음</string>
+    <string name="conversation_detail_settings_thousands_group_is_open">만인 그룹으로 승급</string>
+    <string name="conversation_detail_open_link_join">링크로 가입 함을 켜기</string>
+    <string name="conversation_detail_show_mem">그룹 멤버 목록 표시</string>
+    <string name="conversation_detail_mem_confirm">그룹 멤버 요청될시 확인하기</string>
+    <string name="conversation_detail_open_qrcode_join">가입 할 QR 코드 열기</string>
+    <string name="conversation_detail_group_qrcode">그룹 QR 코드</string>
+    <string name="conversation_detail_delete_member">멤버 삭제</string>
+    <string name="conversation_detail_qrcode_tip">위의 QR 코드를 스캔하여 secret그룹에 참여하기</string>
+    <string name="conversation_detail_qrcode_save">secret그룹 QR 코드 저장</string>
+    <string name="conversation_detail_share_to">에 공유</string>
+    <string name="conversation_detail_share_select">공유</string>
+    <string name="conversation_detail_copy_url">링크 복사</string>
+    <string name="conversation_detail_select_user_share">친구를 선택하요 공유하기</string>
+    <string name="conversation_detail_select_transfer_group">새로운 그룹 소유자를 선택</string>
+    <string name="conversation_detail_invited_member">완료(%s)</string>
+    <string name="conversation_detail_complete">완료</string>
+    <string name="conversation_share_user_mem">보내기(%1$s)</string>
+    <string name="conversation_setting_group_setting">그룹 관리</string>
+    <string name="conversation_setting_group_invite_confirm">그룹 채팅 초대 확인</string>
+    <string name="conversation_setting_group_invite_confirm_tip">사용 가능한다면 멤버 친구를 그룹에 초대하기 전에 그룹 방장의 승인이 필요합니다.기능 가입을 위한 그룹 QR 코드 스캔은 사용 수 없습니다.</string>
+    <string name="conversation_setting_group_only_creator_invite">그룹 방장만 멤버를 초대할수 있음</string>
+    <string name="conversation_setting_group_creator_change">소유권 이전</string>
+    <string name="conversation_setting_group_speaker_manage">연사</string>
+    <string name="conversation_setting_group_admin_manage">관리자</string>
+    <string name="conversation_setting_group_speaker_add">추가</string>
+    <string name="conversation_setting_group_speaker_search_hint">이름 또는 아이디로 검색</string>
+    <string name="conversation_setting_group_bind">연동</string>
+    <string name="conversation_setting_invite_number">%1$s분의 친구를 요청하고 싶음</string>
+    <string name="conversation_setting_invite_to_confirm">확인하기</string>
+    <string name="conversation_setting_invite_confirm">확인함</string>
+    <string name="conversation_setting_you">님</string>
+    <string name="conversation_setting_open_link_join">%1$s님이 가입 할 그룹 링크를 열었습니다</string>
+    <string name="conversation_setting_close_link_join">%1$s가입 할 그룹 링크를 닫았습니다.</string>
+    <string name="conversation_setting_open_confirm_join">%1$s님이 그룹 채팅 초대 확인 설정</string>
+    <string name="conversation_setting_close_confirm_join">%1$s그룹 채팅 초대 확인을 끔.</string>
+    <string name="conversation_setting_open_only_creator">%1$s그룹 소유자만 초대할수있게 설정되었습니다.</string>
+    <string name="conversation_setting_close_only_creator">%1$s님이\'그룹 소유자만 요청할수 있음\'을 끔</string>
+    <string name="conversation_setting_open_show_mem">%1$s그룹 멤버 목록 표시가 활성화되었습니다</string>
+    <string name="conversation_setting_close_show_mem">%1$s그룹 멤버 목록 표시를 끔</string>
+    <string name="conversation_setting_open_mem_confirm">%1$s님이 멤버 초대 확인을 켜기</string>
+    <string name="conversation_setting_close_mem_confirm">%1$s님이 멤버 초대 확인을 끔</string>
+    <string name="conversation_setting_be_new_creator">%1$s님이 새로운 소유자로 되었습니다</string>
+    <string name="conversation_setting_change_new_creator">%1$s이(가) 그룹 소유권을 %2$s에게 이전</string>
+    <string name="conversation_detail_invite_excuse">초대 이유를 입력해 주세요</string>
+    <string name="conversation_detail_invite_description">그룹 소유자는 "그룹 채팅 초대 확인"을 활성화하여 친구를 그룹에 초대하여 그룹 소유자에게 이유를 설명하십시오.</string>
+    <string name="conversation_detail_transfer_group_description">그룹을 이전한후 그룹 소유자의 신분을 잃습니ㄷ</string>
+    <string name="conversation_detail_transfer_group_confirm"><Data><![CDATA[이 그룹을 다음으로 이전하기로 결정 <font color="#009DFF"><b>%1$s</b></font>]]></Data></string>
+    <string name="conversation_detail_transfer_group_success">이전 성공</string>
+    <string name="conversation_detail_add_member">초대장을 보냈습니다. 소유자가 확인할 때까지 기다리십시오.</string>
+    <string name="conversation_detail_transfer_group_failed">이전 실패</string>
+    <string name="conversation_detail_transfer_group_nvitation_failed">초대 실패</string>
+    <string name="conversation_detail_transfer_group_confirm_invite">초대 확인</string>
+    <string name="conversation_detail_transfer_group_invite_detail">초대 세부 사항</string>
+    <string name="conversation_detail_transfer_group_invite_desc">%1$d명의 친구를 그룹에 초대</string>
+    <string name="conversation_send_failure">발송 실패</string>
+    <string name="conversation_setting_group_notice">공지</string>
+    <string name="conversation_setting_group_notice_publish">게시 중</string>
+    <string name="conversation_setting_group_notice_edit">공지를 편집</string>
+    <string name="conversation_setting_group_notice_empty">이 그룹에는 그룹 공지가 없습니다.</string>
+    <string name="conversation_add_exist_user">%1$s 이미 그룹에 존재합니다</string>
+</resources>

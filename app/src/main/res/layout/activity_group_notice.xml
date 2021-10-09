@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Secret
+    Copyright (C) 2019 Secret
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/SecretBackgroundColor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/conversation_notice_tool"
+        style="?conversationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="false"
+        android:contentInsetStart="@dimen/wire__padding__15"
+        android:navigationIcon="@drawable/action_back_dark">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            style="?conversationToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/wire__padding__regular"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/conversation_setting_group_notice"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="17sp" />
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/group_notice_publish"
+            android:layout_marginEnd="@dimen/wire__padding__regular"
+            android:layout_gravity="end|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/secret_publish"
+            android:textColor="@color/SecretBlue"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?attr/SecretPrimaryDividerColor"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            >
+
+            <com.waz.zclient.common.views.ChatHeadViewNew
+                android:id="@+id/iv_avatar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:show_border="false"
+                app:is_round="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:src="@tools:sample/avatars"
+                />
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@id/iv_avatar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="12.5dp"
+                tools:text="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?attr/SecretPrimaryDividerColor"
+            />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edt_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:background="@null"
+        android:imeOptions="actionDone"
+        android:gravity="left|top"
+        android:hint="@string/conversation_setting_group_notice_edit"
+        android:paddingStart="@dimen/wire__padding__18"
+        android:paddingEnd="@dimen/wire__padding__18"
+        android:paddingTop="@dimen/wire__padding__22"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="?attr/SecretPrimaryTextColor"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

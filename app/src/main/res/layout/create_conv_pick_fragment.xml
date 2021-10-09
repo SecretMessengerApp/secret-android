@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Wire
+    Copyright (C) 2018 Wire Swiss GmbH
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="?wireBackgroundCollection"
+             >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        style="?wireBackground"
+        android:visibility="gone"
+        app:navigationIcon="@drawable/ic_action_close_dark">
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity='center'
+            android:text="@string/add_participants_empty_header"
+            android:textColor="?attr/SecretPrimaryTextColor"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__medium"/>
+
+        <com.waz.zclient.ui.text.TypefaceTextView
+            android:id="@+id/confirmation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity='end'
+            android:text="@string/done_button"
+            android:textColor="@drawable/app_entry_text_button"
+            android:textSize="@dimen/wire__text_size__small"
+            app:w_font="@string/wire__typeface__medium"
+            android:layout_marginEnd="@dimen/wire__padding__regular"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <com.waz.zclient.usersearch.views.SearchEditText
+                android:id="@+id/search_box"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/collections__multi_share_search_height"
+                android:layout_margin="@dimen/wire__padding__8"
+                app:hintText="@string/pick_user_search_hint"
+                />
+
+        <com.google.android.material.tabs.TabLayout
+                android:visibility="gone"
+                android:id="@+id/add_users_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/wire__padding__regular"
+                android:layout_marginEnd="@dimen/wire__padding__regular"
+                app:tabIndicatorColor="@color/white_72"
+                app:tabTextColor="@color/white_32"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/white"
+                app:tabIndicatorHeight="@dimen/wire__divider__height"
+                >
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/people_picker__search_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/tab_with_theme_layout"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/people_picker__search_services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/tab_with_theme_layout"/>
+
+            </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:id="@+id/empty_services_icon"
+                android:layout_width="@dimen/services_warning_icon_width"
+                android:layout_height="@dimen/services_warning_icon_height"
+                android:layout_marginBottom="@dimen/wire__padding__16"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/empty_search_message"
+                android:layout_width="@dimen/services_warning_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__text_size__small"
+                app:w_font="@string/wire__typeface__medium"
+                android:visibility="gone"/>
+
+            <com.waz.zclient.ui.text.TypefaceTextView
+                android:id="@+id/empty_services_button"
+                android:paddingStart="@dimen/wire__padding__16"
+                android:paddingEnd="@dimen/wire__padding__16"
+                android:paddingTop="@dimen/wire__padding__4"
+                android:paddingBottom="@dimen/wire__padding__4"
+                android:layout_marginTop="@dimen/wire__padding__16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:w_font="@string/wire__typeface__medium"
+                android:text="@string/add_services_button_text"
+                android:textColor="?attr/SecretPrimaryTextColor"
+                android:textSize="@dimen/wire__text_size__regular_small"
+                android:gravity="center"
+                android:background="@drawable/invite_button_background"
+                android:visibility="gone"
+            />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
